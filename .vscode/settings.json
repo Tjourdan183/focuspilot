@@ -1,0 +1,20 @@
+{
+  // 1) Tailwind-Klassen in TSX/JSX und in CSS-Dateien erlauben:
+  "tailwindCSS.includeLanguages": {
+    "css": "css",
+    "scss": "scss",
+    "postcss": "css",
+    "html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  // 2) Alle Tailwind At-Rules (@tailwind, @apply, @variants, @layer, @screen etc.)
+  //    sollen vom CSS-Validator als „erlaubt“ gesehen werden:
+  "css.validate": false,
+
+  // 3) Innerhalb von Strings (z.B. className="…") Autovervollständigung aktivieren:
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
