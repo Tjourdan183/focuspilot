@@ -1,4 +1,5 @@
-"use client"; // Hinzugefügt, da wir useState und useEffect verwenden
+// app/layout.tsx
+"use client"; // nötig, weil wir in diesem Layout useState/useEffect verwenden
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -12,73 +13,139 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [showPopup, setShowPopup] = useState(false);
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    // Stelle sicher, dass wir im Browser sind
-    if (typeof window === 'undefined') return;
-    
-    // Prüfe, ob das Pop-up bereits geschlossen wurde
+    if (typeof window === "undefined") return;
+
     const hasClosedPopup = localStorage.getItem("newsletterPopupClosed");
     if (hasClosedPopup) return;
-    
-    // Zeige das Pop-up nach 20 Sekunden
+
     const timer = setTimeout(() => {
       setShowPopup(true);
     }, 20000);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
   const closePopup = () => {
     setShowPopup(false);
-    // Speichere, dass das Pop-up geschlossen wurde, damit es nicht erneut erscheint
     localStorage.setItem("newsletterPopupClosed", "true");
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError("");
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (!response.ok) throw new Error('Subscription failed');
+
+      closePopup();
+      setEmail("");
+    } catch (err) {
+      setError('Failed to subscribe. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <html lang="en" className="h-screen">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen overflow-x-hidden relative flex flex-col`}>
+      <body
+        className={`
+          ${geistSans.variable} ${geistMono.variable} antialiased 
+          min-h-screen overflow-x-hidden relative flex flex-col
+        `}
+      >
         <Header />
-        {/* Newsletter Pop-up */}
+
         {showPopup && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative">
-              {/* Schließen-Button */}
+          <div 
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+            onClick={closePopup}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="newsletter-title"
+          >
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full relative mx-4"
+              onClick={(e) => e.stopPropagation()}
+            >
               <button
                 onClick={closePopup}
                 className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+                aria-label="Close newsletter popup"
               >
                 ✕
               </button>
 
-              {/* Pop-up Inhalt */}
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">
-                Melde dich für unseren Newsletter an!
+              <h2 id="newsletter-title" className="text-2xl font-bold mb-4 text-gray-800">
+                Subscribe to Our Newsletter
               </h2>
               <p className="text-gray-600 mb-4">
-                Erhalte die neuesten Updates und Angebote direkt in dein Postfach.
+                Get the latest updates and offers directly in your inbox.
               </p>
-              <div className="flex flex-col space-y-4">
-                <input
-                  type="email"
-                  placeholder="Deine E-Mail-Adresse"
-                  className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button className="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-700">
-                  Anmelden
+
+              <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="
+                      w-full border border-gray-300 rounded px-4 py-2 
+                      focus:outline-none focus:ring-2 focus:ring-blue-500
+                    "
+                    required
+                    aria-label="Email address"
+                    disabled={isSubmitting}
+                  />
+                  {error && (
+                    <p className="text-red-500 text-sm mt-1" role="alert">
+                      {error}
+                    </p>
+                  )}
+                </div>
+                <button
+                  type="submit"
+                  className="
+                    bg-blue-600 text-white rounded px-4 py-2 
+                    hover:bg-blue-700 transition disabled:opacity-50
+                  "
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Subscribing..." : "Subscribe"}
                 </button>
-              </div>
+              </form>
+
               <p className="text-sm text-gray-500 mt-4">
-                Mit deiner Anmeldung stimmst du unserer{" "}
-                <Link href="/datenschutz" className="text-blue-600 hover:underline">
-                  Datenschutzerklärung
-                </Link>{" "}
-                zu.
+                By subscribing, you agree to our{" "}
+                <Link
+                  href="/privacy"
+                  className="text-blue-600 hover:underline"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Privacy Policy
+                </Link>
               </p>
             </div>
           </div>
         )}
+
         <main className="flex-1 pt-24">{children}</main>
+
         <Footer />
       </body>
     </html>
