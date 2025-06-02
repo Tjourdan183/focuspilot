@@ -1,15 +1,14 @@
 // app/layout.tsx
 "use client"; // nötig, weil wir in diesem Layout useState/useEffect verwenden
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -64,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="h-screen">
       <body
         className={`
-          ${geistSans.variable} ${geistMono.variable} antialiased 
+          ${inter.className} antialiased 
           min-h-screen overflow-x-hidden relative flex flex-col
         `}
       >
