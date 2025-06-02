@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import TestimonialsMarquee from '@/components/TestimonialsMarquee'
 
 export default function AboutPage() {
   return (
@@ -11,17 +12,16 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-extrabold">About Focuspilot.ai</h2>
           <p className="mt-4 text-gray-600">
-            Focuspilot.ai wurde entwickelt, um Einzelpersonen und Teams dabei zu helfen, Ablenkungen
-            zu reduzieren und ihre Produktivität auf das nächste Level zu heben. Wir glauben an
-            den Fokus als Schlüssel zum Erfolg – und bauen Werkzeuge, die genau dabei unterstützen.
+            Daddy Samuel ist ein 20-jähriger, der sich in der Entwicklung von Software und Technologe befasst. 
           </p>
           <p className="mt-8 text-gray-600">
-            Unser Team besteht aus Entwickler:innen, Designer:innen und Produktstrateg:innen, die
-            alle eines gemeinsam haben: Die Leidenschaft für effizientes Arbeiten.  
-            No fluff, real tools.
+            Ich bin der Master, der absolute top G
           </p>
         </div>
       </section>
+
+      {/* ------------- NEW ------------- */}
+      <TestimonialsMarquee />
     </main>
   );
 }

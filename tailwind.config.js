@@ -47,6 +47,17 @@ module.exports = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      keyframes: {
+        scroll: {
+          '0%':   { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-50%)' },
+        },
+      },
+      animation: {
+        'scroll-slow':   'scroll 40s linear infinite',
+        'scroll-medium': 'scroll 30s linear infinite',
+        'scroll-fast':   'scroll 20s linear infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
