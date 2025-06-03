@@ -5,16 +5,16 @@ export default function Footer() {
           
           {/* Linker Bereich */}
           <div>
-            <a href="mailto:hi@cursor.com" className="hover:text-gray-900 transition duration-200">
-              hi@cursor.com <span className="inline-block ml-1">↗</span>
+            <a href="mailto:support@focuspilot.net" className="hover:text-gray-900 transition duration-200">
+              support@focuspilot.net <span className="inline-block ml-1">↗</span>
             </a>
             <div className="flex space-x-4 mt-5">
-              <a href="#">X</a>
-              <a href="#">GitHub</a>
-              <a href="#">Discord</a>
-              <a href="#">YouTube</a>
+              <a href="https://www.instagram.com/focuspilot.ai/" target="_blank">Instagram</a>
+              <a href="#" target="_blank">X</a>
+              <a href="#" target="_blank">Discord</a>
+              <a href="#" target="_blank">YouTube</a>
             </div>
-            <p className="mt-6 text-xs">© 2025 Made by Anysphere</p>
+            <p className="mt-6 text-xs">© 2025 Made by Nexoventis AG</p>
           </div>
   
           {/* Mittlerer Bereich */}
