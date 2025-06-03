@@ -32,6 +32,7 @@ export default function Footer() {
             <div>
               <h5 className="font-semibold mb-2">Resources</h5>
               <ul className="space-y-1">
+                <li><a href="/FAQ">FAQ</a></li>
                 <li><a href="#">Docs</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Forum</a></li>
