@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface FAQItemProps {
   question: string;
@@ -10,80 +10,175 @@ function FAQItem({ question, answer }: FAQItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="group glass rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.01] mb-6 border border-transparent hover:border-accent/20">
       <button
-        className="flex justify-between items-center w-full py-6 text-left"
+        className="flex justify-between items-center w-full py-6 px-8 text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-medium text-gray-900">{question}</span>
-        <span className={`transform transition-transform ${isOpen ? 'rotate-180' : ''}`}>
+        <span className="text-xl font-bold text-foreground group-hover:text-gradient transition-all duration-300">{question}</span>
+        <span className={`transform transition-all duration-300 text-xl ${isOpen ? 'rotate-180 text-accent' : 'text-muted-foreground'}`}>
           ▼
         </span>
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96 mb-6' : 'max-h-0'
+          isOpen ? 'max-h-96 pb-6' : 'max-h-0'
         }`}
       >
-        <p className="text-gray-600">{answer}</p>
+        <div className="px-8">
+          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-6"></div>
+          <p className="text-muted-foreground leading-relaxed text-lg">{answer}</p>
+        </div>
       </div>
     </div>
   );
 }
 
 export default function FAQPage() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   const faqs = [
     {
-      question: "What is FocusPilot?",
-      answer: "FocusPilot is an innovative productivity tool designed to help you maintain focus and maximize your efficiency during work sessions. It combines AI-powered task management with scientifically-backed productivity techniques to help you achieve your goals."
+      question: "Was ist FocusPilot?",
+      answer: "FocusPilot ist eine innovative KI-gestützte Produktivitätsplattform, die Ihnen hilft, maximalen Fokus zu erreichen und Ihre Effizienz während der Arbeitszeit zu steigern. Wir kombinieren künstliche Intelligenz mit wissenschaftlich fundierten Produktivitätstechniken."
     },
     {
-      question: "How does the focus timer work?",
-      answer: "Our focus timer is based on the proven Pomodoro Technique, but with smart adaptations. It typically consists of 25-minute focus sessions followed by 5-minute breaks. However, FocusPilot's AI can adjust these intervals based on your personal productivity patterns and the type of work you're doing."
+      question: "Wie funktioniert der Fokus-Timer?",
+      answer: "Unser intelligenter Timer basiert auf der bewährten Pomodoro-Technik, passt sich aber an Ihre persönlichen Produktivitätsmuster an. Die KI analysiert Ihr Arbeitsverhalten und optimiert automatisch die Fokus- und Pausenzeiten für maximale Effizienz."
     },
     {
-      question: "Can I integrate FocusPilot with other tools?",
-      answer: "Yes! FocusPilot seamlessly integrates with popular productivity tools like Notion, Trello, Asana, and Google Calendar. This allows you to maintain your existing workflow while benefiting from FocusPilot's focus-enhancing features."
+      question: "Kann ich FocusPilot mit anderen Tools integrieren?",
+      answer: "Ja! FocusPilot lässt sich nahtlos mit beliebten Produktivitätstools wie Notion, Trello, Asana und Google Calendar integrieren. So können Sie Ihren bestehenden Workflow beibehalten und gleichzeitig von unseren Focus-Features profitieren."
     },
     {
-      question: "Is there a free trial available?",
-      answer: "Yes, we offer a 14-day free trial with full access to all features. No credit card is required to start your trial. After the trial period, you can choose from our flexible pricing plans that suit your needs."
+      question: "Gibt es eine kostenlose Testversion?",
+      answer: "Absolut! Wir bieten eine 14-tägige kostenlose Testphase mit vollem Zugang zu allen Features. Keine Kreditkarte erforderlich. Nach der Testphase können Sie aus unseren flexiblen Preisplänen wählen."
     },
     {
-      question: "How does FocusPilot use AI?",
-      answer: "FocusPilot's AI analyzes your work patterns, task completion rates, and focus sessions to provide personalized recommendations. It helps optimize your schedule, suggests the best times for deep work, and adapts to your natural productivity rhythms."
+      question: "Wie nutzt FocusPilot künstliche Intelligenz?",
+      answer: "Unsere KI analysiert Ihre Arbeitsmuster, Aufgaben-Completion-Raten und Fokussitzungen, um personalisierte Empfehlungen zu geben. Sie hilft beim Optimieren Ihres Zeitplans, schlägt die besten Zeiten für Deep Work vor und passt sich an Ihre natürlichen Produktivitätsrhythmen an."
     },
     {
-      question: "Can I use FocusPilot offline?",
-      answer: "Yes, FocusPilot has an offline mode that allows you to continue using core features without an internet connection. Your data will automatically sync once you're back online."
+      question: "Funktioniert FocusPilot offline?",
+      answer: "Ja! FocusPilot hat einen Offline-Modus, der es Ihnen ermöglicht, die wichtigsten Features auch ohne Internetverbindung zu nutzen. Ihre Daten werden automatisch synchronisiert, sobald Sie wieder online sind."
     },
     {
-      question: "What makes FocusPilot different from other productivity apps?",
-      answer: "FocusPilot stands out through its intelligent adaptation to your work style, seamless integrations, and focus on scientific productivity principles. Unlike traditional productivity apps, FocusPilot learns from your behavior to create a personalized productivity system."
+      question: "Was macht FocusPilot besonders?",
+      answer: "FocusPilot zeichnet sich durch intelligente Anpassung an Ihren Arbeitsstil, nahtlose Integrationen und den Fokus auf wissenschaftliche Produktivitätsprinzipien aus. Im Gegensatz zu traditionellen Apps lernt FocusPilot von Ihrem Verhalten und erschafft ein personalisiertes Produktivitätssystem."
     }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
-      <div className="space-y-2">
-        {faqs.map((faq, index) => (
-          <FAQItem key={index} question={faq.question} answer={faq.answer} />
-        ))}
+    <main className="relative min-h-screen bg-background">
+      
+      {/* Professional animated background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div 
+          className="absolute w-96 h-96 bg-gradient-to-r from-purple-500/20 to-pink-500/10 rounded-full blur-3xl animate-float"
+          style={{
+            transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`,
+            top: '20%',
+            left: '15%'
+          }}
+        />
+        <div 
+          className="absolute w-80 h-80 bg-gradient-to-r from-purple-500/10 to-pink-500/5 rounded-full blur-3xl animate-float-delayed"
+          style={{
+            transform: `translate(${mousePosition.x * -0.005}px, ${mousePosition.y * -0.005}px)`,
+            top: '60%',
+            right: '15%'
+          }}
+        />
+      </div>
+
+      {/* Professional floating elements */}
+      <div className="absolute top-20 left-10 animate-float opacity-60">
+        <div className="w-12 h-12 glass rounded-xl shadow-lg flex items-center justify-center text-lg">
+          ❓
+        </div>
       </div>
       
-      <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-        <h2 className="text-xl font-semibold mb-4">Still have questions?</h2>
-        <p className="text-gray-600 mb-4">
-          Can't find the answer you're looking for? Please reach out to our support team.
-        </p>
-        <a
-          href="mailto:support@focuspilot.net"
-          className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
-        >
-          Contact Support
-        </a>
+      <div className="absolute top-40 right-20 animate-float-delayed opacity-60">
+        <div className="w-10 h-10 glass rounded-full shadow-lg flex items-center justify-center text-sm">
+          💡
+        </div>
       </div>
-    </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 max-w-4xl mx-auto py-32 px-4">
+        
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-8">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-muted-foreground">
+              Frequently Asked Questions
+            </span>
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
+            <span className="text-foreground">FAQ</span>
+            <br />
+            <span className="text-gradient">Center</span>
+          </h1>
+          
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Alles was Sie über FocusPilot wissen möchten - 
+            <span className="font-semibold text-foreground">
+              klar und verständlich erklärt.
+            </span>
+          </p>
+        </div>
+
+        {/* FAQ Items */}
+        <div className="space-y-4 mb-20">
+          {faqs.map((faq, index) => (
+            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+        
+        {/* Contact Support Section */}
+        <div className="relative glass rounded-3xl p-12 shadow-2xl border border-accent/10">
+          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-purple-500/5 rounded-3xl"></div>
+          
+          <div className="relative z-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">
+              <span className="text-gradient">
+                Noch Fragen?
+              </span>
+            </h2>
+            
+            <p className="text-xl text-muted-foreground mb-8">
+              Finden Sie nicht die Antwort, die Sie suchen? Unser Support-Team hilft Ihnen gerne weiter!
+            </p>
+            
+            <a
+              href="mailto:support@focuspilot.net"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-foreground hover:bg-foreground/90 text-background font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                📧 Support kontaktieren
+                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+            </a>
+            
+            <p className="text-sm text-muted-foreground mt-6">
+              ⚡ Antwort in weniger als 24h · 🌍 Deutsch & English · 💬 Live Chat verfügbar
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 } 
