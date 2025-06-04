@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "The professional-grade AI productivity platform that transforms how ambitious teams and individuals achieve peak performance.",
+    "statusBadge": "Trusted by 10,000+ professionals worldwide",
+    "cta": {
+      "startTrial": "Start Free Trial",
+      "watchDemo": "Watch Demo"
+    },
+    "trustIndicators": {
+      "users": "10,000+ users",
+      "rating": "⭐ 4.9/5 rating",
+      "security": "🔒 Enterprise-grade security"
+    },
+    "features": {
+      "title": "Built for Excellence",
+      "subtitle": "Every feature engineered for professional productivity and measurable results.",
+      "aiPowered": {
+        "title": "AI-Powered Focus",
+        "description": "Advanced AI analyzes your work patterns and optimizes focus sessions for peak productivity.",
+        "learnMore": "Learn more"
+      },
+      "smartTimer": {
+        "title": "Smart Timer",
+        "description": "Intelligent Pomodoro timers that adapt to your workflow and maximize deep work sessions.",
+        "learnMore": "Learn more"
+      },
+      "analytics": {
+        "title": "Real-time Analytics",
+        "description": "Beautiful dashboards that transform productivity data into actionable insights.",
+        "learnMore": "Learn more"
+      }
+    },
+    "testimonials": {
+      "title": "Trusted by Industry Leaders",
+      "subtitle": "Join thousands of professionals who've transformed their productivity."
+    },
+    "finalCta": {
+      "title": "Ready to Excel?",
+      "subtitle": "Start your 14-day free trial and experience the future of professional productivity.",
+      "startTrial": "Start Free Trial",
+      "features": "✓ No credit card required • ✓ 14-day free trial • ✓ Cancel anytime"
+    }
+  },
+  "Navigation": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "enterprise": "Enterprise",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "earlyAccess": "Early Access – 20% off"
+  },
+  "Newsletter": {
+    "title": "Subscribe to Our Newsletter",
+    "description": "Get the latest updates and exclusive offers directly in your inbox.",
+    "placeholder": "Your email address",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "privacyText": "By subscribing, you agree to our Privacy Policy.",
+    "error": "Failed to subscribe. Please try again."
+  },
+  "Common": {
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+} 

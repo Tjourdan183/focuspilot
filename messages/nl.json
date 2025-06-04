@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "Het professionele AI-productiviteitsplatform dat transformeert hoe ambitieuze teams en individuen topprestaites bereiken.",
+    "statusBadge": "Vertrouwd door meer dan 10.000 professionals wereldwijd",
+    "cta": {
+      "startTrial": "Start Gratis Proefperiode",
+      "watchDemo": "Bekijk Demo"
+    },
+    "trustIndicators": {
+      "users": "10.000+ gebruikers",
+      "rating": "⭐ 4,9/5 beoordeling",
+      "security": "🔒 Beveiliging op bedrijfsniveau"
+    },
+    "features": {
+      "title": "Gebouwd voor Excellentie",
+      "subtitle": "Elke functie ontworpen voor professionele productiviteit en meetbare resultaten.",
+      "aiPowered": {
+        "title": "AI-Gedreven Focus",
+        "description": "Geavanceerde AI analyseert je werkpatronen en optimaliseert focussessies voor maximale productiviteit.",
+        "learnMore": "Meer weten"
+      },
+      "smartTimer": {
+        "title": "Slimme Timer",
+        "description": "Intelligente Pomodoro-timers die zich aanpassen aan je workflow en diepe werksessies maximaliseren.",
+        "learnMore": "Meer weten"
+      },
+      "analytics": {
+        "title": "Realtime Analytics",
+        "description": "Prachtige dashboards die productiviteitsgegevens omzetten in bruikbare inzichten.",
+        "learnMore": "Meer weten"
+      }
+    },
+    "testimonials": {
+      "title": "Vertrouwd door Industrieleiders",
+      "subtitle": "Sluit je aan bij duizenden professionals die hun productiviteit hebben getransformeerd."
+    },
+    "finalCta": {
+      "title": "Klaar om uit te blinken?",
+      "subtitle": "Start je 14-daagse gratis proefperiode en ervaar de toekomst van professionele productiviteit.",
+      "startTrial": "Start Gratis Proefperiode",
+      "features": "✓ Geen creditcard vereist • ✓ 14-daagse gratis proefperiode • ✓ Altijd opzegbaar"
+    }
+  },
+  "Navigation": {
+    "features": "Functies",
+    "pricing": "Prijzen",
+    "enterprise": "Bedrijf",
+    "resources": "Resources",
+    "about": "Over ons",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "earlyAccess": "Vroege Toegang – 20% korting"
+  },
+  "Newsletter": {
+    "title": "Abonneer op onze Nieuwsbrief",
+    "description": "Ontvang de laatste updates en exclusieve aanbiedingen direct in je inbox.",
+    "placeholder": "Je e-mailadres",
+    "subscribe": "Abonneren",
+    "subscribing": "Abonneren...",
+    "privacyText": "Door te abonneren ga je akkoord met onze Privacybeleid.",
+    "error": "Abonneren mislukt. Probeer het opnieuw."
+  },
+  "Common": {
+    "close": "Sluiten",
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes"
+  }
+} 

@@ -7,6 +7,8 @@ import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from "@/lib/useTranslations";
+import { I18nProvider } from "@/lib/i18n-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   // Dark-Mode
   const [isDark, setIsDark] = useState(false);
+
+  // Translation hook
+  const { t } = useTranslations();
 
   // Zeige Newsletter-Popup nach 20 Sek., sofern nicht schon geschlossen
   useEffect(() => {
@@ -83,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       closePopup();
       setEmail("");
     } catch (err) {
-      setError("Failed to subscribe. Please try again.");
+      setError(t("Newsletter.error"));
     } finally {
       setIsSubmitting(false);
     }
@@ -92,83 +97,85 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <body className="flex flex-col min-h-screen bg-white dark:bg-black text-foreground transition-colors duration-300">
-        {/* Header (enthält auch Dark-Mode-Toggle) */}
-        <Header onToggleDark={toggleDarkMode} isDark={isDark} />
+        <I18nProvider>
+          {/* Header (enthält auch Dark-Mode-Toggle) */}
+          <Header onToggleDark={toggleDarkMode} isDark={isDark} />
 
-        {/* Newsletter-Popup */}
-        {showPopup && (
-          <div
-            className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
-            onClick={closePopup}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="newsletter-title"
-          >
+          {/* Newsletter-Popup */}
+          {showPopup && (
             <div
-              className="bg-card p-6 rounded-card shadow-xl max-w-md w-full mx-4 animate-fadeIn relative"
-              onClick={(e) => e.stopPropagation()}
+              className="fixed inset-0 flex items-center justify-center bg-black/50 z-50"
+              onClick={closePopup}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="newsletter-title"
             >
-              <button
-                onClick={closePopup}
-                className="absolute top-2 right-2 text-muted-foreground hover:text-foreground"
-                aria-label="Close newsletter popup"
+              <div
+                className="bg-card p-6 rounded-card shadow-xl max-w-md w-full mx-4 animate-fadeIn relative"
+                onClick={(e) => e.stopPropagation()}
               >
-                ✕
-              </button>
-
-              <h2 id="newsletter-title" className="text-2xl font-semibold mb-4 text-foreground">
-                Subscribe to Our Newsletter
-              </h2>
-              <p className="text-muted-foreground mb-4">
-                Get the latest updates and exclusive offers directly in your inbox.
-              </p>
-
-              <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full border border-border rounded-md px-4 py-2 focus:ring focus:ring-primary focus:border-primary"
-                    required
-                    aria-label="Email address"
-                    disabled={isSubmitting}
-                  />
-                  {error && (
-                    <p className="text-destructive-foreground text-sm mt-1" role="alert">
-                      {error}
-                    </p>
-                  )}
-                </div>
                 <button
-                  type="submit"
-                  className="bg-primary text-primary-foreground rounded-md px-4 py-2 hover:bg-primary/90 transition disabled:opacity-50"
-                  disabled={isSubmitting}
+                  onClick={closePopup}
+                  className="absolute top-2 right-2 text-muted-foreground hover:text-foreground"
+                  aria-label={t("Common.close")}
                 >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
+                  ✕
                 </button>
-              </form>
 
-              <p className="text-xs text-muted-foreground mt-4">
-                By subscribing, you agree to our{" "}
-                <Link
-                  href="/privacy"
-                  className="text-primary hover:underline"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Privacy Policy
-                </Link>
-                .
-              </p>
+                <h2 id="newsletter-title" className="text-2xl font-semibold mb-4 text-foreground">
+                  {t("Newsletter.title")}
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  {t("Newsletter.description")}
+                </p>
+
+                <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+                  <div>
+                    <input
+                      type="email"
+                      placeholder={t("Newsletter.placeholder")}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="w-full border border-border rounded-md px-4 py-2 focus:ring focus:ring-primary focus:border-primary"
+                      required
+                      aria-label={t("Newsletter.placeholder")}
+                      disabled={isSubmitting}
+                    />
+                    {error && (
+                      <p className="text-destructive-foreground text-sm mt-1" role="alert">
+                        {error}
+                      </p>
+                    )}
+                  </div>
+                  <button
+                    type="submit"
+                    className="bg-primary text-primary-foreground rounded-md px-4 py-2 hover:bg-primary/90 transition disabled:opacity-50"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? t("Newsletter.subscribing") : t("Newsletter.subscribe")}
+                  </button>
+                </form>
+
+                <p className="text-xs text-muted-foreground mt-4">
+                  {t("Newsletter.privacyText").split(' ').slice(0, 7).join(' ')}{" "}
+                  <Link
+                    href="/privacy"
+                    className="text-primary hover:underline"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {t("Newsletter.privacyText").split(' ').slice(7, 9).join(' ')}
+                  </Link>
+                  .
+                </p>
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* Main Content */}
-        <main className="flex-1 pt-24">{children}</main>
+          {/* Main Content */}
+          <main className="flex-1 pt-24">{children}</main>
 
-        <Footer />
+          <Footer />
+        </I18nProvider>
       </body>
     </html>
   );

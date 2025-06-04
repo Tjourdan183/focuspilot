@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "Profesjonalna platforma produktywności AI, która transformuje sposób, w jaki ambitne zespoły i osoby osiągają szczytowe wyniki.",
+    "statusBadge": "Zaufane przez ponad 10 000 profesjonalistów na całym świecie",
+    "cta": {
+      "startTrial": "Rozpocznij Bezpłatny Trial",
+      "watchDemo": "Zobacz Demo"
+    },
+    "trustIndicators": {
+      "users": "10 000+ użytkowników",
+      "rating": "⭐ Ocena 4,9/5",
+      "security": "🔒 Bezpieczeństwo na poziomie korporacyjnym"
+    },
+    "features": {
+      "title": "Stworzone dla Doskonałości",
+      "subtitle": "Każda funkcja zaprojektowana dla profesjonalnej produktywności i mierzalnych rezultatów.",
+      "aiPowered": {
+        "title": "Skupienie wspierane przez AI",
+        "description": "Zaawansowana AI analizuje Twoje wzorce pracy i optymalizuje sesje skupienia dla maksymalnej produktywności.",
+        "learnMore": "Dowiedz się więcej"
+      },
+      "smartTimer": {
+        "title": "Inteligentny Timer",
+        "description": "Inteligentne timery Pomodoro, które dostosowują się do Twojego przepływu pracy i maksymalizują sesje głębokiej pracy.",
+        "learnMore": "Dowiedz się więcej"
+      },
+      "analytics": {
+        "title": "Analityka w Czasie Rzeczywistym",
+        "description": "Piękne dashboardy, które przekształcają dane produktywności w praktyczne spostrzeżenia.",
+        "learnMore": "Dowiedz się więcej"
+      }
+    },
+    "testimonials": {
+      "title": "Zaufane przez Liderów Branży",
+      "subtitle": "Dołącz do tysięcy profesjonalistów, którzy przekształcili swoją produktywność."
+    },
+    "finalCta": {
+      "title": "Gotowy na Doskonałość?",
+      "subtitle": "Rozpocznij 14-dniowy bezpłatny trial i doświadcz przyszłości profesjonalnej produktywności.",
+      "startTrial": "Rozpocznij Bezpłatny Trial",
+      "features": "✓ Nie wymagana karta kredytowa • ✓ 14-dniowy bezpłatny trial • ✓ Anuluj w dowolnym momencie"
+    }
+  },
+  "Navigation": {
+    "features": "Funkcje",
+    "pricing": "Cennik",
+    "enterprise": "Przedsiębiorstwo",
+    "resources": "Zasoby",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "earlyAccess": "Wczesny Dostęp – 20% zniżki"
+  },
+  "Newsletter": {
+    "title": "Zapisz się do Naszego Newslettera",
+    "description": "Otrzymuj najnowsze aktualizacje i ekskluzywne oferty bezpośrednio do swojej skrzynki pocztowej.",
+    "placeholder": "Twój adres e-mail",
+    "subscribe": "Zapisz się",
+    "subscribing": "Zapisywanie...",
+    "privacyText": "Zapisując się, akceptujesz naszą Politykę Prywatności.",
+    "error": "Nie udało się zapisać. Spróbuj ponownie."
+  },
+  "Common": {
+    "close": "Zamknij",
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces"
+  }
+} 

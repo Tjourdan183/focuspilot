@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "Die professionelle KI-Produktivitätsplattform, die transformiert, wie ambitionierte Teams und Einzelpersonen Spitzenleistungen erreichen.",
+    "statusBadge": "Vertraut von über 10.000 Fachkräften weltweit",
+    "cta": {
+      "startTrial": "Kostenlose Testversion starten",
+      "watchDemo": "Demo ansehen"
+    },
+    "trustIndicators": {
+      "users": "10.000+ Nutzer",
+      "rating": "⭐ 4,9/5 Bewertung",
+      "security": "🔒 Sicherheit auf Unternehmensniveau"
+    },
+    "features": {
+      "title": "Gebaut für Exzellenz",
+      "subtitle": "Jede Funktion entwickelt für professionelle Produktivität und messbare Ergebnisse.",
+      "aiPowered": {
+        "title": "KI-gestützte Fokussierung",
+        "description": "Fortschrittliche KI analysiert Ihre Arbeitsgewohnheiten und optimiert Fokussitzungen für maximale Produktivität.",
+        "learnMore": "Mehr erfahren"
+      },
+      "smartTimer": {
+        "title": "Intelligenter Timer",
+        "description": "Intelligente Pomodoro-Timer, die sich an Ihren Arbeitsablauf anpassen und tiefe Arbeitssitzungen maximieren.",
+        "learnMore": "Mehr erfahren"
+      },
+      "analytics": {
+        "title": "Echtzeit-Analytik",
+        "description": "Schöne Dashboards, die Produktivitätsdaten in umsetzbare Erkenntnisse verwandeln.",
+        "learnMore": "Mehr erfahren"
+      }
+    },
+    "testimonials": {
+      "title": "Vertraut von Branchenführern",
+      "subtitle": "Schließen Sie sich Tausenden von Fachkräften an, die ihre Produktivität transformiert haben."
+    },
+    "finalCta": {
+      "title": "Bereit für Exzellenz?",
+      "subtitle": "Starten Sie Ihre 14-tägige kostenlose Testversion und erleben Sie die Zukunft professioneller Produktivität.",
+      "startTrial": "Kostenlose Testversion starten",
+      "features": "✓ Keine Kreditkarte erforderlich • ✓ 14-tägige kostenlose Testversion • ✓ Jederzeit kündbar"
+    }
+  },
+  "Navigation": {
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "enterprise": "Unternehmen",
+    "resources": "Ressourcen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "earlyAccess": "Früher Zugang – 20% Rabatt"
+  },
+  "Newsletter": {
+    "title": "Abonnieren Sie unseren Newsletter",
+    "description": "Erhalten Sie die neuesten Updates und exklusive Angebote direkt in Ihren Posteingang.",
+    "placeholder": "Ihre E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "subscribing": "Abonniere...",
+    "privacyText": "Durch das Abonnieren stimmen Sie unserer Datenschutzrichtlinie zu.",
+    "error": "Abonnement fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "Common": {
+    "close": "Schließen",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg"
+  }
+} 

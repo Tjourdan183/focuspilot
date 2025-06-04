@@ -2,8 +2,11 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "@/lib/i18n-context";
 
 export default function Footer() {
+  const { t } = useTranslations();
+
   return (
     <footer 
       className="relative w-full text-foreground dark:text-secondary-foreground text-sm py-12 px-6 overflow-hidden transition-colors duration-300" 
@@ -74,10 +77,6 @@ export default function Footer() {
 
         {/* Rechter Bereich */}
         <div className="flex flex-col space-y-4">
-          <select className="border border-border rounded-md px-2 py-1 bg-background text-foreground focus:ring focus:ring-primary">
-            <option>English</option>
-            <option>Deutsch</option>
-          </select>
           <div className="flex space-x-3">
             <button onClick={() => document.documentElement.classList.remove("dark")}
               className="bg-primary-foreground text-primary rounded-full w-8 h-8 flex items-center justify-center">🌞</button>

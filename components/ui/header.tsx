@@ -4,6 +4,8 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { MoonIcon, SunIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "@/lib/i18n-context";
 
 interface HeaderProps {
   onToggleDark?: () => void;
@@ -13,6 +15,7 @@ interface HeaderProps {
 export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslations();
 
   // Scroll-Effekt: Sobald >20px gescrollt, setze Blur & Shadow
   useEffect(() => {
@@ -26,13 +29,13 @@ export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
 
   // Navigation Links
   const links = [
-    { href: "/features", label: "Features" },
-    { href: "/pricing", label: "Pricing" },
-    { href: "/enterprise", label: "Enterprise" },
-    { href: "/resources", label: "Resources" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-    { href: "/FAQ", label: "FAQ" },
+    { href: "/features", label: t("Navigation.features") },
+    { href: "/pricing", label: t("Navigation.pricing") },
+    { href: "/enterprise", label: t("Navigation.enterprise") },
+    { href: "/resources", label: t("Navigation.resources") },
+    { href: "/about", label: t("Navigation.about") },
+    { href: "/contact", label: t("Navigation.contact") },
+    { href: "/FAQ", label: t("Navigation.faq") },
   ];
 
   return (
@@ -75,6 +78,9 @@ export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
         </nav>
 
         <div className="flex items-center space-x-4">
+          {/* Language Switcher */}
+          <LanguageSwitcher />
+
           {/* Dark-Mode-Toggle */}
           {onToggleDark && (
             <button
@@ -98,7 +104,7 @@ export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
               animate-pulse-slow
             `}
           >
-            Early Access – 20% off
+            {t("Navigation.earlyAccess")}
           </button>
 
           {/* Mobile Hamburger */}
@@ -133,7 +139,7 @@ export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
             <button
               className="mx-4 mt-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg text-center hover:bg-primary/90 transition"
             >
-              Early Access
+              {t("Navigation.earlyAccess")}
             </button>
           </nav>
         </div>

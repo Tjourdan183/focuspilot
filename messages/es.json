@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "La plataforma de productividad con IA de nivel profesional que transforma cómo los equipos ambiciosos y los individuos logran el máximo rendimiento.",
+    "statusBadge": "Confiado por más de 10,000 profesionales en todo el mundo",
+    "cta": {
+      "startTrial": "Iniciar Prueba Gratuita",
+      "watchDemo": "Ver Demo"
+    },
+    "trustIndicators": {
+      "users": "10,000+ usuarios",
+      "rating": "⭐ Calificación 4.9/5",
+      "security": "🔒 Seguridad de nivel empresarial"
+    },
+    "features": {
+      "title": "Construido para la Excelencia",
+      "subtitle": "Cada característica diseñada para la productividad profesional y resultados medibles.",
+      "aiPowered": {
+        "title": "Enfoque Potenciado por IA",
+        "description": "La IA avanzada analiza tus patrones de trabajo y optimiza las sesiones de enfoque para máxima productividad.",
+        "learnMore": "Saber más"
+      },
+      "smartTimer": {
+        "title": "Temporizador Inteligente",
+        "description": "Temporizadores Pomodoro inteligentes que se adaptan a tu flujo de trabajo y maximizan las sesiones de trabajo profundo.",
+        "learnMore": "Saber más"
+      },
+      "analytics": {
+        "title": "Análisis en Tiempo Real",
+        "description": "Hermosos paneles que transforman los datos de productividad en insights accionables.",
+        "learnMore": "Saber más"
+      }
+    },
+    "testimonials": {
+      "title": "Confiado por Líderes de la Industria",
+      "subtitle": "Únete a miles de profesionales que han transformado su productividad."
+    },
+    "finalCta": {
+      "title": "¿Listo para Sobresalir?",
+      "subtitle": "Inicia tu prueba gratuita de 14 días y experimenta el futuro de la productividad profesional.",
+      "startTrial": "Iniciar Prueba Gratuita",
+      "features": "✓ No se requiere tarjeta de crédito • ✓ Prueba gratuita de 14 días • ✓ Cancela en cualquier momento"
+    }
+  },
+  "Navigation": {
+    "features": "Características",
+    "pricing": "Precios",
+    "enterprise": "Empresa",
+    "resources": "Recursos",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "faq": "FAQ",
+    "earlyAccess": "Acceso Temprano – 20% de descuento"
+  },
+  "Newsletter": {
+    "title": "Suscríbete a Nuestro Newsletter",
+    "description": "Recibe las últimas actualizaciones y ofertas exclusivas directamente en tu bandeja de entrada.",
+    "placeholder": "Tu dirección de correo electrónico",
+    "subscribe": "Suscribirse",
+    "subscribing": "Suscribiendo...",
+    "privacyText": "Al suscribirte, aceptas nuestra Política de Privacidad.",
+    "error": "Error al suscribirse. Por favor, inténtalo de nuevo."
+  },
+  "Common": {
+    "close": "Cerrar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  }
+} 

@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "A plataforma de produtividade IA de nível profissional que transforma como equipes ambiciosas e indivíduos alcançam o desempenho máximo.",
+    "statusBadge": "Confiado por mais de 10.000 profissionais em todo o mundo",
+    "cta": {
+      "startTrial": "Iniciar Teste Gratuito",
+      "watchDemo": "Ver Demonstração"
+    },
+    "trustIndicators": {
+      "users": "10.000+ utilizadores",
+      "rating": "⭐ Classificação 4,9/5",
+      "security": "🔒 Segurança de nível empresarial"
+    },
+    "features": {
+      "title": "Construído para a Excelência",
+      "subtitle": "Cada funcionalidade projetada para produtividade profissional e resultados mensuráveis.",
+      "aiPowered": {
+        "title": "Foco Potenciado por IA",
+        "description": "IA avançada analisa os seus padrões de trabalho e otimiza sessões de foco para produtividade máxima.",
+        "learnMore": "Saber mais"
+      },
+      "smartTimer": {
+        "title": "Cronômetro Inteligente",
+        "description": "Cronômetros Pomodoro inteligentes que se adaptam ao seu fluxo de trabalho e maximizam sessões de trabalho profundo.",
+        "learnMore": "Saber mais"
+      },
+      "analytics": {
+        "title": "Análises em Tempo Real",
+        "description": "Dashboards bonitos que transformam dados de produtividade em insights acionáveis.",
+        "learnMore": "Saber mais"
+      }
+    },
+    "testimonials": {
+      "title": "Confiado por Líderes da Indústria",
+      "subtitle": "Junte-se a milhares de profissionais que transformaram a sua produtividade."
+    },
+    "finalCta": {
+      "title": "Pronto para Sobressair?",
+      "subtitle": "Inicie o seu teste gratuito de 14 dias e experimente o futuro da produtividade profissional.",
+      "startTrial": "Iniciar Teste Gratuito",
+      "features": "✓ Não é necessário cartão de crédito • ✓ Teste gratuito de 14 dias • ✓ Cancele a qualquer momento"
+    }
+  },
+  "Navigation": {
+    "features": "Funcionalidades",
+    "pricing": "Preços",
+    "enterprise": "Empresa",
+    "resources": "Recursos",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "faq": "FAQ",
+    "earlyAccess": "Acesso Antecipado – 20% de desconto"
+  },
+  "Newsletter": {
+    "title": "Subscreva a Nossa Newsletter",
+    "description": "Receba as últimas atualizações e ofertas exclusivas diretamente na sua caixa de entrada.",
+    "placeholder": "O seu endereço de e-mail",
+    "subscribe": "Subscrever",
+    "subscribing": "A subscrever...",
+    "privacyText": "Ao subscrever, concorda com a nossa Política de Privacidade.",
+    "error": "Falha na subscrição. Tente novamente."
+  },
+  "Common": {
+    "close": "Fechar",
+    "loading": "A carregar...",
+    "error": "Erro",
+    "success": "Sucesso"
+  }
+} 

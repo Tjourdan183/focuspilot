@@ -1,0 +1,70 @@
+{
+  "HomePage": {
+    "title": "FocusPilot.ai",
+    "subtitle": "La plateforme de productivité IA de niveau professionnel qui transforme la façon dont les équipes ambitieuses et les individus atteignent des performances optimales.",
+    "statusBadge": "Approuvé par plus de 10 000 professionnels dans le monde",
+    "cta": {
+      "startTrial": "Commencer l'essai gratuit",
+      "watchDemo": "Voir la démo"
+    },
+    "trustIndicators": {
+      "users": "10 000+ utilisateurs",
+      "rating": "⭐ Note 4,9/5",
+      "security": "🔒 Sécurité de niveau entreprise"
+    },
+    "features": {
+      "title": "Conçu pour l'Excellence",
+      "subtitle": "Chaque fonctionnalité conçue pour la productivité professionnelle et des résultats mesurables.",
+      "aiPowered": {
+        "title": "Focus alimenté par l'IA",
+        "description": "L'IA avancée analyse vos habitudes de travail et optimise les sessions de concentration pour une productivité maximale.",
+        "learnMore": "En savoir plus"
+      },
+      "smartTimer": {
+        "title": "Minuteur Intelligent",
+        "description": "Minuteurs Pomodoro intelligents qui s'adaptent à votre flux de travail et maximisent les sessions de travail profond.",
+        "learnMore": "En savoir plus"
+      },
+      "analytics": {
+        "title": "Analyses en Temps Réel",
+        "description": "De beaux tableaux de bord qui transforment les données de productivité en insights exploitables.",
+        "learnMore": "En savoir plus"
+      }
+    },
+    "testimonials": {
+      "title": "Approuvé par les Leaders de l'Industrie",
+      "subtitle": "Rejoignez des milliers de professionnels qui ont transformé leur productivité."
+    },
+    "finalCta": {
+      "title": "Prêt à Exceller ?",
+      "subtitle": "Commencez votre essai gratuit de 14 jours et découvrez l'avenir de la productivité professionnelle.",
+      "startTrial": "Commencer l'essai gratuit",
+      "features": "✓ Aucune carte de crédit requise • ✓ Essai gratuit de 14 jours • ✓ Annulez à tout moment"
+    }
+  },
+  "Navigation": {
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "enterprise": "Entreprise",
+    "resources": "Ressources",
+    "about": "À propos",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "earlyAccess": "Accès anticipé – 20% de réduction"
+  },
+  "Newsletter": {
+    "title": "Abonnez-vous à notre Newsletter",
+    "description": "Recevez les dernières mises à jour et offres exclusives directement dans votre boîte de réception.",
+    "placeholder": "Votre adresse e-mail",
+    "subscribe": "S'abonner",
+    "subscribing": "Abonnement en cours...",
+    "privacyText": "En vous abonnant, vous acceptez notre Politique de Confidentialité.",
+    "error": "Échec de l'abonnement. Veuillez réessayer."
+  },
+  "Common": {
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
+  }
+} 

@@ -6,9 +6,11 @@ import Image from "next/image";
 import TestimonialsMarquee from "@/components/TestimonialsMarquee";
 import { useState, useEffect } from "react";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { useTranslations } from "@/lib/i18n-context";
 
 export default function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const { t, isLoading } = useTranslations();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -18,6 +20,17 @@ export default function HomePage() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">{t("Common.loading")}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative min-h-screen bg-background">
@@ -35,7 +48,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full">
               <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-muted-foreground">
-                Trusted by 10,000+ professionals worldwide
+                {t("HomePage.statusBadge")}
               </span>
             </div>
 
@@ -47,7 +60,7 @@ export default function HomePage() {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                The professional-grade AI productivity platform that transforms how ambitious teams and individuals achieve peak performance.
+                {t("HomePage.subtitle")}
               </p>
             </div>
 
@@ -55,7 +68,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
               <Button className="group relative px-8 py-4 bg-foreground hover:bg-foreground/90 text-background font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                 <span className="relative z-10 flex items-center gap-2">
-                  Start Free Trial
+                  {t("HomePage.cta.startTrial")}
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -67,7 +80,7 @@ export default function HomePage() {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  Watch Demo
+                  {t("HomePage.cta.watchDemo")}
                 </span>
               </Button>
             </div>
@@ -83,10 +96,10 @@ export default function HomePage() {
                         <div key={i} className="w-7 h-7 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-background"></div>
                       ))}
                     </div>
-                    <span className="text-sm font-medium text-slate-800 dark:text-white">10,000+ users</span>
+                    <span className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.users")}</span>
                   </div>
-                  <div className="text-sm font-medium text-slate-800 dark:text-white">⭐ 4.9/5 rating</div>
-                  <div className="text-sm font-medium text-slate-800 dark:text-white">🔒 Enterprise-grade security</div>
+                  <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.rating")}</div>
+                  <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.security")}</div>
                 </div>
               </div>
             </div>
@@ -105,13 +118,13 @@ export default function HomePage() {
             </div>
 
             <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-              <span className="text-foreground">Built for</span>
+              <span className="text-foreground">{t("HomePage.features.title").split(' ')[0]} {t("HomePage.features.title").split(' ')[1]}</span>
               <br />
-              <span className="text-gradient">Excellence</span>
+              <span className="text-gradient">{t("HomePage.features.title").split(' ')[2]}</span>
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Every feature engineered for professional productivity and measurable results.
+              {t("HomePage.features.subtitle")}
             </p>
           </div>
 
@@ -128,15 +141,15 @@ export default function HomePage() {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  AI-Powered Focus
+                  {t("HomePage.features.aiPowered.title")}
                 </h3>
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Advanced AI analyzes your work patterns and optimizes focus sessions for peak productivity.
+                  {t("HomePage.features.aiPowered.description")}
                 </p>
                 
                 <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
-                  Learn more 
+                  {t("HomePage.features.aiPowered.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -154,15 +167,15 @@ export default function HomePage() {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Smart Timer
+                  {t("HomePage.features.smartTimer.title")}
                 </h3>
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Intelligent Pomodoro timers that adapt to your workflow and maximize deep work sessions.
+                  {t("HomePage.features.smartTimer.description")}
                 </p>
                 
                 <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
-                  Learn more 
+                  {t("HomePage.features.smartTimer.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -180,15 +193,15 @@ export default function HomePage() {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Real-time Analytics
+                  {t("HomePage.features.analytics.title")}
                 </h3>
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Beautiful dashboards that transform productivity data into actionable insights.
+                  {t("HomePage.features.analytics.description")}
                 </p>
                 
                 <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
-                  Learn more 
+                  {t("HomePage.features.analytics.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -207,13 +220,13 @@ export default function HomePage() {
           </div>
 
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-            <span className="text-foreground">Trusted by</span>
+            <span className="text-foreground">{t("HomePage.testimonials.title").split(' ')[0]} {t("HomePage.testimonials.title").split(' ')[1]}</span>
             <br />
-            <span className="text-gradient">Industry Leaders</span>
+            <span className="text-gradient">{t("HomePage.testimonials.title").split(' ').slice(2).join(' ')}</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of professionals who've transformed their productivity.
+            {t("HomePage.testimonials.subtitle")}
           </p>
         </div>
         <div className="relative">
@@ -230,17 +243,17 @@ export default function HomePage() {
             
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-                <span className="text-gradient">Ready to Excel?</span>
+                <span className="text-gradient">{t("HomePage.finalCta.title")}</span>
               </h2>
               
               <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-                Start your 14-day free trial and experience the future of professional productivity.
+                {t("HomePage.finalCta.subtitle")}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="group relative px-12 py-6 bg-foreground hover:bg-foreground/90 text-background font-bold text-lg rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
                   <span className="relative z-10 flex items-center gap-2">
-                    Start Free Trial
+                    {t("HomePage.finalCta.startTrial")}
                     <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -249,7 +262,7 @@ export default function HomePage() {
               </div>
               
               <p className="text-sm text-muted-foreground mt-6">
-                ✓ No credit card required • ✓ 14-day free trial • ✓ Cancel anytime
+                {t("HomePage.finalCta.features")}
               </p>
             </div>
           </div>
