@@ -1,0 +1,44 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-row {
+  animation: scroll linear infinite;
+  will-change: transform;
+  width: fit-content;
+}
+
+.scroll-row-1 {
+  animation-duration: 80s;
+}
+
+.scroll-row-2 {
+  animation-duration: 70s;
+}
+
+.scroll-row-3 {
+  animation-duration: 90s;
+}
+
+.testimonials-container {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+  will-change: mask-image;
+} 
