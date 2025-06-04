@@ -64,7 +64,9 @@ module.exports = {
         // Professional floating animations
         "float": "float 6s ease-in-out infinite",
         "float-delayed": "float-delayed 6s ease-in-out infinite",
-        "pulse-slow": "pulse-slow 4s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-slower": "pulse-slower 5s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-slowest": "pulse-slowest 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         
         // Subtle professional animations
         "fade-in": "fade-in 0.5s ease-out",
@@ -83,6 +85,10 @@ module.exports = {
         // Professional hover animations
         "bounce-gentle": "bounce-gentle 1s ease-in-out infinite",
         "rotate-slow": "rotate-slow 20s linear infinite",
+        // New pattern animations
+        "pattern-shift": "pattern-shift 12s ease-in-out infinite",
+        "pattern-rotate": "pattern-rotate 20s linear infinite",
+        "pattern-morph": "pattern-morph 15s ease-in-out infinite",
       },
       keyframes: {
         // Professional floating animations
@@ -107,14 +113,16 @@ module.exports = {
           },
         },
         "pulse-slow": {
-          "0%, 100%": { 
-            opacity: "0.4",
-            transform: "scale(1)"
-          },
-          "50%": { 
-            opacity: "0.8",
-            transform: "scale(1.05)"
-          },
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
+        },
+        "pulse-slower": {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.6' },
+        },
+        "pulse-slowest": {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
         },
         
         // Entrance animations
@@ -217,6 +225,31 @@ module.exports = {
           "100%": {
             transform: "rotate(360deg)",
           },
+        },
+        // New pattern keyframes
+        "pattern-shift": {
+          '0%, 100%': { 
+            transform: 'translateX(0) translateY(0) rotate(0deg)',
+            opacity: '0.5'
+          },
+          '50%': { 
+            transform: 'translateX(30px) translateY(-30px) rotate(5deg)',
+            opacity: '0.8'
+          }
+        },
+        "pattern-rotate": {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' }
+        },
+        "pattern-morph": {
+          '0%, 100%': { 
+            borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%',
+            opacity: '0.6'
+          },
+          '50%': { 
+            borderRadius: '30% 60% 70% 40%/50% 60% 30% 60%',
+            opacity: '0.8'
+          }
         },
       },
       backgroundImage: {

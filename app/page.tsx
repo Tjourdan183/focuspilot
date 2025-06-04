@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import TestimonialsMarquee from "@/components/TestimonialsMarquee";
 import { useState, useEffect } from "react";
+import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 export default function HomePage() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -19,91 +20,8 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-background">
-      
-      {/* Colorful animated background elements - LOUD and vibrant! */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        {/* Bright Purple Blur */}
-        <div 
-          className="absolute w-[40rem] h-[40rem] bg-purple-500/40 blur-3xl rounded-full animate-float"
-          style={{ top: '5%', left: '-15%' }}
-        />
-        {/* Neon Pink Blur */}
-        <div 
-          className="absolute w-[35rem] h-[35rem] bg-pink-500/40 blur-3xl rounded-full animate-float-delayed"
-          style={{ top: '50%', left: '0%' }}
-        />
-        {/* Electric Blue Blur */}
-        <div 
-          className="absolute w-[30rem] h-[30rem] bg-blue-500/40 blur-3xl rounded-full animate-float"
-          style={{ top: '15%', right: '-12%' }}
-        />
-        {/* Vibrant Green Blur */}
-        <div 
-          className="absolute w-[32rem] h-[32rem] bg-emerald-500/40 blur-3xl rounded-full animate-float-delayed"
-          style={{ top: '40%', right: '5%' }}
-        />
-        {/* Bright Orange Blur */}
-        <div 
-          className="absolute w-[28rem] h-[28rem] bg-orange-500/40 blur-3xl rounded-full animate-float"
-          style={{ bottom: '-5%', left: '25%' }}
-        />
-        {/* Bright Yellow Blur */}
-        <div 
-          className="absolute w-[25rem] h-[25rem] bg-yellow-400/40 blur-3xl rounded-full animate-float-delayed"
-          style={{ bottom: '10%', right: '15%' }}
-        />
-        {/* Cyan Blur */}
-        <div 
-          className="absolute w-[30rem] h-[30rem] bg-cyan-400/35 blur-3xl rounded-full animate-float"
-          style={{ top: '70%', left: '60%' }}
-        />
-        {/* Red/Rose Blur */}
-        <div 
-          className="absolute w-[26rem] h-[26rem] bg-rose-500/35 blur-3xl rounded-full animate-float-delayed"
-          style={{ top: '30%', left: '40%' }}
-        />
-      </div>
-
-      {/* Floating animated icons - more colorful */}
-      <div className="absolute top-24 left-16 animate-float opacity-90 z-10">
-        <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-xl flex items-center justify-center text-2xl animate-bounce-gentle text-white">
-          🚀
-        </div>
-      </div>
-      <div className="absolute top-1/2 right-24 animate-float-delayed opacity-90 z-10">
-        <div className="w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full shadow-xl flex items-center justify-center text-xl animate-bounce-gentle text-white">
-          💡
-        </div>
-      </div>
-      <div className="absolute bottom-24 left-1/3 animate-float opacity-85 z-10">
-        <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-green-500 rounded-full shadow-xl flex items-center justify-center text-lg animate-bounce-gentle text-white">
-          🎯
-        </div>
-      </div>
-      <div className="absolute top-1/3 left-1/4 animate-float-delayed opacity-80 z-10">
-        <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full shadow-lg flex items-center justify-center text-sm animate-bounce-gentle text-white">
-          ⭐
-        </div>
-      </div>
-      <div className="absolute bottom-1/3 right-1/3 animate-float opacity-85 z-10">
-        <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl shadow-lg flex items-center justify-center text-lg animate-bounce-gentle text-white">
-          ✨
-        </div>
-      </div>
-
-      {/* Professional floating elements */}
-      <div className="absolute top-20 left-10 animate-float opacity-60">
-        <div className="w-12 h-12 glass rounded-xl shadow-lg flex items-center justify-center text-lg">
-          ⚡
-        </div>
-      </div>
-      
-      <div className="absolute top-40 right-20 animate-float-delayed opacity-60">
-        <div className="w-10 h-10 glass rounded-full shadow-lg flex items-center justify-center text-sm">
-          🎯
-        </div>
-      </div>
+    <div className="relative min-h-screen bg-background">
+      <AnimatedBackground isHomePage={true} />
 
       {/* Hero Section - Professional & Clean */}
       <section className="relative min-h-screen flex items-center justify-center px-4">
@@ -155,17 +73,22 @@ export default function HomePage() {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-8 pt-8 opacity-70">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  {[1,2,3,4,5].map(i => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-background"></div>
-                  ))}
+            <div className="relative mt-8 mb-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-blue-500/5 blur-2xl"></div>
+              <div className="relative backdrop-blur-sm bg-black/5 dark:bg-black/20 rounded-xl border border-white/10">
+                <div className="flex flex-wrap justify-center items-center gap-6 py-4 px-6">
+                  <div className="flex items-center gap-3">
+                    <div className="flex -space-x-2">
+                      {[1,2,3,4,5].map(i => (
+                        <div key={i} className="w-7 h-7 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-background"></div>
+                      ))}
+                    </div>
+                    <span className="text-sm font-medium text-slate-800 dark:text-white">10,000+ users</span>
+                  </div>
+                  <div className="text-sm font-medium text-slate-800 dark:text-white">⭐ 4.9/5 rating</div>
+                  <div className="text-sm font-medium text-slate-800 dark:text-white">🔒 Enterprise-grade security</div>
                 </div>
-                <span className="text-sm text-muted-foreground font-medium">10,000+ users</span>
               </div>
-              <div className="text-sm text-muted-foreground">⭐ 4.9/5 rating</div>
-              <div className="text-sm text-muted-foreground">🔒 Enterprise-grade security</div>
             </div>
           </div>
         </div>
@@ -277,14 +200,8 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials with professional design */}
-      <section className="relative py-32 bg-background">
-        {/* Multiple subtle purple blur accents */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute w-80 h-80 bg-purple-400/20 blur-3xl rounded-full -top-24 -left-24" style={{zIndex:0}} />
-          <div className="absolute w-64 h-64 bg-purple-300/15 blur-2xl rounded-full bottom-0 -right-32" style={{zIndex:0}} />
-          <div className="absolute w-40 h-40 bg-pink-300/10 blur-2xl rounded-full top-1/2 left-0 -translate-y-1/2 -translate-x-1/2" style={{zIndex:0}} />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 text-center mb-12 relative z-10">
+      <section className="relative py-32">
+        <div className="max-w-7xl mx-auto px-4 text-center mb-12 relative">
           <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
             <span className="text-sm font-medium text-muted-foreground">Testimonials</span>
           </div>
@@ -299,7 +216,7 @@ export default function HomePage() {
             Join thousands of professionals who've transformed their productivity.
           </p>
         </div>
-        <div className="relative z-10">
+        <div className="relative">
           <TestimonialsMarquee />
         </div>
       </section>
@@ -338,6 +255,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

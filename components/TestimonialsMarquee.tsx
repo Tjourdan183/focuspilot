@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import React from "react";
+import "../app/testimonials.css";
 
 type Testimonial = {
   avatar: string;
@@ -50,118 +51,104 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-const doubled = [...testimonials, ...testimonials];
-
 export default function TestimonialsMarquee() {
+  // Create three different arrays with different starting positions
+  const row1 = [...testimonials];
+  const row2 = [...testimonials.slice(2), ...testimonials.slice(0, 2)];
+  const row3 = [...testimonials.slice(4), ...testimonials.slice(0, 4)];
+
   return (
     <div className="relative w-full overflow-hidden py-20">
-      
-      {/* Gradient Overlays */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-50 to-transparent dark:from-slate-900 z-10"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-50 to-transparent dark:from-slate-900 z-10"></div>
-
-      <div className="flex gap-6">
-        {/* Column 1 */}
-        <ul className="flex flex-col gap-6 animate-scroll-slow">
-          {doubled.map((t, i) => (
-            <li
-              key={`col1-${i}`}
-              className="group w-80 backdrop-blur-xl bg-white/10 dark:bg-black/10 rounded-3xl border border-white/20 dark:border-white/10 p-6 shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:scale-105"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <Image
-                  src={t.avatar}
-                  alt={t.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full ring-2 ring-white/20 shadow-lg"
-                />
-                <div>
-                  <p className="font-semibold text-slate-800 dark:text-white">{t.name}</p>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{t.title}</p>
+      <div className="flex flex-col gap-12">
+        {/* Row 1 - Slowest */}
+        <div className="flex scroll-row scroll-row-1">
+          <div className="flex gap-6 pr-6">
+            {[...row1, ...row1].map((testimonial, i) => (
+              <div
+                key={`row1-${i}`}
+                className="w-[350px] flex-shrink-0 px-2"
+              >
+                <div className="glass rounded-3xl p-6 border border-white/20 dark:border-white/10 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      width={50}
+                      height={50}
+                      className="rounded-full ring-2 ring-white/20 shadow-lg"
+                    />
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
-              
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed italic">
-                "{t.quote}"
-              </p>
-              
-              <div className="flex mt-4 text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
 
-        {/* Column 2 */}
-        <ul
-          className="flex flex-col gap-6 animate-scroll-medium"
-          style={{ animationDelay: "-10s" }}
-        >
-          {doubled.map((t, i) => (
-            <li
-              key={`col2-${i}`}
-              className="group w-80 backdrop-blur-xl bg-white/10 dark:bg-black/10 rounded-3xl border border-white/20 dark:border-white/10 p-6 shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 hover:scale-105"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <Image
-                  src={t.avatar}
-                  alt={t.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full ring-2 ring-white/20 shadow-lg"
-                />
-                <div>
-                  <p className="font-semibold text-slate-800 dark:text-white">{t.name}</p>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{t.title}</p>
+        {/* Row 2 - Medium Speed */}
+        <div className="flex scroll-row scroll-row-2">
+          <div className="flex gap-6 pr-6">
+            {[...row2, ...row2].map((testimonial, i) => (
+              <div
+                key={`row2-${i}`}
+                className="w-[350px] flex-shrink-0 px-2"
+              >
+                <div className="glass rounded-3xl p-6 border border-white/20 dark:border-white/10 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      width={50}
+                      height={50}
+                      className="rounded-full ring-2 ring-white/20 shadow-lg"
+                    />
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
-              
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed italic">
-                "{t.quote}"
-              </p>
-              
-              <div className="flex mt-4 text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
 
-        {/* Column 3 */}
-        <ul
-          className="flex flex-col gap-6 animate-scroll-fast"
-          style={{ animationDelay: "-20s" }}
-        >
-          {doubled.map((t, i) => (
-            <li
-              key={`col3-${i}`}
-              className="group w-80 backdrop-blur-xl bg-white/10 dark:bg-black/10 rounded-3xl border border-white/20 dark:border-white/10 p-6 shadow-2xl hover:shadow-green-500/10 transition-all duration-500 hover:scale-105"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                <Image
-                  src={t.avatar}
-                  alt={t.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full ring-2 ring-white/20 shadow-lg"
-                />
-                <div>
-                  <p className="font-semibold text-slate-800 dark:text-white">{t.name}</p>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{t.title}</p>
+        {/* Row 3 - Fastest */}
+        <div className="flex scroll-row scroll-row-3">
+          <div className="flex gap-6 pr-6">
+            {[...row3, ...row3].map((testimonial, i) => (
+              <div
+                key={`row3-${i}`}
+                className="w-[350px] flex-shrink-0 px-2"
+              >
+                <div className="glass rounded-3xl p-6 border border-white/20 dark:border-white/10 opacity-70 hover:opacity-100 transition-opacity duration-300">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      width={50}
+                      height={50}
+                      className="rounded-full ring-2 ring-white/20 shadow-lg"
+                    />
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
-              
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed italic">
-                "{t.quote}"
-              </p>
-              
-              <div className="flex mt-4 text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

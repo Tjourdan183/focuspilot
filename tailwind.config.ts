@@ -74,12 +74,27 @@ const config: Config = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-15px)' },
         },
+        'scroll-left-1': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' }
+        },
+        'scroll-left-2': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' }
+        },
+        'scroll-left-3': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: 'float 6s ease-in-out infinite',
         'float-delayed': 'float-delayed 6s ease-in-out infinite 1s',
+        'scroll-1': 'scroll-left-1 50s linear infinite',
+        'scroll-2': 'scroll-left-2 40s linear infinite',
+        'scroll-3': 'scroll-left-3 30s linear infinite'
       },
     },
   },
