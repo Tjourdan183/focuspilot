@@ -56,7 +56,6 @@ export default function HomePage() {
             <div className="space-y-6">
               <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tight">
                 <span className="block text-foreground">FocusPilot</span>
-                <span className="block text-gradient">.ai</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
