@@ -95,15 +95,7 @@ export default function Footer() {
 
         {/* Rechter Bereich */}
         <div className="flex flex-col space-y-4">
-          <div className="flex space-x-3">
-            <button onClick={() => document.documentElement.classList.remove("dark")}
-              className="bg-primary-foreground text-primary rounded-full w-8 h-8 flex items-center justify-center">🌞</button>
-            <button onClick={() => document.documentElement.classList.add("dark")}
-              className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center">🌜</button>
-          </div>
-          <span className="border border-border px-2 py-1 rounded-md text-xs text-muted-foreground text-center">
-            SOC 2 Certified
-          </span>
+          {/* Removed dark/light mode toggle and SOC 2 Certified text */}
         </div>
       </div>
       
