@@ -38,71 +38,100 @@ export default function HomePage() {
 
       {/* Hero Section - Professional & Clean */}
       <section className="relative min-h-screen flex items-center justify-center px-4">
-        
-        <div className="relative z-10 text-center max-w-7xl mx-auto">
-          
-          {/* Professional hero content */}
-          <div className="space-y-8">
+        <div className="relative z-10 text-center max-w-7xl mx-auto space-y-8">
+          {/* Status badge */}
+          <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full">
+            <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-muted-foreground">
+              {t("HomePage.statusBadge")}
+            </span>
+          </div>
+
+          {/* Main headline */}
+          <div className="space-y-6">
+            <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tight">
+              <span className="block text-foreground">FocusPilot</span>
+              <span className="block text-gradient">.ai</span>
+            </h1>
             
-            {/* Status badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {t("HomePage.statusBadge")}
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              {t("HomePage.subtitle")}
+            </p>
+          </div>
+
+          {/* Professional CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+            <Button className="group relative px-8 py-4 bg-foreground hover:bg-foreground/90 text-background font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              <span className="relative z-10 flex items-center gap-2">
+                {t("HomePage.cta.startTrial")}
+                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </span>
-            </div>
+            </Button>
+            
+            <Button variant="outline" className="px-8 py-4 border-2 border-border glass rounded-xl transition-all duration-300 hover:border-accent">
+              <span className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {t("HomePage.cta.watchDemo")}
+              </span>
+            </Button>
+          </div>
 
-            {/* Main headline */}
-            <div className="space-y-6">
-              <h1 className="text-6xl md:text-8xl font-black leading-[0.9] tracking-tight">
-                <span className="block text-foreground">FocusPilot</span>
-                <span className="block text-gradient">.ai</span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                {t("HomePage.subtitle")}
-              </p>
-            </div>
-
-            {/* Professional CTA buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <Button className="group relative px-8 py-4 bg-foreground hover:bg-foreground/90 text-background font-semibold rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                <span className="relative z-10 flex items-center gap-2">
-                  {t("HomePage.cta.startTrial")}
-                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </span>
-              </Button>
-              
-              <Button variant="outline" className="px-8 py-4 border-2 border-border glass rounded-xl transition-all duration-300 hover:border-accent">
-                <span className="flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  {t("HomePage.cta.watchDemo")}
-                </span>
-              </Button>
-            </div>
-
-            {/* Trust indicators */}
-            <div className="relative mt-8 mb-4">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-blue-500/5 blur-2xl"></div>
-              <div className="relative backdrop-blur-sm bg-black/5 dark:bg-black/20 rounded-xl border border-white/10">
-                <div className="flex flex-wrap justify-center items-center gap-6 py-4 px-6">
-                  <div className="flex items-center gap-3">
-                    <div className="flex -space-x-2">
-                      {[1,2,3,4,5].map(i => (
-                        <div key={i} className="w-7 h-7 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-background"></div>
-                      ))}
-                    </div>
-                    <span className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.users")}</span>
+          {/* Trust indicators */}
+          <div className="relative mt-8">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-blue-500/5 blur-2xl"></div>
+            <div className="relative backdrop-blur-sm bg-black/5 dark:bg-black/20 rounded-xl border border-white/10">
+              <div className="flex flex-wrap justify-center items-center gap-6 py-4 px-6">
+                <div className="flex items-center gap-3">
+                  <div className="flex -space-x-2">
+                    {[1,2,3,4,5].map(i => (
+                      <div key={i} className="w-7 h-7 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 border-2 border-background"></div>
+                    ))}
                   </div>
-                  <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.rating")}</div>
-                  <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.security")}</div>
+                  <span className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.users")}</span>
                 </div>
+                <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.rating")}</div>
+                <div className="text-sm font-medium text-slate-800 dark:text-white">{t("HomePage.trustIndicators.security")}</div>
               </div>
             </div>
+          </div>
+
+          {/* App Store Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
+            <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
+              <div className="flex items-center gap-3">
+                <Image 
+                  src="/appstore.svg" 
+                  alt="Download on App Store"
+                  width={27}
+                  height={27}
+                  className="w-6 h-6"
+                />
+                <div className="text-left">
+                  <div className="text-xs">{t("HomePage.appStores.downloadOn")}</div>
+                  <div className="text-lg font-semibold">App Store</div>
+                </div>
+              </div>
+            </Button>
+
+            <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
+              <div className="flex items-center gap-3">
+                <Image 
+                  src="/playstore.svg" 
+                  alt="Get it on Play Store"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+                <div className="text-left">
+                  <div className="text-xs">{t("HomePage.appStores.getItOn")}</div>
+                  <div className="text-lg font-semibold">Play Store</div>
+                </div>
+              </div>
+            </Button>
           </div>
         </div>
       </section>
