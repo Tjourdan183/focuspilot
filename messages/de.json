@@ -43,11 +43,11 @@
     },
     "appStores": {
       "appStore": {
-        "prefix": "Baixar na",
+        "prefix": "Laden im",
         "name": "App Store"
       },
       "playStore": {
-        "prefix": "Disponível no",
+        "prefix": "Jetzt bei",
         "name": "Google Play"
       }
     }
