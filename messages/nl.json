@@ -40,6 +40,16 @@
       "subtitle": "Start je 14-daagse gratis proefperiode en ervaar de toekomst van professionele productiviteit.",
       "startTrial": "Start Gratis Proefperiode",
       "features": "✓ Geen creditcard vereist • ✓ 14-daagse gratis proefperiode • ✓ Altijd opzegbaar"
+    },
+    "appStores": {
+      "appStore": {
+        "prefix": "Download in de",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Verkrijgbaar in",
+        "name": "Google Play"
+      }
     }
   },
   "Navigation": {

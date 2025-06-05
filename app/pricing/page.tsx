@@ -10,7 +10,7 @@ export default function PricingPage() {
     {
       name: "Free",
       price: "$0",
-      features: ["Basic Task Management", "Focus Timer", "✗ Analytics"],
+      features: ["✓ Basic Task Management", "✓ Focus Timer", "✗ Analytics"],
       highlighted: false,
     },
     {
@@ -64,7 +64,7 @@ export default function PricingPage() {
                     {plan.features.map((f, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <span className={f.startsWith('✓') ? 'text-emerald-500' : f.startsWith('✗') ? 'text-red-500' : 'text-muted-foreground'}>
-                          {f.startsWith('✓') ? '✓' : f.startsWith('✗') ? '✗' : '•'}
+                          {f.startsWith('✓') ? '✓' : f.startsWith('✗') ? '✗' : '✓'}
                         </span>
                         {f.replace(/^[✓✗]\s/, '')}
                       </li>

@@ -40,6 +40,16 @@
       "subtitle": "Starten Sie Ihre 14-tägige kostenlose Testversion und erleben Sie die Zukunft professioneller Produktivität.",
       "startTrial": "Kostenlose Testversion starten",
       "features": "✓ Keine Kreditkarte erforderlich • ✓ 14-tägige kostenlose Testversion • ✓ Jederzeit kündbar"
+    },
+    "appStores": {
+      "appStore": {
+        "prefix": "Baixar na",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Disponível no",
+        "name": "Google Play"
+      }
     }
   },
   "Navigation": {
