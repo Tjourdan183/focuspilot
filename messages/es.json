@@ -12,6 +12,16 @@
       "rating": "⭐ Calificación 4.9/5",
       "security": "🔒 Seguridad de nivel empresarial"
     },
+    "appStores": {
+      "appStore": {
+        "prefix": "Descárgalo en el",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Disponible en",
+        "name": "Google Play"
+      }
+    },
     "features": {
       "title": "Construido para la Excelencia",
       "subtitle": "Cada característica diseñada para la productividad profesional y resultados medibles.",

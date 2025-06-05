@@ -12,6 +12,16 @@
       "rating": "⭐ 4.9/5 rating",
       "security": "🔒 Enterprise-grade security"
     },
+    "appStores": {
+      "appStore": {
+        "prefix": "Download on the",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Get it on",
+        "name": "Play Store"
+      }
+    },
     "features": {
       "title": "Built for Excellence",
       "subtitle": "Every feature engineered for professional productivity and measurable results.",

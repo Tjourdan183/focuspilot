@@ -40,6 +40,16 @@
       "subtitle": "Inizia la tua prova gratuita di 14 giorni e sperimenta il futuro della produttività professionale.",
       "startTrial": "Inizia Prova Gratuita",
       "features": "✓ Nessuna carta di credito richiesta • ✓ Prova gratuita di 14 giorni • ✓ Cancella in qualsiasi momento"
+    },
+    "appStores": {
+      "appStore": {
+        "prefix": "Scarica su",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Disponibile su",
+        "name": "Google Play"
+      }
     }
   },
   "Navigation": {

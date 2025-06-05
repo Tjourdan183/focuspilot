@@ -40,6 +40,16 @@
       "subtitle": "Commencez votre essai gratuit de 14 jours et découvrez l'avenir de la productivité professionnelle.",
       "startTrial": "Commencer l'essai gratuit",
       "features": "✓ Aucune carte de crédit requise • ✓ Essai gratuit de 14 jours • ✓ Annulez à tout moment"
+    },
+    "appStores": {
+      "appStore": {
+        "prefix": "Télécharger sur l'",
+        "name": "App Store"
+      },
+      "playStore": {
+        "prefix": "Disponible sur",
+        "name": "Google Play"
+      }
     }
   },
   "Navigation": {

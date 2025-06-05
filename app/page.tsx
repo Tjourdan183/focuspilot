@@ -104,15 +104,15 @@ export default function HomePage() {
             <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/public/appstore.svg" 
+                  src="appstore.svg" 
                   alt="Download on App Store"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={30}
+                  height={30}
+                  className="w-9 h-9"
                 />
                 <div className="text-left">
-                  <div className="text-xs">{t("HomePage.appStores.downloadOn")}</div>
-                  <div className="text-lg font-semibold">App Store</div>
+                  <div className="text-xs">{t("HomePage.appStores.appStore.prefix")}</div>
+                  <div className="text-lg font-semibold">{t("HomePage.appStores.appStore.name")}</div>
                 </div>
               </div>
             </Button>
@@ -120,15 +120,15 @@ export default function HomePage() {
             <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/cache/images/play-store/playstore.svg" 
+                  src="playstore.svg" 
                   alt="Get it on Play Store"
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={30}
+                  height={30}
+                  className="w-9 h-9"
                 />
                 <div className="text-left">
-                  <div className="text-xs">{t("HomePage.appStores.getItOn")}</div>
-                  <div className="text-lg font-semibold">Play Store</div>
+                  <div className="text-xs">{t("HomePage.appStores.playStore.prefix")}</div>
+                  <div className="text-lg font-semibold">{t("HomePage.appStores.playStore.name")}</div>
                 </div>
               </div>
             </Button>
