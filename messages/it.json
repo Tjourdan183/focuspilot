@@ -213,5 +213,57 @@
     "loading": "Caricamento...",
     "error": "Errore",
     "success": "Successo"
+  },
+  "Impressum": {
+    "backToHome": "Torna alla home",
+    "badge": "Informazioni legali",
+    "title": "Impressum",
+    "subtitle": "Informazioni legali secondo il diritto svizzero e il GDPR dell'UE",
+    "company": {
+      "title": "Informazioni aziendali",
+      "details": "Dettagli aziendali",
+      "contact": "Informazioni di contatto"
+    },
+    "legal": {
+      "title": "Informazioni legali",
+      "registration": "Registrazione",
+      "registerNumber": "Numero di registro commerciale",
+      "taxNumber": "Numero UID",
+      "court": "Tribunale di registrazione",
+      "courtLocation": "Ufficio del registro commerciale di Zurigo",
+      "management": "Direzione",
+      "ceo": "Amministratore delegato",
+      "cto": "Direttore tecnico",
+      "operations": "Direttore operativo"
+    },
+    "content": {
+      "title": "Responsabile del contenuto",
+      "responsible": "Responsabile del contenuto di questo sito web secondo il § 55 comma 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Esclusione di responsabilità",
+      "liability": {
+        "title": "Responsabilità per i contenuti",
+        "content": "Come fornitore di servizi, siamo responsabili del nostro contenuto su queste pagine secondo le leggi generali ai sensi del § 7 comma 1 TMG. Secondo i §§ 8-10 TMG, tuttavia, noi come fornitore di servizi non siamo obbligati a monitorare le informazioni di terze parti trasmesse o memorizzate o a indagare su circostanze che indicano attività illegali."
+      },
+      "links": {
+        "title": "Responsabilità per i collegamenti",
+        "content": "La nostra offerta contiene collegamenti a siti web esterni di terze parti sui cui contenuti non abbiamo alcuna influenza. Pertanto, non possiamo assumere alcuna garanzia per questo contenuto esterno. Il rispettivo fornitore o operatore delle pagine è sempre responsabile del contenuto delle pagine collegate."
+      },
+      "copyright": {
+        "title": "Diritti d'autore",
+        "content": "I contenuti e le opere create dai gestori del sito su queste pagine sono soggetti al diritto d'autore tedesco. La duplicazione, elaborazione, distribuzione e qualsiasi tipo di sfruttamento al di fuori dei limiti del diritto d'autore richiedono il consenso scritto del rispettivo autore o creatore."
+      }
+    },
+    "links": {
+      "title": "Informazioni aggiuntive",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "cookies": "Impostazioni cookie"
+    },
+    "lastUpdated": "Ultimo aggiornamento"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 

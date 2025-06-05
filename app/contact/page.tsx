@@ -3,7 +3,6 @@
 
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import Image from "next/image";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 export default function ContactPage() {

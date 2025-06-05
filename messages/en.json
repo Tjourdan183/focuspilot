@@ -213,5 +213,57 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success"
+  },
+  "Impressum": {
+    "backToHome": "Back to Home",
+    "badge": "Legal Information",
+    "title": "Imprint",
+    "subtitle": "Legal information according to Swiss law and EU-GDPR",
+    "company": {
+      "title": "Company Information",
+      "details": "Company Details",
+      "contact": "Contact Information"
+    },
+    "legal": {
+      "title": "Legal Information",
+      "registration": "Registration",
+      "registerNumber": "Commercial Register Number",
+      "taxNumber": "UID Number",
+      "court": "Register Court",
+      "courtLocation": "Commercial Register Office Zurich",
+      "management": "Management",
+      "ceo": "Chief Executive Officer",
+      "cto": "Chief Technology Officer",
+      "operations": "Operations Manager"
+    },
+    "content": {
+      "title": "Responsible for Content",
+      "responsible": "Responsible for the content of this website according to § 55 para. 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "liability": {
+        "title": "Liability for Content",
+        "content": "As a service provider, we are responsible for our own content on these pages according to general laws pursuant to § 7 para. 1 TMG. According to §§ 8 to 10 TMG, however, we as a service provider are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+      },
+      "links": {
+        "title": "Liability for Links",
+        "content": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any guarantee for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "content": "The content and works created by the site operators on these pages are subject to German copyright law. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator."
+      }
+    },
+    "links": {
+      "title": "Additional Information",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Settings"
+    },
+    "lastUpdated": "Last Updated"
+  },
+  "Footer": {
+    "impressum": "Imprint"
   }
 } 

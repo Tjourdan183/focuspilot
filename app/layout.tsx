@@ -88,7 +88,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       if (!response.ok) throw new Error("Subscription failed");
       closePopup();
       setEmail("");
-    } catch (err) {
+    } catch (error) {
+      console.error('Failed to load translations:', error);
       setError(t("Newsletter.error"));
     } finally {
       setIsSubmitting(false);

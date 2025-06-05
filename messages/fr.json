@@ -213,5 +213,57 @@
     "loading": "Chargement...",
     "error": "Erreur",
     "success": "Succès"
+  },
+  "Impressum": {
+    "backToHome": "Retour à l'accueil",
+    "badge": "Informations légales",
+    "title": "Mentions légales",
+    "subtitle": "Informations légales selon le droit suisse et le RGPD de l'UE",
+    "company": {
+      "title": "Informations sur l'entreprise",
+      "details": "Détails de l'entreprise",
+      "contact": "Informations de contact"
+    },
+    "legal": {
+      "title": "Informations légales",
+      "registration": "Enregistrement",
+      "registerNumber": "Numéro de registre du commerce",
+      "taxNumber": "Numéro IDE",
+      "court": "Tribunal d'enregistrement",
+      "courtLocation": "Office du registre du commerce de Zurich",
+      "management": "Direction",
+      "ceo": "Directeur général",
+      "cto": "Directeur technique",
+      "operations": "Directeur des opérations"
+    },
+    "content": {
+      "title": "Responsable du contenu",
+      "responsible": "Responsable du contenu de ce site web selon le § 55 al. 2 RStV :"
+    },
+    "disclaimer": {
+      "title": "Avis de non-responsabilité",
+      "liability": {
+        "title": "Responsabilité du contenu",
+        "content": "En tant que prestataire de services, nous sommes responsables de notre propre contenu sur ces pages selon les lois générales conformément au § 7 al. 1 TMG. Selon les §§ 8 à 10 TMG, cependant, nous en tant que prestataire de services ne sommes pas obligés de surveiller les informations tierces transmises ou stockées ou d'enquêter sur des circonstances qui indiquent une activité illégale."
+      },
+      "links": {
+        "title": "Responsabilité des liens",
+        "content": "Notre offre contient des liens vers des sites web externes tiers sur le contenu desquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune garantie pour ce contenu externe. Le fournisseur ou exploitant respectif des pages est toujours responsable du contenu des pages liées."
+      },
+      "copyright": {
+        "title": "Droit d'auteur",
+        "content": "Le contenu et les œuvres créés par les exploitants du site sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution et tout type d'exploitation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif."
+      }
+    },
+    "links": {
+      "title": "Informations supplémentaires",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Paramètres des cookies"
+    },
+    "lastUpdated": "Dernière mise à jour"
+  },
+  "Footer": {
+    "impressum": "Mentions légales"
   }
 } 

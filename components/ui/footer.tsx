@@ -3,7 +3,6 @@
 
 import Link from "next/link";
 import { useTranslations } from "@/lib/i18n-context";
-import Image from "next/image";
 
 export default function Footer() {
   const { t } = useTranslations();
@@ -51,6 +50,7 @@ export default function Footer() {
         <div className="md:w-1/2 flex flex-col items-start md:items-end mt-8 md:mt-0">
           <h5 className="font-semibold mb-2 text-foreground">Legal</h5>
           <div className="flex space-x-6 text-muted-foreground">
+            <Link href="/impressum" className="hover:text-accent">{t("Footer.impressum")}</Link>
             <Link href="/terms" className="hover:text-accent">Terms</Link>
             <Link href="/privacy" className="hover:text-accent">Privacy</Link>
             <Link href="/cookie-settings" className="hover:text-accent">Cookie Settings</Link>

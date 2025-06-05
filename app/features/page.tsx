@@ -1,7 +1,6 @@
 // app/features/page.tsx
 "use client";
 
-import { useState } from "react";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 export default function FeaturesPage() {

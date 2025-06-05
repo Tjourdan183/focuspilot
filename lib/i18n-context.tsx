@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { locales, languageNames, languageFlags, Locale } from './i18n';
+import { locales, Locale } from './i18n';
 
 interface I18nContextType {
   locale: Locale;
@@ -14,7 +14,7 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>('de');
-  const [messages, setMessages] = useState<any>(null);
+  const [messages, setMessages] = useState<Record<string, unknown> | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -52,11 +52,11 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     if (!messages) return key;
     
     const keys = key.split('.');
-    let value: any = messages;
+    let value: unknown = messages;
     
     for (const k of keys) {
-      if (value && typeof value === 'object' && k in value) {
-        value = value[k];
+      if (value && typeof value === 'object' && value !== null && k in value) {
+        value = (value as Record<string, unknown>)[k];
       } else {
         return key;
       }

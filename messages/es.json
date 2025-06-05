@@ -213,5 +213,57 @@
     "loading": "Cargando...",
     "error": "Error",
     "success": "Éxito"
+  },
+  "Impressum": {
+    "backToHome": "Volver al inicio",
+    "badge": "Información legal",
+    "title": "Aviso legal",
+    "subtitle": "Información legal según el derecho suizo y el RGPD de la UE",
+    "company": {
+      "title": "Información de la empresa",
+      "details": "Detalles de la empresa",
+      "contact": "Información de contacto"
+    },
+    "legal": {
+      "title": "Información legal",
+      "registration": "Registro",
+      "registerNumber": "Número de registro mercantil",
+      "taxNumber": "Número UID",
+      "court": "Tribunal de registro",
+      "courtLocation": "Oficina del registro mercantil de Zúrich",
+      "management": "Dirección",
+      "ceo": "Director ejecutivo",
+      "cto": "Director técnico",
+      "operations": "Director de operaciones"
+    },
+    "content": {
+      "title": "Responsable del contenido",
+      "responsible": "Responsable del contenido de este sitio web según el § 55 párr. 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Descargo de responsabilidad",
+      "liability": {
+        "title": "Responsabilidad del contenido",
+        "content": "Como proveedor de servicios, somos responsables de nuestro propio contenido en estas páginas según las leyes generales de conformidad con el § 7 párr. 1 TMG. Según los §§ 8 a 10 TMG, sin embargo, nosotros como proveedor de servicios no estamos obligados a monitorear información de terceros transmitida o almacenada o investigar circunstancias que indiquen actividad ilegal."
+      },
+      "links": {
+        "title": "Responsabilidad de enlaces",
+        "content": "Nuestra oferta contiene enlaces a sitios web externos de terceros sobre cuyo contenido no tenemos influencia. Por lo tanto, no podemos asumir ninguna garantía para este contenido externo. El proveedor u operador respectivo de las páginas es siempre responsable del contenido de las páginas enlazadas."
+      },
+      "copyright": {
+        "title": "Derechos de autor",
+        "content": "El contenido y las obras creadas por los operadores del sitio en estas páginas están sujetos a la ley de derechos de autor alemana. La duplicación, procesamiento, distribución y cualquier tipo de explotación fuera de los límites de la ley de derechos de autor requieren el consentimiento por escrito del autor o creador respectivo."
+      }
+    },
+    "links": {
+      "title": "Información adicional",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de servicio",
+      "cookies": "Configuración de cookies"
+    },
+    "lastUpdated": "Última actualización"
+  },
+  "Footer": {
+    "impressum": "Aviso legal"
   }
 } 

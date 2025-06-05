@@ -213,5 +213,57 @@
     "loading": "Laden...",
     "error": "Fehler",
     "success": "Erfolg"
+  },
+  "Impressum": {
+    "backToHome": "Zurück zur Startseite",
+    "badge": "Rechtliche Informationen",
+    "title": "Impressum",
+    "subtitle": "Rechtliche Angaben gemäß Schweizer Recht und EU-DSGVO",
+    "company": {
+      "title": "Unternehmensangaben",
+      "details": "Firmendetails",
+      "contact": "Kontaktinformationen"
+    },
+    "legal": {
+      "title": "Rechtliche Informationen",
+      "registration": "Registrierung",
+      "registerNumber": "Handelsregisternummer",
+      "taxNumber": "UID-Nummer",
+      "court": "Registergericht",
+      "courtLocation": "Handelsregisteramt Zürich",
+      "management": "Geschäftsführung",
+      "ceo": "Geschäftsführer",
+      "cto": "Technischer Leiter",
+      "operations": "Betriebsleiter"
+    },
+    "content": {
+      "title": "Verantwortlich für den Inhalt",
+      "responsible": "Verantwortlich für den Inhalt dieser Website nach § 55 Abs. 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "liability": {
+        "title": "Haftung für Inhalte",
+        "content": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "content": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+      }
+    },
+    "links": {
+      "title": "Weitere Informationen",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Einstellungen"
+    },
+    "lastUpdated": "Letzte Aktualisierung"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 

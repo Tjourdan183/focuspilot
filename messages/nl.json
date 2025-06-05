@@ -213,5 +213,57 @@
     "loading": "Laden...",
     "error": "Fout",
     "success": "Succes"
+  },
+  "Impressum": {
+    "backToHome": "Terug naar home",
+    "badge": "Juridische informatie",
+    "title": "Impressum",
+    "subtitle": "Juridische informatie volgens Zwitsers recht en EU-AVG",
+    "company": {
+      "title": "Bedrijfsinformatie",
+      "details": "Bedrijfsgegevens",
+      "contact": "Contactinformatie"
+    },
+    "legal": {
+      "title": "Juridische informatie",
+      "registration": "Registratie",
+      "registerNumber": "Handelsregisternummer",
+      "taxNumber": "UID-nummer",
+      "court": "Registratiekamer",
+      "courtLocation": "Handelsregisterkantoor Zürich",
+      "management": "Management",
+      "ceo": "Chief Executive Officer",
+      "cto": "Chief Technology Officer",
+      "operations": "Operations Manager"
+    },
+    "content": {
+      "title": "Verantwoordelijk voor inhoud",
+      "responsible": "Verantwoordelijk voor de inhoud van deze website volgens § 55 lid 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "liability": {
+        "title": "Aansprakelijkheid voor inhoud",
+        "content": "Als dienstverlener zijn wij verantwoordelijk voor onze eigen inhoud op deze pagina's volgens de algemene wetten conform § 7 lid 1 TMG. Volgens §§ 8 tot 10 TMG zijn wij als dienstverlener echter niet verplicht om doorgegeven of opgeslagen informatie van derden te controleren of onderzoek te doen naar omstandigheden die wijzen op illegale activiteiten."
+      },
+      "links": {
+        "title": "Aansprakelijkheid voor links",
+        "content": "Ons aanbod bevat links naar externe websites van derden waarop wij geen invloed hebben. Daarom kunnen wij geen garantie overnemen voor deze externe inhoud. De respectievelijke aanbieder of exploitant van de pagina's is altijd verantwoordelijk voor de inhoud van de gelinkte pagina's."
+      },
+      "copyright": {
+        "title": "Auteursrecht",
+        "content": "De inhoud en werken die door de site-exploitanten op deze pagina's zijn gemaakt, vallen onder het Duitse auteursrecht. Duplicatie, bewerking, distributie en elk soort exploitatie buiten de grenzen van het auteursrecht vereisen de schriftelijke toestemming van de respectievelijke auteur of maker."
+      }
+    },
+    "links": {
+      "title": "Aanvullende informatie",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "cookies": "Cookie-instellingen"
+    },
+    "lastUpdated": "Laatst bijgewerkt"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 

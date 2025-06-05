@@ -1,22 +1,9 @@
-import { useEffect, useState } from 'react';
-
 interface AnimatedBackgroundProps {
   colorVariant?: 'default' | 'blue' | 'green' | 'purple' | 'orange' | 'yellow' | 'red' | 'teal';
   isHomePage?: boolean;
 }
 
 export default function AnimatedBackground({ colorVariant = 'default', isHomePage = false }: AnimatedBackgroundProps) {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   const getColorScheme = () => {
     // If it's homepage, return simpler color scheme
     if (isHomePage) {
@@ -121,7 +108,7 @@ export default function AnimatedBackground({ colorVariant = 'default', isHomePag
   const colors = getColorScheme();
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
+    <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
       {/* Primary Color Blur */}
       <div 
         className={`absolute w-[40rem] h-[40rem] ${colors.primary} blur-[120px] rounded-full animate-float`}
