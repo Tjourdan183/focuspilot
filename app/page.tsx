@@ -104,10 +104,10 @@ export default function HomePage() {
             <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/appstore.svg" 
+                  src="/public/appstore.svg" 
                   alt="Download on App Store"
-                  width={27}
-                  height={27}
+                  width={24}
+                  height={24}
                   className="w-6 h-6"
                 />
                 <div className="text-left">
@@ -120,7 +120,7 @@ export default function HomePage() {
             <Button variant="outline" className="h-16 px-8 glass hover:bg-accent/5 transition-all duration-300 border-2">
               <div className="flex items-center gap-3">
                 <Image 
-                  src="/playstore.svg" 
+                  src="/cache/images/play-store/playstore.svg" 
                   alt="Get it on Play Store"
                   width={24}
                   height={24}

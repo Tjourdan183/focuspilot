@@ -58,7 +58,7 @@ export default function Header({ onToggleDark, isDark = false }: HeaderProps) {
             ${scrolled ? "" : "text-foreground/90"}
           `}
         >
-          Focuspilot.ai
+          FocusPilot
         </Link>
 
         {/* Desktop-Navigation */}

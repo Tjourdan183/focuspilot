@@ -57,7 +57,7 @@ export default function AboutPage() {
                 </h2>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  FocusPilot.ai wurde von <span className="font-bold text-foreground">Samuel</span> gegründet, einem leidenschaftlichen
+                  FocusPilot wurde von <span className="font-bold text-foreground">Samuel</span> gegründet, einem leidenschaftlichen
                   Software-Entwickler, der nach einer revolutionären Lösung suchte, um sein
                   eigenes Zeitmanagement und seinen Fokus zu optimieren.
                 </p>
