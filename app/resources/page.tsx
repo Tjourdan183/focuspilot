@@ -13,12 +13,12 @@ export default function ResourcesPage() {
     },
     {
       title: "Tutorials",
-      description: "Schritt-für-Schritt-Anleitungen, um das Beste aus FocusPilot.ai herauszuholen.",
+      description: "Schritt-für-Schritt-Anleitungen, um das Beste aus FocusPilot herauszuholen.",
       href: "#",
     },
     {
       title: "User Stories",
-      description: "Erfahre, wie andere ihren Workflow mit FocusPilot.ai verbessert haben.",
+      description: "Erfahre, wie andere ihren Workflow mit FocusPilot verbessert haben.",
       href: "#",
     },
   ];
