@@ -166,6 +166,48 @@
       "features": "Keine Kreditkarte erforderlich · Jederzeit kündbar · Schweizer Datenschutz"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie-Einstellungen",
+      "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, Website-Traffic zu analysieren und personalisierte Inhalte bereitzustellen. Ihre Privatsphäre ist uns wichtig.",
+      "acceptAll": "Alle akzeptieren",
+      "acceptNecessary": "Nur notwendige",
+      "moreInfo": "Erfahren Sie mehr in unserer",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
+    "settings": {
+      "title": "Cookie-Präferenzen",
+      "subtitle": "Verwalten Sie Ihre Cookie-Einstellungen und kontrollieren Sie, wie wir Ihre Daten verwenden.",
+      "required": "Erforderlich",
+      "examples": "Beispiele",
+      "savePreferences": "Einstellungen speichern",
+      "acceptAll": "Alle akzeptieren",
+      "canChange": "Sie können diese Einstellungen jederzeit in unserer",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "description": "Wesentliche Cookies, die für grundlegende Website-Funktionen, Sicherheit und Benutzerauthentifizierung erforderlich sind.",
+        "examples": "Session-Cookies, Authentifizierungs-Token, Sicherheits-Cookies"
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, um die Benutzererfahrung zu verbessern.",
+        "examples": "Google Analytics, Seitenaufrufe, Nutzerverhalten-Tracking"
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Werden verwendet, um personalisierte Werbung zu liefern und die Wirksamkeit von Werbekampagnen zu messen.",
+        "examples": "Facebook Pixel, Werbe-Cookies, Conversion-Tracking"
+      },
+      "personalization": {
+        "title": "Personalisierungs-Cookies",
+        "description": "Merken sich Ihre Präferenzen und bieten angepasste Inhalte basierend auf Ihrer Nutzung.",
+        "examples": "Spracheinstellungen, Theme-Einstellungen, personalisierte Empfehlungen"
+      }
+    }
+  },
   "Common": {
     "close": "Schließen",
     "loading": "Laden...",

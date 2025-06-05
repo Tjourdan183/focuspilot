@@ -166,6 +166,48 @@
       "features": "Geen creditcard vereist · Altijd opzegbaar · Zwitserse privacy"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie-instellingen",
+      "description": "We gebruiken cookies om uw ervaring te verbeteren, websiteverkeer te analyseren en gepersonaliseerde content te bieden. Uw privacy is belangrijk voor ons.",
+      "acceptAll": "Alles Accepteren",
+      "acceptNecessary": "Alleen Noodzakelijke",
+      "moreInfo": "Lees meer in ons",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "settings": {
+      "title": "Cookie Voorkeuren",
+      "subtitle": "Beheer uw cookie-instellingen en controleer hoe we uw gegevens gebruiken.",
+      "required": "Vereist",
+      "examples": "Voorbeelden",
+      "savePreferences": "Voorkeuren Opslaan",
+      "acceptAll": "Alles Accepteren",
+      "canChange": "U kunt deze instellingen op elk moment wijzigen in ons",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Noodzakelijke Cookies",
+        "description": "Essentiële cookies vereist voor basale websitefunctionaliteit, beveiliging en gebruikersauthenticatie.",
+        "examples": "Sessie cookies, authenticatie tokens, beveiligings cookies"
+      },
+      "analytics": {
+        "title": "Analyse Cookies",
+        "description": "Helpen ons begrijpen hoe bezoekers omgaan met onze website om de gebruikerservaring te verbeteren.",
+        "examples": "Google Analytics, paginaweergaven, gebruikersgedrag tracking"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Gebruikt voor het leveren van gepersonaliseerde advertenties en het meten van reclamecampagne-effectiviteit.",
+        "examples": "Facebook Pixel, reclame cookies, conversie tracking"
+      },
+      "personalization": {
+        "title": "Personalisatie Cookies",
+        "description": "Onthouden uw voorkeuren en bieden aangepaste content gebaseerd op uw gebruik.",
+        "examples": "Taalvoorkeuren, thema-instellingen, gepersonaliseerde aanbevelingen"
+      }
+    }
+  },
   "Common": {
     "close": "Sluiten",
     "loading": "Laden...",

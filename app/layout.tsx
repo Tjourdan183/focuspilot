@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import CookieConsent from "@/components/ui/CookieConsent";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTranslations } from "@/lib/useTranslations";
@@ -175,6 +176,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1 pt-24">{children}</main>
 
           <Footer />
+          <CookieConsent />
         </I18nProvider>
       </body>
     </html>

@@ -166,6 +166,48 @@
       "features": "Aucune carte de crédit requise · Annulez à tout moment · Confidentialité hébergée en Suisse"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Paramètres des Cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic du site et fournir du contenu personnalisé. Votre vie privée compte pour nous.",
+      "acceptAll": "Accepter Tout",
+      "acceptNecessary": "Nécessaires Seulement",
+      "moreInfo": "En savoir plus dans notre",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "settings": {
+      "title": "Préférences des Cookies",
+      "subtitle": "Gérez vos paramètres de cookies et contrôlez comment nous utilisons vos données.",
+      "required": "Requis",
+      "examples": "Exemples",
+      "savePreferences": "Enregistrer les Préférences",
+      "acceptAll": "Accepter Tout",
+      "canChange": "Vous pouvez modifier ces paramètres à tout moment dans notre",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookies Nécessaires",
+        "description": "Cookies essentiels requis pour les fonctionnalités de base du site, la sécurité et l'authentification des utilisateurs.",
+        "examples": "Cookies de session, jetons d'authentification, cookies de sécurité"
+      },
+      "analytics": {
+        "title": "Cookies d'Analyse",
+        "description": "Nous aident à comprendre comment les visiteurs interagissent avec notre site pour améliorer l'expérience utilisateur.",
+        "examples": "Google Analytics, vues de pages, suivi du comportement utilisateur"
+      },
+      "marketing": {
+        "title": "Cookies Marketing",
+        "description": "Utilisés pour diffuser des publicités personnalisées et mesurer l'efficacité des campagnes publicitaires.",
+        "examples": "Facebook Pixel, cookies publicitaires, suivi des conversions"
+      },
+      "personalization": {
+        "title": "Cookies de Personnalisation",
+        "description": "Se souviennent de vos préférences et fournissent du contenu personnalisé basé sur votre utilisation.",
+        "examples": "Préférences linguistiques, paramètres de thème, recommandations personnalisées"
+      }
+    }
+  },
   "Common": {
     "close": "Fermer",
     "loading": "Chargement...",

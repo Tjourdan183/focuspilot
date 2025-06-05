@@ -166,6 +166,48 @@
       "features": "No credit card required · Cancel anytime · Swiss-hosted privacy"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to enhance your experience, analyze website traffic, and provide personalized content. Your privacy matters to us.",
+      "acceptAll": "Accept All",
+      "acceptNecessary": "Necessary Only",
+      "moreInfo": "Learn more in our",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "settings": {
+      "title": "Cookie Preferences",
+      "subtitle": "Manage your cookie settings and control how we use your data.",
+      "required": "Required",
+      "examples": "Examples",
+      "savePreferences": "Save Preferences",
+      "acceptAll": "Accept All",
+      "canChange": "You can change these settings anytime in our",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "Essential cookies required for basic website functionality, security, and user authentication.",
+        "examples": "Session cookies, authentication tokens, security cookies"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors interact with our website to improve user experience.",
+        "examples": "Google Analytics, page views, user behavior tracking"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to deliver personalized advertisements and measure advertising campaign effectiveness.",
+        "examples": "Facebook Pixel, advertising cookies, conversion tracking"
+      },
+      "personalization": {
+        "title": "Personalization Cookies",
+        "description": "Remember your preferences and provide customized content based on your usage.",
+        "examples": "Language preferences, theme settings, personalized recommendations"
+      }
+    }
+  },
   "Common": {
     "close": "Close",
     "loading": "Loading...",

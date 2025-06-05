@@ -166,6 +166,48 @@
       "features": "Nessuna carta di credito richiesta · Cancella in qualsiasi momento · Privacy ospitata in Svizzera"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Impostazioni Cookie",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza, analizzare il traffico del sito e fornire contenuti personalizzati. La tua privacy ci sta a cuore.",
+      "acceptAll": "Accetta Tutto",
+      "acceptNecessary": "Solo Necessari",
+      "moreInfo": "Scopri di più nella nostra",
+      "privacyPolicy": "Politica sulla Privacy"
+    },
+    "settings": {
+      "title": "Preferenze Cookie",
+      "subtitle": "Gestisci le tue impostazioni dei cookie e controlla come utilizziamo i tuoi dati.",
+      "required": "Richiesto",
+      "examples": "Esempi",
+      "savePreferences": "Salva Preferenze",
+      "acceptAll": "Accetta Tutto",
+      "canChange": "Puoi modificare queste impostazioni in qualsiasi momento nella nostra",
+      "privacyPolicy": "Politica sulla Privacy"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookie Necessari",
+        "description": "Cookie essenziali richiesti per le funzionalità di base del sito web, sicurezza e autenticazione degli utenti.",
+        "examples": "Cookie di sessione, token di autenticazione, cookie di sicurezza"
+      },
+      "analytics": {
+        "title": "Cookie Analitici",
+        "description": "Ci aiutano a capire come i visitatori interagiscono con il nostro sito web per migliorare l'esperienza utente.",
+        "examples": "Google Analytics, visualizzazioni di pagina, tracciamento del comportamento utente"
+      },
+      "marketing": {
+        "title": "Cookie di Marketing",
+        "description": "Utilizzati per fornire pubblicità personalizzate e misurare l'efficacia delle campagne pubblicitarie.",
+        "examples": "Facebook Pixel, cookie pubblicitari, tracciamento delle conversioni"
+      },
+      "personalization": {
+        "title": "Cookie di Personalizzazione",
+        "description": "Ricordano le tue preferenze e forniscono contenuti personalizzati basati sul tuo utilizzo.",
+        "examples": "Preferenze linguistiche, impostazioni del tema, raccomandazioni personalizzate"
+      }
+    }
+  },
   "Common": {
     "close": "Chiudi",
     "loading": "Caricamento...",

@@ -166,6 +166,48 @@
       "features": "Nenhum cartão de crédito necessário · Cancele a qualquer momento · Privacidade hospedada na Suíça"
     }
   },
+  "CookieConsent": {
+    "banner": {
+      "title": "Definições de Cookies",
+      "description": "Utilizamos cookies para melhorar a sua experiência, analisar o tráfego do website e fornecer conteúdo personalizado. A sua privacidade é importante para nós.",
+      "acceptAll": "Aceitar Tudo",
+      "acceptNecessary": "Apenas Necessários",
+      "moreInfo": "Saiba mais na nossa",
+      "privacyPolicy": "Política de Privacidade"
+    },
+    "settings": {
+      "title": "Preferências de Cookies",
+      "subtitle": "Gerencie as suas definições de cookies e controle como utilizamos os seus dados.",
+      "required": "Obrigatório",
+      "examples": "Exemplos",
+      "savePreferences": "Guardar Preferências",
+      "acceptAll": "Aceitar Tudo",
+      "canChange": "Pode alterar estas definições a qualquer momento na nossa",
+      "privacyPolicy": "Política de Privacidade"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookies Necessários",
+        "description": "Cookies essenciais necessários para funcionalidades básicas do website, segurança e autenticação de utilizadores.",
+        "examples": "Cookies de sessão, tokens de autenticação, cookies de segurança"
+      },
+      "analytics": {
+        "title": "Cookies de Análise",
+        "description": "Ajudam-nos a entender como os visitantes interagem com o nosso website para melhorar a experiência do utilizador.",
+        "examples": "Google Analytics, visualizações de página, rastreamento de comportamento do utilizador"
+      },
+      "marketing": {
+        "title": "Cookies de Marketing",
+        "description": "Utilizados para entregar publicidade personalizada e medir a eficácia das campanhas publicitárias.",
+        "examples": "Facebook Pixel, cookies publicitários, rastreamento de conversões"
+      },
+      "personalization": {
+        "title": "Cookies de Personalização",
+        "description": "Lembram as suas preferências e fornecem conteúdo personalizado baseado na sua utilização.",
+        "examples": "Preferências de idioma, definições de tema, recomendações personalizadas"
+      }
+    }
+  },
   "Common": {
     "close": "Fechar",
     "loading": "A carregar...",

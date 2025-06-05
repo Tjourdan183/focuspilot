@@ -52,8 +52,8 @@ export default function Footer() {
           <h5 className="font-semibold mb-2 text-foreground">Legal</h5>
           <div className="flex space-x-6 text-muted-foreground">
             <Link href="/terms" className="hover:text-accent">Terms</Link>
-            <Link href="#" className="hover:text-accent">Security</Link>
-            <Link href="#" className="hover:text-accent">Privacy</Link>
+            <Link href="/privacy" className="hover:text-accent">Privacy</Link>
+            <Link href="/cookie-settings" className="hover:text-accent">Cookie Settings</Link>
           </div>
         </div>
       </div>
