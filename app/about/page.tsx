@@ -1,241 +1,377 @@
-// app/about/page.tsx
 "use client";
-
-import TestimonialsMarquee from "@/components/TestimonialsMarquee";
-import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
+import { ShieldCheck, Lightbulb, TrendingUp, Target, Users, Award, Globe, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
-export default function AboutPage() {
+// Data -----------------------------------------------------------------------
+const usps = [
+  {
+    icon: Target,
+    title: "All‑in‑One Mentor",
+    desc: "Road‑mapping, habit loops & emotion tracking in one place.",
+    gradient: "from-blue-500 to-purple-600"
+  },
+  {
+    icon: Lightbulb,
+    title: "Adaptive AI Nudges",
+    desc: "Detects roadblocks and delivers just‑in‑time guidance.",
+    gradient: "from-emerald-500 to-teal-600"
+  },
+  {
+    icon: ShieldCheck,
+    title: "Zero‑Compromise Security",
+    desc: "Swiss‑hosted, end‑to‑end encrypted, GDPR & HIPAA ready.",
+    gradient: "from-purple-500 to-pink-600"
+  },
+  {
+    icon: TrendingUp,
+    title: "Measurable Results",
+    desc: "Dashboards that visualise progress & well‑being.",
+    gradient: "from-orange-500 to-red-600"
+  },
+];
+
+const values = [
+  { name: "Human First", icon: Heart },
+  { name: "Radical Clarity", icon: Target },
+  { name: "Relentless Quality", icon: Award },
+  { name: "Data Guardianship", icon: ShieldCheck },
+  { name: "Open Science", icon: Globe },
+];
+
+const team = [
+  {
+    name: "Thomas Jourdan",
+    role: "CEO · Behavioral‑Finance Expert",
+    quote: "No one should have to navigate life's volatility without a compass. Focuspilot is that compass.",
+    gradient: "from-blue-500 to-purple-600"
+  },
+  {
+    name: "Samuel Fricker",
+    role: "Data Scientist · ETH Zürich",
+    quote: "I turn mathematical models into measurable mental‑health outcomes.",
+    gradient: "from-emerald-500 to-teal-600"
+  },
+  {
+    name: "Orhan Koca",
+    role: "Operations Lead · ex‑Banker",
+    quote: "I translate strict financial discipline into user‑centred product operations that keep people accountable—without stress.",
+    gradient: "from-purple-500 to-pink-600"
+  },
+  {
+    name: "Vitoria Kambirasi",
+    role: "Clinical Psychology Liaison",
+    quote: "Therapeutic insights belong in everyone's pocket, not just in clinics.",
+    gradient: "from-orange-500 to-red-600"
+  },
+  {
+    name: "Ammar Kadip",
+    role: "Machine‑Learning Engineer",
+    quote: "Privacy‑preserving AI lets us help millions without ever seeing their raw data.",
+    gradient: "from-cyan-500 to-blue-600"
+  },
+  {
+    name: "Markus Jurtan",
+    role: "UX & Accessibility Designer",
+    quote: "Interfaces should lower cortisol levels before you even tap a button.",
+    gradient: "from-pink-500 to-rose-600"
+  },
+];
+
+const stats = [
+  { number: "100M+", label: "People to Impact", icon: Users },
+  { number: "34%", label: "Task Completion Boost", icon: TrendingUp },
+  { number: "29%", label: "Stress Reduction", icon: Heart },
+  { number: "4 weeks", label: "To See Results", icon: Target },
+];
+
+// Animation helpers -----------------------------------------------------------
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({ 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      delay: i * 0.1,
+      duration: 0.6,
+      ease: [0.4, 0, 0.2, 1]
+    } 
+  }),
+};
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2
+    }
+  }
+};
+
+// Components ------------------------------------------------------------------
+const USPCard = ({ icon: Icon, title, desc, gradient }: { 
+  icon: React.ElementType; 
+  title: string; 
+  desc: string;
+  gradient: string;
+}) => (
+  <motion.div
+    variants={fadeInUp}
+    whileHover={{ scale: 1.02, y: -8 }}
+    transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+    className="group relative h-full"
+  >
+    <div className={`absolute inset-0 bg-gradient-to-r ${gradient}/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+    <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-white/20 hover:border-accent/30 h-full flex flex-col">
+      <div className={`w-16 h-16 bg-gradient-to-r ${gradient} rounded-xl flex items-center justify-center text-white mb-6 shadow-lg`}>
+        <Icon size={28} />
+      </div>
+      <h3 className="text-2xl font-bold text-foreground mb-4">{title}</h3>
+      <p className="text-muted-foreground leading-relaxed flex-grow">{desc}</p>
+      <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300 mt-6">
+        Learn More
+        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </div>
+    </div>
+  </motion.div>
+);
+
+const TeamCard = ({ name, role, quote, gradient }: { 
+  name: string; 
+  role: string; 
+  quote: string;
+  gradient: string;
+}) => (
+  <motion.div
+    variants={fadeInUp}
+    whileHover={{ scale: 1.02 }}
+    transition={{ duration: 0.3 }}
+    className="group relative"
+  >
+    <div className={`absolute inset-0 bg-gradient-to-r ${gradient}/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+    <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-white/20 hover:border-accent/30 h-full">
+      <div className={`w-12 h-12 bg-gradient-to-r ${gradient} rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4`}>
+        {name.split(' ').map(n => n[0]).join('')}
+      </div>
+      <h4 className="text-xl font-bold text-foreground mb-2">{name}</h4>
+      <p className="text-sm text-muted-foreground mb-4">{role}</p>
+             <blockquote className="text-sm text-foreground/80 italic leading-relaxed">
+         &ldquo;{quote}&rdquo;
+       </blockquote>
+    </div>
+  </motion.div>
+);
+
+const StatCard = ({ number, label, icon: Icon }: {
+  number: string;
+  label: string;
+  icon: React.ElementType;
+}) => (
+  <motion.div
+    variants={fadeInUp}
+    whileHover={{ scale: 1.05 }}
+    className="glass rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20"
+  >
+    <Icon className="w-8 h-8 text-accent mx-auto mb-3" />
+    <div className="text-3xl font-black text-foreground mb-2">{number}</div>
+    <div className="text-sm text-muted-foreground">{label}</div>
+  </motion.div>
+);
+
+// Main ------------------------------------------------------------------------
+export default function AboutUs() {
   return (
-    <div className="relative min-h-screen">
-      <AnimatedBackground colorVariant="yellow" />
+    <div className="relative min-h-screen bg-background">
+      <AnimatedBackground isHomePage={false} />
       
-      {/* Main Content */}
-      <main className="relative">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-32 space-y-32">
+        
         {/* Hero Section */}
-        <section className="relative py-32 px-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-8">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-muted-foreground">
-                About Us
-              </span>
-            </div>
+        <motion.section 
+          initial="hidden" 
+          animate="visible" 
+          variants={staggerContainer}
+          className="text-center space-y-8"
+        >
+          <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+            <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium text-muted-foreground">About FocusPilot</span>
+          </motion.div>
 
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight">
-              <span className="text-foreground">Unsere</span>
-              <br />
-              <span className="text-gradient">Vision</span>
-            </h1>
+          <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tight">
+            <span className="block text-foreground">Turning Inner Chaos</span>
+            <span className="block text-gradient">into Clarity</span>
+          </motion.h1>
+          
+          <motion.p variants={fadeInUp} className="max-w-4xl mx-auto text-xl text-muted-foreground leading-relaxed">
+            High performers, students and entrepreneurs alike often find themselves juggling productivity tools and well‑being
+                         apps that don&apos;t talk to each other. <span className="text-foreground font-semibold">FocusPilot.ai bridges that gap</span>: 
+            an AI‑powered mentor uniting science‑backed mental‑health practices with goal execution—without ever compromising your privacy.
+          </motion.p>
+        </motion.section>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-              Wir revolutionieren die Art, wie Menschen arbeiten und produktiv sind. 
-              <span className="font-semibold text-foreground">
-                Mit KI-gestützter Innovation für eine bessere Zukunft.
-              </span>
-            </p>
+        {/* Mission & Stats */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+          className="space-y-16"
+        >
+          <div className="text-center">
+            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+              <span className="text-sm font-medium text-muted-foreground">Our Mission</span>
+            </motion.div>
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+              Empower <span className="text-gradient">100 Million People</span>
+            </motion.h2>
+            <motion.p variants={fadeInUp} className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              To achieve meaningful goals while feeling mentally resilient and in control.
+            </motion.p>
           </div>
-        </section>
 
-        {/* Story & Mission Sections */}
-        <section className="relative py-20 px-4">
-          <div className="max-w-6xl mx-auto space-y-32">
-            
-            {/* Our Story */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-8">
-                <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full">
-                  <span className="text-sm font-medium text-muted-foreground">
-                    📖 Unsere Geschichte
-                  </span>
-                </div>
+          <motion.div 
+            variants={staggerContainer}
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+          >
+            {stats.map((stat, i) => (
+              <StatCard key={i} {...stat} />
+            ))}
+          </motion.div>
+        </motion.section>
 
-                <h2 className="text-4xl md:text-5xl font-black tracking-tight">
-                  <span className="text-gradient">
-                    Wie alles begann
-                  </span>
-                </h2>
-                
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  FocusPilot wurde von <span className="font-bold text-foreground">Samuel</span> gegründet, einem leidenschaftlichen
-                  Software-Entwickler, der nach einer revolutionären Lösung suchte, um sein
-                  eigenes Zeitmanagement und seinen Fokus zu optimieren.
-                </p>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Aus dieser Vision entstand eine Plattform, die heute weltweit Teams und
-                  Einzelpersonen dabei hilft, <span className="font-semibold text-foreground">ihre Produktivität zu revolutionieren</span> und
-                  ihre Ziele zu erreichen.
-                </p>
-              </div>
-              
-              <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-accent/10 to-purple-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
-                  <Image
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
-                    alt="Team working together"
-                    width={600}
-                    height={400}
-                    className="rounded-2xl shadow-lg w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Our Mission */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="relative group order-2 lg:order-1">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
-                  <Image
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
-                    alt="Mission visualization"
-                    width={600}
-                    height={400}
-                    className="rounded-2xl shadow-lg w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-8 order-1 lg:order-2">
-                <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full">
-                  <span className="text-sm font-medium text-muted-foreground">
-                    🎯 Unsere Mission
-                  </span>
-                </div>
-
-                <h2 className="text-4xl md:text-5xl font-black tracking-tight">
-                  <span className="text-gradient">
-                    Produktivität neu definieren
-                  </span>
-                </h2>
-                
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  Wir glauben daran, dass jeder Mensch das Potenzial hat, <span className="font-bold text-foreground">Höchstleistungen zu erbringen</span>,
-                  wenn Ablenkungen minimiert und Fokus maximiert werden.
-                </p>
-                
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Mit Hilfe von <span className="font-semibold text-foreground">KI-gestützter Analyse</span>, intuitiven Benutzeroberflächen und bewährten
-                  Zeitmanagement-Methoden wollen wir Menschen auf der ganzen Welt dabei unterstützen,
-                  ihre Träume zu verwirklichen.
-                </p>
-              </div>
-            </div>
-
-            {/* Values Section */}
-            <div className="text-center">
-              <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-12">
-                <span className="text-sm font-medium text-muted-foreground">
-                  💎 Unsere Werte
-                </span>
-              </div>
-
-              <h2 className="text-4xl md:text-5xl font-black mb-16 tracking-tight">
-                <span className="text-gradient">
-                  Woran wir glauben
-                </span>
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {[
-                  {
-                    icon: "🚀",
-                    title: "Innovation",
-                    description: "Wir pushen kontinuierlich die Grenzen dessen, was in der Produktivitätstechnologie möglich ist.",
-                    gradient: "from-blue-500/10 to-purple-500/10"
-                  },
-                  {
-                    icon: "🤝",
-                    title: "Gemeinschaft", 
-                    description: "Erfolg entsteht gemeinsam. Wir bauen Tools, die Teams und Individuen gleichermaßen stärken.",
-                    gradient: "from-emerald-500/10 to-cyan-500/10"
-                  },
-                  {
-                    icon: "⚡",
-                    title: "Einfachheit",
-                    description: "Die beste Technologie ist unsichtbar. Wir schaffen intuitive Erlebnisse, die einfach funktionieren.",
-                    gradient: "from-purple-500/10 to-pink-500/10"
-                  }
-                ].map((value, index) => (
-                  <div key={index} className="group relative">
-                    <div className={`absolute inset-0 bg-gradient-to-r ${value.gradient} rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                    <div className="relative glass rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
-                      <div className="text-4xl mb-6">{value.icon}</div>
-                      <h3 className="text-2xl font-bold text-foreground mb-4">{value.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+        {/* Core Features */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+          className="space-y-16"
+        >
+          <div className="text-center">
+            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+              <span className="text-sm font-medium text-muted-foreground">Core Features</span>
+            </motion.div>
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+              Why <span className="text-gradient">FocusPilot</span> Works
+            </motion.h2>
           </div>
-        </section>
 
-        {/* Testimonials Section */}
-        <section className="relative py-32">
-          <div className="max-w-7xl mx-auto px-4 text-center mb-12 relative z-10">
-            <div className="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-8">
-              <span className="text-sm font-medium text-muted-foreground">
-                🌟 Testimonials
-              </span>
-            </div>
+          <motion.div 
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
+          >
+            {usps.map((usp, i) => (
+              <USPCard key={i} {...usp} />
+            ))}
+          </motion.div>
+        </motion.section>
 
-            <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tight">
-              <span className="text-foreground">
-                Was unsere
-              </span>
-              <br />
-              <span className="text-gradient">
-                Community sagt
-              </span>
+        {/* Values */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+          className="space-y-16"
+        >
+          <div className="text-center">
+            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+              <span className="text-sm font-medium text-muted-foreground">Our Values</span>
+            </motion.div>
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+              What <span className="text-gradient">Drives Us</span>
+            </motion.h2>
+          </div>
+
+          <motion.div 
+            variants={staggerContainer}
+            className="flex flex-wrap justify-center gap-4"
+          >
+                         {values.map((value) => (
+               <motion.div
+                 key={value.name}
+                 variants={fadeInUp}
+                 whileHover={{ scale: 1.05 }}
+                 className="group glass rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20 hover:border-accent/30"
+               >
+                <div className="flex items-center gap-3">
+                  <value.icon className="w-5 h-5 text-accent" />
+                  <span className="font-semibold text-foreground">{value.name}</span>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.section>
+
+        {/* Team */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+          className="space-y-16"
+        >
+          <div className="text-center">
+            <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+              <span className="text-sm font-medium text-muted-foreground">Our Team</span>
+            </motion.div>
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+              Meet the Team – <span className="text-gradient">Why We Care</span>
+            </motion.h2>
+          </div>
+
+          <motion.div 
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+                         {team.map((member) => (
+               <TeamCard key={member.name} {...member} />
+             ))}
+          </motion.div>
+        </motion.section>
+
+        {/* Call to Action */}
+        <motion.section 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true, margin: "-100px" }}
+          variants={fadeInUp}
+          className="relative"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-purple-500/5 rounded-3xl blur-2xl"></div>
+          <div className="relative glass rounded-3xl p-16 shadow-2xl border border-accent/20 text-center">
+            <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
+              Ready to <span className="text-gradient">co‑pilot your focus?</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Über 10.000 Menschen haben bereits ihre Produktivität mit FocusPilot revolutioniert.
+            <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+              Request early access today and help us redefine mental health for the next decade.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="group relative px-12 py-6 bg-foreground hover:bg-foreground/90 text-background font-bold text-lg rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
+                <span className="relative z-10 flex items-center gap-2">
+                  Get Early Access
+                  <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </Button>
+              <Button variant="outline" className="px-12 py-6 glass border-2 border-accent/30 rounded-xl font-bold text-lg transition-all duration-300 hover:border-accent">
+                Watch Demo
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground mt-8">
+              No credit card required · Cancel anytime · Swiss-hosted privacy
             </p>
           </div>
-          <div className="relative z-10">
-            <TestimonialsMarquee />
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="relative py-32 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="relative glass rounded-3xl p-16 shadow-2xl border border-accent/10">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-purple-500/5 rounded-3xl"></div>
-              
-              <div className="relative z-10">
-                <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-                  <span className="text-gradient">
-                    Bereit mitzumachen?
-                  </span>
-                </h2>
-                
-                <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-                  Werden Sie Teil der FocusPilot-Community und revolutionieren Sie Ihre Produktivität noch heute.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="group relative px-12 py-6 bg-foreground hover:bg-foreground/90 text-background font-bold text-lg rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                    <span className="relative z-10 flex items-center gap-2">
-                      🚀 Jetzt kostenlos starten
-                      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-                
-                <p className="text-sm text-muted-foreground mt-6">
-                  ✅ 14 Tage kostenlos · ✅ Keine Kreditkarte erforderlich · ✅ Sofortiger Zugang
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+        </motion.section>
+      </div>
     </div>
   );
 }
