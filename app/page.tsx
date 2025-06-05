@@ -129,12 +129,12 @@ export default function HomePage() {
           </div>
 
           {/* Feature grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             
             {/* Feature 1 - AI Focus */}
-            <div className="group relative">
+            <div className="group relative h-full flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
+              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20 flex flex-col h-full">
                 
                 <div className="w-16 h-16 gradient-brand rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg">
                   🧠
@@ -148,7 +148,7 @@ export default function HomePage() {
                   {t("HomePage.features.aiPowered.description")}
                 </p>
                 
-                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
+                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300 mt-auto">
                   {t("HomePage.features.aiPowered.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -158,9 +158,9 @@ export default function HomePage() {
             </div>
 
             {/* Feature 2 - Smart Timer */}
-            <div className="group relative">
+            <div className="group relative h-full flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-cyan-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
+              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20 flex flex-col h-full">
                 
                 <div className="w-16 h-16 gradient-success rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg">
                   ⏰
@@ -174,7 +174,7 @@ export default function HomePage() {
                   {t("HomePage.features.smartTimer.description")}
                 </p>
                 
-                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
+                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300 mt-auto">
                   {t("HomePage.features.smartTimer.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -184,9 +184,9 @@ export default function HomePage() {
             </div>
 
             {/* Feature 3 - Analytics */}
-            <div className="group relative">
+            <div className="group relative h-full flex flex-col">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20">
+              <div className="relative glass rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.02] border border-transparent hover:border-accent/20 flex flex-col h-full">
                 
                 <div className="w-16 h-16 gradient-purple rounded-xl flex items-center justify-center text-white text-2xl mb-6 shadow-lg">
                   📊
@@ -200,7 +200,7 @@ export default function HomePage() {
                   {t("HomePage.features.analytics.description")}
                 </p>
                 
-                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300">
+                <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300 mt-auto">
                   {t("HomePage.features.analytics.learnMore")} 
                   <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
