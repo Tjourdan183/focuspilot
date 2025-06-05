@@ -71,6 +71,101 @@
     "privacyText": "Door te abonneren ga je akkoord met onze Privacybeleid.",
     "error": "Abonneren mislukt. Probeer het opnieuw."
   },
+  "AboutUs": {
+    "statusBadge": "Over FocusPilot",
+    "hero": {
+      "title": "Van Innerlijke Chaos naar Helderheid",
+      "subtitle": "Hoge presteerders, studenten en ondernemers bevinden zich vaak jonglerende met productiviteitstools en wellness‑apps die niet met elkaar communiceren. FocusPilot.ai overbrugt deze kloof: een AI‑aangedreven mentor die wetenschappelijk onderbouwde mental‑health‑praktijken verenigt met doeluitvoering—zonder ooit je privacy in gevaar te brengen."
+    },
+    "mission": {
+      "badge": "Onze Missie",
+      "title": "100 Miljoen Mensen Empoweren",
+      "description": "Om betekenisvolle doelen te bereiken terwijl ze zich mentaal veerkrachtig en in controle voelen."
+    },
+    "stats": {
+      "users": "Mensen te Beïnvloeden",
+      "completion": "Taakvoltooing Boost",
+      "stress": "Stressvermindering",
+      "time": "Om Resultaten te Zien"
+    },
+    "features": {
+      "badge": "Kernfuncties", 
+      "title": "Waarom FocusPilot Werkt",
+      "items": {
+        "mentor": {
+          "title": "Alles‑in‑Één Mentor",
+          "description": "Routeplanning, gewoontelussen & emotietracking op één plek."
+        },
+        "ai": {
+          "title": "Adaptieve AI‑Duwtjes", 
+          "description": "Detecteert wegversperringen en levert just‑in‑time begeleiding."
+        },
+        "security": {
+          "title": "Geen‑Compromis Beveiliging",
+          "description": "Zwitsers gehost, end‑to‑end versleuteld, GDPR & HIPAA klaar."
+        },
+        "results": {
+          "title": "Meetbare Resultaten",
+          "description": "Dashboards die vooruitgang & welzijn visualiseren."
+        }
+      },
+      "learnMore": "Meer Weten"
+    },
+    "values": {
+      "badge": "Onze Waarden",
+      "title": "Wat Ons Drijft",
+      "items": {
+        "humanFirst": "Mens Eerst",
+        "clarity": "Radicale Helderheid", 
+        "quality": "Meedogenloze Kwaliteit",
+        "guardianship": "Data Bewaking",
+        "science": "Open Wetenschap"
+      }
+    },
+    "team": {
+      "badge": "Ons Team",
+      "title": "Ontmoet het Team – Waarom Wij Geven",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Gedragsfinancieringsexpert",
+          "quote": "Niemand zou de volatiliteit van het leven moeten navigeren zonder kompas. Focuspilot is dat kompas."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "Ik zet wiskundige modellen om in meetbare mentale‑gezondheidsresultaten."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operationeel Leider · ex‑Bankier", 
+          "quote": "Ik vertaal strikte financiële discipline naar gebruikersgerichte productoperaties die mensen verantwoordelijk houden—zonder stress."
+        },
+        "vitoria": {
+          "name": "Vitoria Kambirasi",
+          "role": "Klinische Psychologie Verbinding",
+          "quote": "Therapeutische inzichten horen in ieders zak, niet alleen in klinieken."
+        },
+        "ammar": {
+          "name": "Ammar Kadip",
+          "role": "Machine Learning Ingenieur",
+          "quote": "Privacy‑behoudende AI laat ons miljoenen helpen zonder ooit hun ruwe data te zien."
+        },
+        "markus": {
+          "name": "Markus Jurtan", 
+          "role": "UX & Toegankelijkheidsontwerper",
+          "quote": "Interfaces zouden cortisolniveaus moeten verlagen voordat je zelfs maar een knop aanraakt."
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om je focus te co‑piloten?",
+      "subtitle": "Vraag vandaag vroege toegang aan en help ons mental health voor het volgende decennium opnieuw te definiëren.",
+      "getAccess": "Vroege Toegang Krijgen",
+      "watchDemo": "Demo Bekijken", 
+      "features": "Geen creditcard vereist · Altijd opzegbaar · Zwitserse privacy"
+    }
+  },
   "Common": {
     "close": "Sluiten",
     "loading": "Laden...",

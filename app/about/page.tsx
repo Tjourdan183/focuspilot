@@ -4,87 +4,88 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Lightbulb, TrendingUp, Target, Users, Award, Globe, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
+import { useTranslations } from "@/lib/i18n-context";
 
 // Data -----------------------------------------------------------------------
-const usps = [
+const getUSPs = (t: (key: string) => string) => [
   {
     icon: Target,
-    title: "All‑in‑One Mentor",
-    desc: "Road‑mapping, habit loops & emotion tracking in one place.",
+    title: t("AboutUs.features.items.mentor.title"),
+    desc: t("AboutUs.features.items.mentor.description"),
     gradient: "from-blue-500 to-purple-600"
   },
   {
     icon: Lightbulb,
-    title: "Adaptive AI Nudges",
-    desc: "Detects roadblocks and delivers just‑in‑time guidance.",
+    title: t("AboutUs.features.items.ai.title"),
+    desc: t("AboutUs.features.items.ai.description"),
     gradient: "from-emerald-500 to-teal-600"
   },
   {
     icon: ShieldCheck,
-    title: "Zero‑Compromise Security",
-    desc: "Swiss‑hosted, end‑to‑end encrypted, GDPR & HIPAA ready.",
+    title: t("AboutUs.features.items.security.title"),
+    desc: t("AboutUs.features.items.security.description"),
     gradient: "from-purple-500 to-pink-600"
   },
   {
     icon: TrendingUp,
-    title: "Measurable Results",
-    desc: "Dashboards that visualise progress & well‑being.",
+    title: t("AboutUs.features.items.results.title"),
+    desc: t("AboutUs.features.items.results.description"),
     gradient: "from-orange-500 to-red-600"
   },
 ];
 
-const values = [
-  { name: "Human First", icon: Heart },
-  { name: "Radical Clarity", icon: Target },
-  { name: "Relentless Quality", icon: Award },
-  { name: "Data Guardianship", icon: ShieldCheck },
-  { name: "Open Science", icon: Globe },
+const getValues = (t: (key: string) => string) => [
+  { name: t("AboutUs.values.items.humanFirst"), icon: Heart },
+  { name: t("AboutUs.values.items.clarity"), icon: Target },
+  { name: t("AboutUs.values.items.quality"), icon: Award },
+  { name: t("AboutUs.values.items.guardianship"), icon: ShieldCheck },
+  { name: t("AboutUs.values.items.science"), icon: Globe },
 ];
 
-const team = [
+const getTeam = (t: (key: string) => string) => [
   {
-    name: "Thomas Jourdan",
-    role: "CEO · Behavioral‑Finance Expert",
-    quote: "No one should have to navigate life's volatility without a compass. Focuspilot is that compass.",
+    name: t("AboutUs.team.members.thomas.name"),
+    role: t("AboutUs.team.members.thomas.role"),
+    quote: t("AboutUs.team.members.thomas.quote"),
     gradient: "from-blue-500 to-purple-600"
   },
   {
-    name: "Samuel Fricker",
-    role: "Data Scientist · ETH Zürich",
-    quote: "I turn mathematical models into measurable mental‑health outcomes.",
+    name: t("AboutUs.team.members.samuel.name"),
+    role: t("AboutUs.team.members.samuel.role"),
+    quote: t("AboutUs.team.members.samuel.quote"),
     gradient: "from-emerald-500 to-teal-600"
   },
   {
-    name: "Orhan Koca",
-    role: "Operations Lead · ex‑Banker",
-    quote: "I translate strict financial discipline into user‑centred product operations that keep people accountable—without stress.",
+    name: t("AboutUs.team.members.orhan.name"),
+    role: t("AboutUs.team.members.orhan.role"),
+    quote: t("AboutUs.team.members.orhan.quote"),
     gradient: "from-purple-500 to-pink-600"
   },
   {
-    name: "Vitoria Kambirasi",
-    role: "Clinical Psychology Liaison",
-    quote: "Therapeutic insights belong in everyone's pocket, not just in clinics.",
+    name: t("AboutUs.team.members.vitoria.name"),
+    role: t("AboutUs.team.members.vitoria.role"),
+    quote: t("AboutUs.team.members.vitoria.quote"),
     gradient: "from-orange-500 to-red-600"
   },
   {
-    name: "Ammar Kadip",
-    role: "Machine‑Learning Engineer",
-    quote: "Privacy‑preserving AI lets us help millions without ever seeing their raw data.",
+    name: t("AboutUs.team.members.ammar.name"),
+    role: t("AboutUs.team.members.ammar.role"),
+    quote: t("AboutUs.team.members.ammar.quote"),
     gradient: "from-cyan-500 to-blue-600"
   },
   {
-    name: "Markus Jurtan",
-    role: "UX & Accessibility Designer",
-    quote: "Interfaces should lower cortisol levels before you even tap a button.",
+    name: t("AboutUs.team.members.markus.name"),
+    role: t("AboutUs.team.members.markus.role"),
+    quote: t("AboutUs.team.members.markus.quote"),
     gradient: "from-pink-500 to-rose-600"
   },
 ];
 
-const stats = [
-  { number: "100M+", label: "People to Impact", icon: Users },
-  { number: "34%", label: "Task Completion Boost", icon: TrendingUp },
-  { number: "29%", label: "Stress Reduction", icon: Heart },
-  { number: "4 weeks", label: "To See Results", icon: Target },
+const getStats = (t: (key: string) => string) => [
+  { number: "100M+", label: t("AboutUs.stats.users"), icon: Users },
+  { number: "34%", label: t("AboutUs.stats.completion"), icon: TrendingUp },
+  { number: "29%", label: t("AboutUs.stats.stress"), icon: Heart },
+  { number: "4 weeks", label: t("AboutUs.stats.time"), icon: Target },
 ];
 
 // Animation helpers -----------------------------------------------------------
@@ -113,11 +114,12 @@ const staggerContainer = {
 };
 
 // Components ------------------------------------------------------------------
-const USPCard = ({ icon: Icon, title, desc, gradient }: { 
+const USPCard = ({ icon: Icon, title, desc, gradient, learnMore }: { 
   icon: React.ElementType; 
   title: string; 
   desc: string;
   gradient: string;
+  learnMore: string;
 }) => (
   <motion.div
     variants={fadeInUp}
@@ -133,7 +135,7 @@ const USPCard = ({ icon: Icon, title, desc, gradient }: {
       <h3 className="text-2xl font-bold text-foreground mb-4">{title}</h3>
       <p className="text-muted-foreground leading-relaxed flex-grow">{desc}</p>
       <div className="flex items-center gap-2 text-accent font-semibold group-hover:gap-3 transition-all duration-300 mt-6">
-        Learn More
+        {learnMore}
         <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
         </svg>
@@ -186,6 +188,23 @@ const StatCard = ({ number, label, icon: Icon }: {
 
 // Main ------------------------------------------------------------------------
 export default function AboutUs() {
+  const { t, isLoading } = useTranslations();
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">{t("Common.loading")}</p>
+        </div>
+      </div>
+    );
+  }
+
+  const usps = getUSPs(t);
+  const values = getValues(t);
+  const team = getTeam(t);
+  const stats = getStats(t);
   return (
     <div className="relative min-h-screen bg-background">
       <AnimatedBackground isHomePage={false} />
@@ -199,20 +218,17 @@ export default function AboutUs() {
           variants={staggerContainer}
           className="text-center space-y-8"
         >
-          <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
+                    <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
             <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-muted-foreground">About FocusPilot</span>
+            <span className="text-sm font-medium text-muted-foreground">{t("AboutUs.statusBadge")}</span>
           </motion.div>
 
           <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tight">
-            <span className="block text-foreground">Turning Inner Chaos</span>
-            <span className="block text-gradient">into Clarity</span>
+            <span className="block text-gradient">{t("AboutUs.hero.title")}</span>
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="max-w-4xl mx-auto text-xl text-muted-foreground leading-relaxed">
-            High performers, students and entrepreneurs alike often find themselves juggling productivity tools and well‑being
-                         apps that don&apos;t talk to each other. <span className="text-foreground font-semibold">FocusPilot.ai bridges that gap</span>: 
-            an AI‑powered mentor uniting science‑backed mental‑health practices with goal execution—without ever compromising your privacy.
+            {t("AboutUs.hero.subtitle")}
           </motion.p>
         </motion.section>
 
@@ -226,13 +242,13 @@ export default function AboutUs() {
         >
           <div className="text-center">
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
-              <span className="text-sm font-medium text-muted-foreground">Our Mission</span>
+              <span className="text-sm font-medium text-muted-foreground">{t("AboutUs.mission.badge")}</span>
             </motion.div>
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
-              Empower <span className="text-gradient">100 Million People</span>
+              <span className="text-gradient">{t("AboutUs.mission.title")}</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              To achieve meaningful goals while feeling mentally resilient and in control.
+              {t("AboutUs.mission.description")}
             </motion.p>
           </div>
 
@@ -256,10 +272,10 @@ export default function AboutUs() {
         >
           <div className="text-center">
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
-              <span className="text-sm font-medium text-muted-foreground">Core Features</span>
+              <span className="text-sm font-medium text-muted-foreground">{t("AboutUs.features.badge")}</span>
             </motion.div>
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
-              Why <span className="text-gradient">FocusPilot</span> Works
+              <span className="text-gradient">{t("AboutUs.features.title")}</span>
             </motion.h2>
           </div>
 
@@ -267,9 +283,9 @@ export default function AboutUs() {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8"
           >
-            {usps.map((usp, i) => (
-              <USPCard key={i} {...usp} />
-            ))}
+                       {usps.map((usp, i) => (
+             <USPCard key={i} {...usp} learnMore={t("AboutUs.features.learnMore")} />
+           ))}
           </motion.div>
         </motion.section>
 
@@ -283,10 +299,10 @@ export default function AboutUs() {
         >
           <div className="text-center">
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
-              <span className="text-sm font-medium text-muted-foreground">Our Values</span>
+              <span className="text-sm font-medium text-muted-foreground">{t("AboutUs.values.badge")}</span>
             </motion.div>
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
-              What <span className="text-gradient">Drives Us</span>
+              <span className="text-gradient">{t("AboutUs.values.title")}</span>
             </motion.h2>
           </div>
 
@@ -320,10 +336,10 @@ export default function AboutUs() {
         >
           <div className="text-center">
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6">
-              <span className="text-sm font-medium text-muted-foreground">Our Team</span>
+              <span className="text-sm font-medium text-muted-foreground">{t("AboutUs.team.badge")}</span>
             </motion.div>
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
-              Meet the Team – <span className="text-gradient">Why We Care</span>
+              <span className="text-gradient">{t("AboutUs.team.title")}</span>
             </motion.h2>
           </div>
 
@@ -348,26 +364,26 @@ export default function AboutUs() {
           <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-purple-500/5 rounded-3xl blur-2xl"></div>
           <div className="relative glass rounded-3xl p-16 shadow-2xl border border-accent/20 text-center">
             <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight">
-              Ready to <span className="text-gradient">co‑pilot your focus?</span>
+              <span className="text-gradient">{t("AboutUs.cta.title")}</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Request early access today and help us redefine mental health for the next decade.
+              {t("AboutUs.cta.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="group relative px-12 py-6 bg-foreground hover:bg-foreground/90 text-background font-bold text-lg rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105">
                 <span className="relative z-10 flex items-center gap-2">
-                  Get Early Access
+                  {t("AboutUs.cta.getAccess")}
                   <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
               </Button>
               <Button variant="outline" className="px-12 py-6 glass border-2 border-accent/30 rounded-xl font-bold text-lg transition-all duration-300 hover:border-accent">
-                Watch Demo
+                {t("AboutUs.cta.watchDemo")}
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-8">
-              No credit card required · Cancel anytime · Swiss-hosted privacy
+              {t("AboutUs.cta.features")}
             </p>
           </div>
         </motion.section>

@@ -71,6 +71,101 @@
     "privacyText": "By subscribing, you agree to our Privacy Policy.",
     "error": "Failed to subscribe. Please try again."
   },
+  "AboutUs": {
+    "statusBadge": "About FocusPilot",
+    "hero": {
+      "title": "Turning Inner Chaos into Clarity",
+      "subtitle": "High performers, students and entrepreneurs alike often find themselves juggling productivity tools and well‑being apps that don't talk to each other. FocusPilot.ai bridges that gap: an AI‑powered mentor uniting science‑backed mental‑health practices with goal execution—without ever compromising your privacy."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Empower 100 Million People",
+      "description": "To achieve meaningful goals while feeling mentally resilient and in control."
+    },
+    "stats": {
+      "users": "People to Impact",
+      "completion": "Task Completion Boost",
+      "stress": "Stress Reduction",
+      "time": "To See Results"
+    },
+    "features": {
+      "badge": "Core Features", 
+      "title": "Why FocusPilot Works",
+      "items": {
+        "mentor": {
+          "title": "All‑in‑One Mentor",
+          "description": "Road‑mapping, habit loops & emotion tracking in one place."
+        },
+        "ai": {
+          "title": "Adaptive AI Nudges", 
+          "description": "Detects roadblocks and delivers just‑in‑time guidance."
+        },
+        "security": {
+          "title": "Zero‑Compromise Security",
+          "description": "Swiss‑hosted, end‑to‑end encrypted, GDPR & HIPAA ready."
+        },
+        "results": {
+          "title": "Measurable Results",
+          "description": "Dashboards that visualise progress & well‑being."
+        }
+      },
+      "learnMore": "Learn More"
+    },
+    "values": {
+      "badge": "Our Values",
+      "title": "What Drives Us",
+      "items": {
+        "humanFirst": "Human First",
+        "clarity": "Radical Clarity", 
+        "quality": "Relentless Quality",
+        "guardianship": "Data Guardianship",
+        "science": "Open Science"
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "Meet the Team – Why We Care",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Behavioral‑Finance Expert",
+          "quote": "No one should have to navigate life's volatility without a compass. Focuspilot is that compass."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "I turn mathematical models into measurable mental‑health outcomes."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operations Lead · ex‑Banker", 
+          "quote": "I translate strict financial discipline into user‑centred product operations that keep people accountable—without stress."
+        },
+        "vitoria": {
+          "name": "Vitoria Kambirasi",
+          "role": "Clinical Psychology Liaison",
+          "quote": "Therapeutic insights belong in everyone's pocket, not just in clinics."
+        },
+        "ammar": {
+          "name": "Ammar Kadip",
+          "role": "Machine‑Learning Engineer",
+          "quote": "Privacy‑preserving AI lets us help millions without ever seeing their raw data."
+        },
+        "markus": {
+          "name": "Markus Jurtan", 
+          "role": "UX & Accessibility Designer",
+          "quote": "Interfaces should lower cortisol levels before you even tap a button."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to co‑pilot your focus?",
+      "subtitle": "Request early access today and help us redefine mental health for the next decade.",
+      "getAccess": "Get Early Access",
+      "watchDemo": "Watch Demo", 
+      "features": "No credit card required · Cancel anytime · Swiss-hosted privacy"
+    }
+  },
   "Common": {
     "close": "Close",
     "loading": "Loading...",

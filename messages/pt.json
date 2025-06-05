@@ -71,6 +71,101 @@
     "privacyText": "Ao subscrever, concorda com a nossa Política de Privacidade.",
     "error": "Falha na subscrição. Tente novamente."
   },
+  "AboutUs": {
+    "statusBadge": "Sobre o FocusPilot",
+    "hero": {
+      "title": "Do Caos Interior à Clareza",
+      "subtitle": "Profissionais de alto desempenho, estudantes e empreendedores frequentemente encontram-se a fazer malabarismos com ferramentas de produtividade e aplicações de bem‑estar que não comunicam entre si. FocusPilot.ai preenche essa lacuna: um mentor alimentado por IA que une práticas de saúde mental baseadas em ciência com execução de objetivos—sem nunca comprometer a sua privacidade."
+    },
+    "mission": {
+      "badge": "A Nossa Missão",
+      "title": "Capacitar 100 Milhões de Pessoas",
+      "description": "Para alcançar objetivos significativos enquanto se sentem mentalmente resilientes e no controlo."
+    },
+    "stats": {
+      "users": "Pessoas para Impactar",
+      "completion": "Aumento na Conclusão de Tarefas",
+      "stress": "Redução do Stress",
+      "time": "Para Ver Resultados"
+    },
+    "features": {
+      "badge": "Funcionalidades Principais", 
+      "title": "Porque é que o FocusPilot Funciona",
+      "items": {
+        "mentor": {
+          "title": "Mentor Tudo‑em‑Um",
+          "description": "Planeamento, ciclos de hábitos e rastreamento emocional num só lugar."
+        },
+        "ai": {
+          "title": "Empurrões IA Adaptativos", 
+          "description": "Deteta obstáculos e oferece orientação no momento certo."
+        },
+        "security": {
+          "title": "Segurança Sem Compromissos",
+          "description": "Hospedado na Suíça, encriptação ponta a ponta, pronto para RGPD e HIPAA."
+        },
+        "results": {
+          "title": "Resultados Mensuráveis",
+          "description": "Dashboards que visualizam progresso e bem‑estar."
+        }
+      },
+      "learnMore": "Saber Mais"
+    },
+    "values": {
+      "badge": "Os Nossos Valores",
+      "title": "O Que Nos Move",
+      "items": {
+        "humanFirst": "Humano Primeiro",
+        "clarity": "Clareza Radical", 
+        "quality": "Qualidade Implacável",
+        "guardianship": "Custódia de Dados",
+        "science": "Ciência Aberta"
+      }
+    },
+    "team": {
+      "badge": "A Nossa Equipa",
+      "title": "Conheça a Equipa – Porque Nos Importamos",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Especialista em Finanças Comportamentais",
+          "quote": "Ninguém deveria ter que navegar a volatilidade da vida sem uma bússola. Focuspilot é essa bússola."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Cientista de Dados · ETH Zürich",
+          "quote": "Eu transformo modelos matemáticos em resultados mensuráveis de saúde mental."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Líder de Operações · ex‑Banqueiro", 
+          "quote": "Eu traduzo disciplina financeira rigorosa em operações de produto centradas no utilizador que mantêm as pessoas responsáveis—sem stress."
+        },
+        "vitoria": {
+          "name": "Vitoria Kambirasi",
+          "role": "Ligação de Psicologia Clínica",
+          "quote": "Insights terapêuticos pertencem ao bolso de todos, não apenas em clínicas."
+        },
+        "ammar": {
+          "name": "Ammar Kadip",
+          "role": "Engenheiro de Machine Learning",
+          "quote": "IA que preserva privacidade permite-nos ajudar milhões sem nunca ver os seus dados brutos."
+        },
+        "markus": {
+          "name": "Markus Jurtan", 
+          "role": "Designer UX e Acessibilidade",
+          "quote": "Interfaces deveriam reduzir níveis de cortisol antes mesmo de tocar num botão."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pronto para co‑pilotar o seu foco?",
+      "subtitle": "Solicite acesso antecipado hoje e ajude-nos a redefinir saúde mental para a próxima década.",
+      "getAccess": "Obter Acesso Antecipado",
+      "watchDemo": "Ver Demo", 
+      "features": "Nenhum cartão de crédito necessário · Cancele a qualquer momento · Privacidade hospedada na Suíça"
+    }
+  },
   "Common": {
     "close": "Fechar",
     "loading": "A carregar...",

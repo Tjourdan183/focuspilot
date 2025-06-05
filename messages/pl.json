@@ -61,6 +61,101 @@
     "privacyText": "Zapisując się, akceptujesz naszą Politykę Prywatności.",
     "error": "Nie udało się zapisać. Spróbuj ponownie."
   },
+  "AboutUs": {
+    "statusBadge": "O FocusPilot",
+    "hero": {
+      "title": "Od Wewnętrznego Chaosu do Jasności",
+      "subtitle": "Osoby o wysokiej wydajności, studenci i przedsiębiorcy często żonglują narzędziami produktywności i aplikacjami wellness, które nie komunikują się między sobą. FocusPilot.ai wypełnia tę lukę: mentor napędzany przez AI, który łączy oparte na nauce praktyki zdrowia psychicznego z realizacją celów—bez narażania Twojej prywatności."
+    },
+    "mission": {
+      "badge": "Nasza Misja",
+      "title": "Wzmocnić 100 Milionów Ludzi",
+      "description": "Aby osiągać znaczące cele czując się mentalnie odpornym i panującym nad sytuacją."
+    },
+    "stats": {
+      "users": "Ludzi do Wpływania",
+      "completion": "Wzrost Ukończenia Zadań",
+      "stress": "Redukcja Stresu",
+      "time": "Aby Zobaczyć Rezultaty"
+    },
+    "features": {
+      "badge": "Kluczowe Funkcje", 
+      "title": "Dlaczego FocusPilot Działa",
+      "items": {
+        "mentor": {
+          "title": "Mentor Wszystko‑w‑Jednym",
+          "description": "Planowanie tras, pętle nawyków i śledzenie emocji w jednym miejscu."
+        },
+        "ai": {
+          "title": "Adaptacyjne Podpowiedzi AI", 
+          "description": "Wykrywa przeszkody i dostarcza wskazówki w odpowiednim czasie."
+        },
+        "security": {
+          "title": "Bezpieczeństwo Bez Kompromisów",
+          "description": "Hostowane w Szwajcarii, szyfrowanie end‑to‑end, gotowe na RODO i HIPAA."
+        },
+        "results": {
+          "title": "Mierzalne Rezultaty",
+          "description": "Panele kontrolne wizualizujące postęp i samopoczucie."
+        }
+      },
+      "learnMore": "Dowiedz Się Więcej"
+    },
+    "values": {
+      "badge": "Nasze Wartości",
+      "title": "Co Nas Napędza",
+      "items": {
+        "humanFirst": "Człowiek Przede Wszystkim",
+        "clarity": "Radykalna Jasność", 
+        "quality": "Bezwzględna Jakość",
+        "guardianship": "Opieka nad Danymi",
+        "science": "Otwarta Nauka"
+      }
+    },
+    "team": {
+      "badge": "Nasz Zespół",
+      "title": "Poznaj Zespół – Dlaczego Nam Zależy",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Ekspert Finansów Behawioralnych",
+          "quote": "Nikt nie powinien nawigować niestabilności życia bez kompasu. Focuspilot jest tym kompasem."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "Przekształcam modele matematyczne w mierzalne wyniki zdrowia psychicznego."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Kierownik Operacji · były Bankier", 
+          "quote": "Tłumaczę ścisłą dyscyplinę finansową na operacje produktowe zorientowane na użytkownika, które utrzymują ludzi odpowiedzialnych—bez stresu."
+        },
+        "vitoria": {
+          "name": "Vitoria Kambirasi",
+          "role": "Łącznik Psychologii Klinicznej",
+          "quote": "Terapeutyczne spostrzeżenia należą do kieszeni każdego, nie tylko do klinik."
+        },
+        "ammar": {
+          "name": "Ammar Kadip",
+          "role": "Inżynier Machine Learning",
+          "quote": "AI zachowująca prywatność pozwala nam pomagać milionom bez oglądania ich surowych danych."
+        },
+        "markus": {
+          "name": "Markus Jurtan", 
+          "role": "Designer UX i Dostępności",
+          "quote": "Interfejsy powinny obniżać poziom kortyzolu zanim nawet dotkniesz przycisku."
+        }
+      }
+    },
+    "cta": {
+      "title": "Gotowy na współpilotowanie swojego skupienia?",
+      "subtitle": "Poproś o wczesny dostęp już dziś i pomóż nam przedefiniować zdrowie psychiczne na następną dekadę.",
+      "getAccess": "Uzyskaj Wczesny Dostęp",
+      "watchDemo": "Zobacz Demo", 
+      "features": "Nie jest wymagana karta kredytowa · Anuluj w dowolnym momencie · Prywatność hostowana w Szwajcarii"
+    }
+  },
   "Common": {
     "close": "Zamknij",
     "loading": "Ładowanie...",

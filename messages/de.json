@@ -71,6 +71,101 @@
     "privacyText": "Durch das Abonnieren stimmen Sie unserer Datenschutzrichtlinie zu.",
     "error": "Abonnement fehlgeschlagen. Bitte versuchen Sie es erneut."
   },
+  "AboutUs": {
+    "statusBadge": "Über FocusPilot",
+    "hero": {
+      "title": "Vom inneren Chaos zur Klarheit",
+      "subtitle": "Leistungsträger, Studenten und Unternehmer finden sich oft beim Jonglieren von Produktivitätstools und Wellness‑Apps wieder, die nicht miteinander kommunizieren. FocusPilot.ai schließt diese Lücke: ein KI‑gestützter Mentor, der wissenschaftlich fundierte Mental‑Health‑Praktiken mit Zielerreichung vereint—ohne jemals Ihre Privatsphäre zu gefährden."
+    },
+    "mission": {
+      "badge": "Unsere Mission",
+      "title": "100 Millionen Menschen stärken",
+      "description": "Bedeutungsvolle Ziele zu erreichen und sich dabei mental widerstandsfähig und in Kontrolle zu fühlen."
+    },
+    "stats": {
+      "users": "Menschen zu unterstützen",
+      "completion": "Aufgabenerledigung steigern",
+      "stress": "Stress reduzieren",
+      "time": "Bis Ergebnisse sichtbar werden"
+    },
+    "features": {
+      "badge": "Kernfunktionen", 
+      "title": "Warum FocusPilot funktioniert",
+      "items": {
+        "mentor": {
+          "title": "All‑in‑One Mentor",
+          "description": "Zielsetzung, Gewohnheitsschleifen & Emotionstracking an einem Ort."
+        },
+        "ai": {
+          "title": "Adaptive KI‑Stupser", 
+          "description": "Erkennt Hindernisse und liefert Orientierung zum richtigen Zeitpunkt."
+        },
+        "security": {
+          "title": "Kompromisslose Sicherheit",
+          "description": "Schweizer Hosting, Ende‑zu‑Ende‑Verschlüsselung, GDPR & HIPAA‑bereit."
+        },
+        "results": {
+          "title": "Messbare Ergebnisse",
+          "description": "Dashboards, die Fortschritt & Wohlbefinden visualisieren."
+        }
+      },
+      "learnMore": "Mehr erfahren"
+    },
+    "values": {
+      "badge": "Unsere Werte",
+      "title": "Was uns antreibt",
+      "items": {
+        "humanFirst": "Mensch zuerst",
+        "clarity": "Radikale Klarheit", 
+        "quality": "Kompromisslose Qualität",
+        "guardianship": "Datenschutz‑Verantwortung",
+        "science": "Offene Wissenschaft"
+      }
+    },
+    "team": {
+      "badge": "Unser Team",
+      "title": "Lernen Sie das Team kennen – Warum uns das wichtig ist",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Behavioral‑Finance‑Experte",
+          "quote": "Niemand sollte die Volatilität des Lebens ohne Kompass navigieren müssen. Focuspilot ist dieser Kompass."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Datenwissenschaftler · ETH Zürich",
+          "quote": "Ich verwandle mathematische Modelle in messbare Mental‑Health‑Ergebnisse."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operations‑Leiter · ex‑Banker", 
+          "quote": "Ich übersetze strenge Finanzdisziplin in nutzerzentrierte Produktoperationen, die Menschen verantwortlich halten—ohne Stress."
+        },
+        "vitoria": {
+          "name": "Vitoria Kambirasi",
+          "role": "Klinische Psychologie‑Verbindung",
+          "quote": "Therapeutische Erkenntnisse gehören in jedermanns Hosentasche, nicht nur in Kliniken."
+        },
+        "ammar": {
+          "name": "Ammar Kadip",
+          "role": "Machine‑Learning‑Ingenieur",
+          "quote": "Privatsphäre‑wahrende KI lässt uns Millionen helfen, ohne jemals ihre Rohdaten zu sehen."
+        },
+        "markus": {
+          "name": "Markus Jurtan", 
+          "role": "UX & Barrierefreiheits‑Designer",
+          "quote": "Benutzeroberflächen sollten den Cortisol‑Spiegel senken, bevor Sie überhaupt einen Button antippen."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren Fokus zu co‑pilotieren?",
+      "subtitle": "Fordern Sie heute frühen Zugang an und helfen Sie uns, Mental Health für das nächste Jahrzehnt neu zu definieren.",
+      "getAccess": "Frühen Zugang erhalten",
+      "watchDemo": "Demo ansehen", 
+      "features": "Keine Kreditkarte erforderlich · Jederzeit kündbar · Schweizer Datenschutz"
+    }
+  },
   "Common": {
     "close": "Schließen",
     "loading": "Laden...",
