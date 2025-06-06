@@ -45,26 +45,26 @@ const getValues = (t: (key: string) => string) => [
 const getTeam = (t: (key: string) => string) => [
   {
     name: t("AboutUs.team.members.thomas.name"),
-    role: t("AboutUs.team.members.thomas.role"),
+    role: "Founder & Trading-Experte",
     quote: t("AboutUs.team.members.thomas.quote"),
     gradient: "from-blue-500 to-purple-600"
   },
   {
     name: t("AboutUs.team.members.samuel.name"),
-    role: t("AboutUs.team.members.samuel.role"),
+    role: "ETH Student Mathematik",
     quote: t("AboutUs.team.members.samuel.quote"),
     gradient: "from-emerald-500 to-teal-600"
   },
   {
     name: t("AboutUs.team.members.orhan.name"),
-    role: t("AboutUs.team.members.orhan.role"),
+    role: "Banker",
     quote: t("AboutUs.team.members.orhan.quote"),
     gradient: "from-purple-500 to-pink-600"
   },
   {
     name: t("AboutUs.team.members.vitoria.name"),
-    role: t("AboutUs.team.members.vitoria.role"),
-    quote: t("AboutUs.team.members.vitoria.quote"),
+    role: "CMO | Global Speaker | AI Solutions Expert",
+    quote: "Strategic business manager with 15+ years of global and EMEA experience in FMCG and Life Science. Innovative, pragmatic, team builder, consistently delivering on all targets and goals. Fluency in 5 languages.",
     gradient: "from-orange-500 to-red-600"
   },
   {
@@ -75,7 +75,7 @@ const getTeam = (t: (key: string) => string) => [
   },
   {
     name: t("AboutUs.team.members.markus.name"),
-    role: t("AboutUs.team.members.markus.role"),
+    role: "Spezialist Finanz- und Planungsprozessen",
     quote: t("AboutUs.team.members.markus.quote"),
     gradient: "from-pink-500 to-rose-600"
   },
