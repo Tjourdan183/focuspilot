@@ -1,10 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, Lightbulb, TrendingUp, Target, Users, Award, Globe, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 import { useTranslations } from "@/lib/i18n-context";
+import { z } from "zod";
+import dynamic from "next/dynamic";
+import Image from 'next/image';
+import { Skeleton } from "@/components/ui/skeleton";
 
 // Data -----------------------------------------------------------------------
 const getUSPs = (t: (key: string) => string) => [
@@ -144,7 +148,7 @@ const USPCard = ({ icon: Icon, title, desc, gradient, learnMore }: {
   </motion.div>
 );
 
-const TeamCard = ({ name, role, quote, gradient }: { 
+const TeamCard = React.memo(({ name, role, quote, gradient }: { 
   name: string; 
   role: string; 
   quote: string;
@@ -168,7 +172,7 @@ const TeamCard = ({ name, role, quote, gradient }: {
        </blockquote>
     </div>
   </motion.div>
-);
+));
 
 const StatCard = ({ number, label, icon: Icon }: {
   number: string;
@@ -186,9 +190,19 @@ const StatCard = ({ number, label, icon: Icon }: {
   </motion.div>
 );
 
+// Dynamic Imports für schwere Komponenten
+const TeamSection = dynamic(() => import('./TeamSection'), {
+  loading: () => <TeamSkeleton />
+})
+
 // Main ------------------------------------------------------------------------
 export default function AboutUs() {
   const { t, isLoading } = useTranslations();
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPopup(true), 60000); // 1 Min statt 20 Sek
+  }, []);
 
   if (isLoading) {
     return (
