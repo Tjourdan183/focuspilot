@@ -1,0 +1,46 @@
+Privacy Policy
+ This Privacy Policy explains how Nexoventis AG ("we", "us", or "our"), located at Blumenrain 45, 2503
+ Biel/Bienne, Switzerland, and represented by Thomas Jourdan, processes personal data as the data
+ controller when you use the website 
+https://focuspilot.net. For any data protection inquiries, please
+ contact us at 
+support@focuspilot.net. Our designated Data Protection Officer is Mr. Samuel Fricker.
+ 1. Purpose of the Website
+ This website is intended to provide information about our product and business and to facilitate
+ communication with interested parties and potential investors.
+ 2. Categories of Personal Data Collected
+ We may collect and process the following categories of personal data: - IP address, device type, browser
+ data, and user behavior (via Google Analytics) - Technical log files, including access timestamps, HTTP
+ status codes, and accessed URLs - Cookies used for statistical analysis and to ensure technical
+ functionality
+ 3. Purposes of Data Processing
+ We process personal data for the following purposes: - To analyze website performance (Art. 31(1)(f)
+ revFADP) - To communicate with website users (Art. 31(2)(a) revFADP) - To enhance product visibility - To
+ maintain investor relations
+ 4. Legal Basis for Processing
+ Data is processed on the basis of our legitimate interests pursuant to Art. 31(1)(f) revFADP, and, where
+ applicable, based on your consent in accordance with Art. 31(2)(a) revFADP.
+ 5. Cookies and Consent
+ We only use cookies after obtaining your explicit consent via our cookie banner. You may withdraw or
+ modify your consent at any time by adjusting your browser settings.
+ 6. Third-Party Services and International Transfers
+ We use Google Analytics. All data is processed exclusively on servers located in Switzerland or the
+ European Economic Area (EEA). No personal data is transferred to countries outside of these
+ jurisdictions.
+ 7. Data Retention
+ We retain analytics-related personal data for up to 10 years unless you request its earlier deletion.
+ 8. Your Data Protection Rights
+You have the following rights: - To request access to your personal data - To request correction of
+ inaccurate or incomplete data - To request deletion of your data - To object to or restrict the processing
+ of your data - To lodge a complaint with the competent supervisory authority
+ 9. Data Security
+ We implement appropriate technical and organizational measures to protect your data, including SSL
+ encryption, access restrictions, and secured server infrastructure.
+ 10. Amendments to This Privacy Policy
+ We may update this Privacy Policy from time to time. Any changes will be published on this page. Last
+ updated: 12.06.2025.
+ Contact Nexoventis AG
+ Blumenrain 45
+ 2503 Biel/Bienne
+ Email: 
+support@focuspilot.net
