@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
-import { ChevronDownIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
-import { locales, languageNames, languageFlags, Locale } from '@/lib/i18n';
-import { useTranslations } from '@/lib/i18n-context';
+import React, { useState, useRef, useEffect } from "react";
+import { ChevronDown, Globe } from "lucide-react";
+import { languageNames, languageFlags, Locale } from "@/lib/i18n";
+import { useTranslations } from "@/lib/i18n-context";
 
 export default function LanguageSwitcher() {
   const { locale, changeLocale } = useTranslations();
@@ -40,12 +40,12 @@ export default function LanguageSwitcher() {
         className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-secondary/20 transition-colors duration-200 text-muted-foreground hover:text-foreground"
         aria-label="Select language"
       >
-        <GlobeAltIcon className="w-5 h-5" />
+        <Globe className="w-5 h-5" />
         <span className="text-lg">{languageFlags[locale]}</span>
         <span className="hidden sm:inline text-sm font-medium">
           {languageNames[locale]}
         </span>
-        <ChevronDownIcon 
+        <ChevronDown 
           className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
         />
       </button>
@@ -54,7 +54,7 @@ export default function LanguageSwitcher() {
         <div className="absolute top-full right-0 mt-2 w-80 bg-background border border-border rounded-xl shadow-xl z-50 max-h-96 overflow-y-auto">
           <div className="p-3">
             <h3 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
-              <GlobeAltIcon className="w-4 h-4" />
+              <Globe className="w-4 h-4" />
               Select Language
             </h3>
             

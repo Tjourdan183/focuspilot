@@ -71,10 +71,199 @@
     "privacyText": "By subscribing, you agree to our Privacy Policy.",
     "error": "Failed to subscribe. Please try again."
   },
+  "AboutUs": {
+    "statusBadge": "About FocusPilot",
+    "hero": {
+      "title": "Turning Inner Chaos into Clarity",
+      "subtitle": "High performers, students and entrepreneurs alike often find themselves juggling productivity tools and well‑being apps that don't talk to each other. FocusPilot.ai bridges that gap: an AI‑powered mentor uniting science‑backed mental‑health practices with goal execution—without ever compromising your privacy."
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Empower 100 Million People",
+      "description": "To achieve meaningful goals while feeling mentally resilient and in control."
+    },
+    "stats": {
+      "users": "People to Impact",
+      "completion": "Task Completion Boost",
+      "stress": "Stress Reduction",
+      "time": "To See Results"
+    },
+    "features": {
+      "badge": "Core Features", 
+      "title": "Why FocusPilot Works",
+      "items": {
+        "mentor": {
+          "title": "All‑in‑One Mentor",
+          "description": "Road‑mapping, habit loops & emotion tracking in one place."
+        },
+        "ai": {
+          "title": "Adaptive AI Nudges", 
+          "description": "Detects roadblocks and delivers just‑in‑time guidance."
+        },
+        "security": {
+          "title": "Zero‑Compromise Security",
+          "description": "Swiss‑hosted, end‑to‑end encrypted, GDPR & HIPAA ready."
+        },
+        "results": {
+          "title": "Measurable Results",
+          "description": "Dashboards that visualise progress & well‑being."
+        }
+      },
+      "learnMore": "Learn More"
+    },
+    "values": {
+      "badge": "Our Values",
+      "title": "What Drives Us",
+      "items": {
+        "humanFirst": "Human First",
+        "clarity": "Radical Clarity", 
+        "quality": "Relentless Quality",
+        "guardianship": "Data Guardianship",
+        "science": "Open Science"
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "Meet the Team – Why We Care",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Behavioral‑Finance Expert",
+          "quote": "No one should have to navigate life's volatility without a compass. Focuspilot is that compass."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "I turn mathematical models into measurable mental‑health outcomes."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operations Lead · ex‑Banker", 
+          "quote": "I translate strict financial discipline into user‑centred product operations that keep people accountable—without stress."
+        },
+        "vitoria": {
+          "name": "Vittoria Gambirasi",
+          "role": "Clinical Psychology Liaison",
+          "quote": "Therapeutic insights belong in everyone's pocket, not just in clinics."
+        },
+        "ammar": {
+          "name": "Ammar Khatib",
+          "role": "Machine‑Learning Engineer",
+          "quote": "Privacy‑preserving AI lets us help millions without ever seeing their raw data."
+        },
+        "markus": {
+          "name": "Markus Jourdan",
+          "role": "UX & Accessibility Designer",
+          "quote": "Interfaces should lower cortisol levels before you even tap a button."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to co‑pilot your focus?",
+      "subtitle": "Request early access today and help us redefine mental health for the next decade.",
+      "getAccess": "Get Early Access",
+      "watchDemo": "Watch Demo", 
+      "features": "No credit card required · Cancel anytime · Swiss-hosted privacy"
+    }
+  },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to enhance your experience, analyze website traffic, and provide personalized content. Your privacy matters to us.",
+      "acceptAll": "Accept All",
+      "acceptNecessary": "Necessary Only",
+      "moreInfo": "Learn more in our",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "settings": {
+      "title": "Cookie Preferences",
+      "subtitle": "Manage your cookie settings and control how we use your data.",
+      "required": "Required",
+      "examples": "Examples",
+      "savePreferences": "Save Preferences",
+      "acceptAll": "Accept All",
+      "canChange": "You can change these settings anytime in our",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Necessary Cookies",
+        "description": "Essential cookies required for basic website functionality, security, and user authentication.",
+        "examples": "Session cookies, authentication tokens, security cookies"
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "Help us understand how visitors interact with our website to improve user experience.",
+        "examples": "Google Analytics, page views, user behavior tracking"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Used to deliver personalized advertisements and measure advertising campaign effectiveness.",
+        "examples": "Facebook Pixel, advertising cookies, conversion tracking"
+      },
+      "personalization": {
+        "title": "Personalization Cookies",
+        "description": "Remember your preferences and provide customized content based on your usage.",
+        "examples": "Language preferences, theme settings, personalized recommendations"
+      }
+    }
+  },
   "Common": {
     "close": "Close",
     "loading": "Loading...",
     "error": "Error",
     "success": "Success"
+  },
+  "Impressum": {
+    "backToHome": "Back to Home",
+    "badge": "Legal Information",
+    "title": "Imprint",
+    "subtitle": "Legal information according to Swiss law and EU-GDPR",
+    "company": {
+      "title": "Company Information",
+      "details": "Company Details",
+      "contact": "Contact Information"
+    },
+    "legal": {
+      "title": "Legal Information",
+      "registration": "Registration",
+      "registerNumber": "Commercial Register Number",
+      "taxNumber": "UID Number",
+      "court": "Register Court",
+      "courtLocation": "Commercial Register Office Zurich",
+      "management": "Management",
+      "ceo": "Chief Executive Officer",
+      "cto": "Chief Technology Officer",
+      "operations": "Operations Manager"
+    },
+    "content": {
+      "title": "Responsible for Content",
+      "responsible": "Responsible for the content of this website according to § 55 para. 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "liability": {
+        "title": "Liability for Content",
+        "content": "As a service provider, we are responsible for our own content on these pages according to general laws pursuant to § 7 para. 1 TMG. According to §§ 8 to 10 TMG, however, we as a service provider are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+      },
+      "links": {
+        "title": "Liability for Links",
+        "content": "Our offer contains links to external third-party websites over whose content we have no influence. Therefore, we cannot assume any guarantee for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+      },
+      "copyright": {
+        "title": "Copyright",
+        "content": "The content and works created by the site operators on these pages are subject to German copyright law. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator."
+      }
+    },
+    "links": {
+      "title": "Additional Information",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Settings"
+    },
+    "lastUpdated": "Last Updated"
+  },
+  "Footer": {
+    "impressum": "Imprint"
   }
 } 

@@ -71,10 +71,199 @@
     "privacyText": "Iscrivendoti, accetti la nostra Politica sulla Privacy.",
     "error": "Iscrizione fallita. Riprova."
   },
+  "AboutUs": {
+    "statusBadge": "Chi siamo FocusPilot",
+    "hero": {
+      "title": "Dal Caos Interiore alla Chiarezza",
+      "subtitle": "I performer ad alto livello, studenti e imprenditori spesso si trovano a destreggiarsi tra strumenti di produttività e app per il benessere che non comunicano tra loro. FocusPilot.ai colma questa lacuna: un mentor alimentato dall'AI che unisce pratiche di salute mentale basate sulla scienza con l'esecuzione di obiettivi—senza mai compromettere la tua privacy."
+    },
+    "mission": {
+      "badge": "La Nostra Missione",
+      "title": "Potenziare 100 Milioni di Persone",
+      "description": "Per raggiungere obiettivi significativi sentendosi mentalmente resilienti e in controllo."
+    },
+    "stats": {
+      "users": "Persone da Impattare",
+      "completion": "Aumento Completamento Attività",
+      "stress": "Riduzione dello Stress",
+      "time": "Per Vedere i Risultati"
+    },
+    "features": {
+      "badge": "Funzionalità Chiave", 
+      "title": "Perché FocusPilot Funziona",
+      "items": {
+        "mentor": {
+          "title": "Mentor Tutto‑in‑Uno",
+          "description": "Pianificazione, loop di abitudini e tracciamento emotivo in un unico posto."
+        },
+        "ai": {
+          "title": "Suggerimenti AI Adattivi", 
+          "description": "Rileva ostacoli e fornisce orientamento al momento giusto."
+        },
+        "security": {
+          "title": "Sicurezza Senza Compromessi",
+          "description": "Ospitato in Svizzera, crittografato end‑to‑end, pronto per GDPR e HIPAA."
+        },
+        "results": {
+          "title": "Risultati Misurabili",
+          "description": "Dashboard che visualizzano progresso e benessere."
+        }
+      },
+      "learnMore": "Scopri di Più"
+    },
+    "values": {
+      "badge": "I Nostri Valori",
+      "title": "Quello che Ci Spinge",
+      "items": {
+        "humanFirst": "Umano Prima di Tutto",
+        "clarity": "Chiarezza Radicale", 
+        "quality": "Qualità Inarrestabile",
+        "guardianship": "Custodia dei Dati",
+        "science": "Scienza Aperta"
+      }
+    },
+    "team": {
+      "badge": "Il Nostro Team",
+      "title": "Incontra il Team – Perché Ci Importa",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Esperto di Finanza Comportamentale",
+          "quote": "Nessuno dovrebbe dover navigare la volatilità della vita senza una bussola. Focuspilot è quella bussola."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "Trasformo modelli matematici in risultati misurabili di salute mentale."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Responsabile Operazioni · ex‑Banchiere", 
+          "quote": "Traduco la disciplina finanziaria rigorosa in operazioni prodotto centrate sull'utente che mantengono le persone responsabili—senza stress."
+        },
+        "vitoria": {
+          "name": "Vittoria Gambirasi",
+          "role": "Collegamento Psicologia Clinica",
+          "quote": "Gli insights terapeutici appartengono alla tasca di tutti, non solo nelle cliniche."
+        },
+        "ammar": {
+          "name": "Ammar Khatib",
+          "role": "Ingegnere Machine Learning",
+          "quote": "L'AI che preserva la privacy ci consente di aiutare milioni senza mai vedere i loro dati grezzi."
+        },
+        "markus": {
+          "name": "Markus Jourdan",
+          "role": "Designer UX e Accessibilità",
+          "quote": "Le interfacce dovrebbero abbassare i livelli di cortisolo prima ancora che tocchi un pulsante."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pronto a co‑pilotare il tuo focus?",
+      "subtitle": "Richiedi accesso anticipato oggi e aiutaci a ridefinire la salute mentale per il prossimo decennio.",
+      "getAccess": "Ottieni Accesso Anticipato",
+      "watchDemo": "Guarda Demo", 
+      "features": "Nessuna carta di credito richiesta · Cancella in qualsiasi momento · Privacy ospitata in Svizzera"
+    }
+  },
+  "CookieConsent": {
+    "banner": {
+      "title": "Impostazioni Cookie",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza, analizzare il traffico del sito e fornire contenuti personalizzati. La tua privacy ci sta a cuore.",
+      "acceptAll": "Accetta Tutto",
+      "acceptNecessary": "Solo Necessari",
+      "moreInfo": "Scopri di più nella nostra",
+      "privacyPolicy": "Politica sulla Privacy"
+    },
+    "settings": {
+      "title": "Preferenze Cookie",
+      "subtitle": "Gestisci le tue impostazioni dei cookie e controlla come utilizziamo i tuoi dati.",
+      "required": "Richiesto",
+      "examples": "Esempi",
+      "savePreferences": "Salva Preferenze",
+      "acceptAll": "Accetta Tutto",
+      "canChange": "Puoi modificare queste impostazioni in qualsiasi momento nella nostra",
+      "privacyPolicy": "Politica sulla Privacy"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookie Necessari",
+        "description": "Cookie essenziali richiesti per le funzionalità di base del sito web, sicurezza e autenticazione degli utenti.",
+        "examples": "Cookie di sessione, token di autenticazione, cookie di sicurezza"
+      },
+      "analytics": {
+        "title": "Cookie Analitici",
+        "description": "Ci aiutano a capire come i visitatori interagiscono con il nostro sito web per migliorare l'esperienza utente.",
+        "examples": "Google Analytics, visualizzazioni di pagina, tracciamento del comportamento utente"
+      },
+      "marketing": {
+        "title": "Cookie di Marketing",
+        "description": "Utilizzati per fornire pubblicità personalizzate e misurare l'efficacia delle campagne pubblicitarie.",
+        "examples": "Facebook Pixel, cookie pubblicitari, tracciamento delle conversioni"
+      },
+      "personalization": {
+        "title": "Cookie di Personalizzazione",
+        "description": "Ricordano le tue preferenze e forniscono contenuti personalizzati basati sul tuo utilizzo.",
+        "examples": "Preferenze linguistiche, impostazioni del tema, raccomandazioni personalizzate"
+      }
+    }
+  },
   "Common": {
     "close": "Chiudi",
     "loading": "Caricamento...",
     "error": "Errore",
     "success": "Successo"
+  },
+  "Impressum": {
+    "backToHome": "Torna alla home",
+    "badge": "Informazioni legali",
+    "title": "Impressum",
+    "subtitle": "Informazioni legali secondo il diritto svizzero e il GDPR dell'UE",
+    "company": {
+      "title": "Informazioni aziendali",
+      "details": "Dettagli aziendali",
+      "contact": "Informazioni di contatto"
+    },
+    "legal": {
+      "title": "Informazioni legali",
+      "registration": "Registrazione",
+      "registerNumber": "Numero di registro commerciale",
+      "taxNumber": "Numero UID",
+      "court": "Tribunale di registrazione",
+      "courtLocation": "Ufficio del registro commerciale di Zurigo",
+      "management": "Direzione",
+      "ceo": "Amministratore delegato",
+      "cto": "Direttore tecnico",
+      "operations": "Direttore operativo"
+    },
+    "content": {
+      "title": "Responsabile del contenuto",
+      "responsible": "Responsabile del contenuto di questo sito web secondo il § 55 comma 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Esclusione di responsabilità",
+      "liability": {
+        "title": "Responsabilità per i contenuti",
+        "content": "Come fornitore di servizi, siamo responsabili del nostro contenuto su queste pagine secondo le leggi generali ai sensi del § 7 comma 1 TMG. Secondo i §§ 8-10 TMG, tuttavia, noi come fornitore di servizi non siamo obbligati a monitorare le informazioni di terze parti trasmesse o memorizzate o a indagare su circostanze che indicano attività illegali."
+      },
+      "links": {
+        "title": "Responsabilità per i collegamenti",
+        "content": "La nostra offerta contiene collegamenti a siti web esterni di terze parti sui cui contenuti non abbiamo alcuna influenza. Pertanto, non possiamo assumere alcuna garanzia per questo contenuto esterno. Il rispettivo fornitore o operatore delle pagine è sempre responsabile del contenuto delle pagine collegate."
+      },
+      "copyright": {
+        "title": "Diritti d'autore",
+        "content": "I contenuti e le opere create dai gestori del sito su queste pagine sono soggetti al diritto d'autore tedesco. La duplicazione, elaborazione, distribuzione e qualsiasi tipo di sfruttamento al di fuori dei limiti del diritto d'autore richiedono il consenso scritto del rispettivo autore o creatore."
+      }
+    },
+    "links": {
+      "title": "Informazioni aggiuntive",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "cookies": "Impostazioni cookie"
+    },
+    "lastUpdated": "Ultimo aggiornamento"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 

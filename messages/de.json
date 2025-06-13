@@ -71,10 +71,199 @@
     "privacyText": "Durch das Abonnieren stimmen Sie unserer Datenschutzrichtlinie zu.",
     "error": "Abonnement fehlgeschlagen. Bitte versuchen Sie es erneut."
   },
+  "AboutUs": {
+    "statusBadge": "Über FocusPilot",
+    "hero": {
+      "title": "Vom inneren Chaos zur Klarheit",
+      "subtitle": "Leistungsträger, Studenten und Unternehmer finden sich oft beim Jonglieren von Produktivitätstools und Wellness‑Apps wieder, die nicht miteinander kommunizieren. FocusPilot.ai schließt diese Lücke: ein KI‑gestützter Mentor, der wissenschaftlich fundierte Mental‑Health‑Praktiken mit Zielerreichung vereint—ohne jemals Ihre Privatsphäre zu gefährden."
+    },
+    "mission": {
+      "badge": "Unsere Mission",
+      "title": "100 Millionen Menschen stärken",
+      "description": "Bedeutungsvolle Ziele zu erreichen und sich dabei mental widerstandsfähig und in Kontrolle zu fühlen."
+    },
+    "stats": {
+      "users": "Menschen zu unterstützen",
+      "completion": "Aufgabenerledigung steigern",
+      "stress": "Stress reduzieren",
+      "time": "Bis Ergebnisse sichtbar werden"
+    },
+    "features": {
+      "badge": "Kernfunktionen", 
+      "title": "Warum FocusPilot funktioniert",
+      "items": {
+        "mentor": {
+          "title": "All‑in‑One Mentor",
+          "description": "Zielsetzung, Gewohnheitsschleifen & Emotionstracking an einem Ort."
+        },
+        "ai": {
+          "title": "Adaptive KI‑Stupser", 
+          "description": "Erkennt Hindernisse und liefert Orientierung zum richtigen Zeitpunkt."
+        },
+        "security": {
+          "title": "Kompromisslose Sicherheit",
+          "description": "Schweizer Hosting, Ende‑zu‑Ende‑Verschlüsselung, GDPR & HIPAA‑bereit."
+        },
+        "results": {
+          "title": "Messbare Ergebnisse",
+          "description": "Dashboards, die Fortschritt & Wohlbefinden visualisieren."
+        }
+      },
+      "learnMore": "Mehr erfahren"
+    },
+    "values": {
+      "badge": "Unsere Werte",
+      "title": "Was uns antreibt",
+      "items": {
+        "humanFirst": "Mensch zuerst",
+        "clarity": "Radikale Klarheit", 
+        "quality": "Kompromisslose Qualität",
+        "guardianship": "Datenschutz‑Verantwortung",
+        "science": "Offene Wissenschaft"
+      }
+    },
+    "team": {
+      "badge": "Unser Team",
+      "title": "Lernen Sie das Team kennen – Warum uns das wichtig ist",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Behavioral‑Finance‑Experte",
+          "quote": "Niemand sollte die Volatilität des Lebens ohne Kompass navigieren müssen. Focuspilot ist dieser Kompass."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Datenwissenschaftler · ETH Zürich",
+          "quote": "Ich verwandle mathematische Modelle in messbare Mental‑Health‑Ergebnisse."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operations‑Leiter · ex‑Banker", 
+          "quote": "Ich übersetze strenge Finanzdisziplin in nutzerzentrierte Produktoperationen, die Menschen verantwortlich halten—ohne Stress."
+        },
+        "vitoria": {
+          "name": "Vittoria Gambirasi",
+          "role": "Klinische Psychologie‑Verbindung",
+          "quote": "Therapeutische Erkenntnisse gehören in jedermanns Hosentasche, nicht nur in Kliniken."
+        },
+        "ammar": {
+          "name": "Ammar Khatib",
+          "role": "Machine‑Learning‑Ingenieur",
+          "quote": "Privatsphäre‑wahrende KI lässt uns Millionen helfen, ohne jemals ihre Rohdaten zu sehen."
+        },
+        "markus": {
+          "name": "Markus Jourdan",
+          "role": "UX & Barrierefreiheits‑Designer",
+          "quote": "Benutzeroberflächen sollten den Cortisol‑Spiegel senken, bevor Sie überhaupt einen Button antippen."
+        }
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren Fokus zu co‑pilotieren?",
+      "subtitle": "Fordern Sie heute frühen Zugang an und helfen Sie uns, Mental Health für das nächste Jahrzehnt neu zu definieren.",
+      "getAccess": "Frühen Zugang erhalten",
+      "watchDemo": "Demo ansehen", 
+      "features": "Keine Kreditkarte erforderlich · Jederzeit kündbar · Schweizer Datenschutz"
+    }
+  },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie-Einstellungen",
+      "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, Website-Traffic zu analysieren und personalisierte Inhalte bereitzustellen. Ihre Privatsphäre ist uns wichtig.",
+      "acceptAll": "Alle akzeptieren",
+      "acceptNecessary": "Nur notwendige",
+      "moreInfo": "Erfahren Sie mehr in unserer",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
+    "settings": {
+      "title": "Cookie-Präferenzen",
+      "subtitle": "Verwalten Sie Ihre Cookie-Einstellungen und kontrollieren Sie, wie wir Ihre Daten verwenden.",
+      "required": "Erforderlich",
+      "examples": "Beispiele",
+      "savePreferences": "Einstellungen speichern",
+      "acceptAll": "Alle akzeptieren",
+      "canChange": "Sie können diese Einstellungen jederzeit in unserer",
+      "privacyPolicy": "Datenschutzerklärung"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Notwendige Cookies",
+        "description": "Wesentliche Cookies, die für grundlegende Website-Funktionen, Sicherheit und Benutzerauthentifizierung erforderlich sind.",
+        "examples": "Session-Cookies, Authentifizierungs-Token, Sicherheits-Cookies"
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, um die Benutzererfahrung zu verbessern.",
+        "examples": "Google Analytics, Seitenaufrufe, Nutzerverhalten-Tracking"
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Werden verwendet, um personalisierte Werbung zu liefern und die Wirksamkeit von Werbekampagnen zu messen.",
+        "examples": "Facebook Pixel, Werbe-Cookies, Conversion-Tracking"
+      },
+      "personalization": {
+        "title": "Personalisierungs-Cookies",
+        "description": "Merken sich Ihre Präferenzen und bieten angepasste Inhalte basierend auf Ihrer Nutzung.",
+        "examples": "Spracheinstellungen, Theme-Einstellungen, personalisierte Empfehlungen"
+      }
+    }
+  },
   "Common": {
     "close": "Schließen",
     "loading": "Laden...",
     "error": "Fehler",
     "success": "Erfolg"
+  },
+  "Impressum": {
+    "backToHome": "Zurück zur Startseite",
+    "badge": "Rechtliche Informationen",
+    "title": "Impressum",
+    "subtitle": "Rechtliche Angaben gemäß Schweizer Recht und EU-DSGVO",
+    "company": {
+      "title": "Unternehmensangaben",
+      "details": "Firmendetails",
+      "contact": "Kontaktinformationen"
+    },
+    "legal": {
+      "title": "Rechtliche Informationen",
+      "registration": "Registrierung",
+      "registerNumber": "Handelsregisternummer",
+      "taxNumber": "UID-Nummer",
+      "court": "Registergericht",
+      "courtLocation": "Handelsregisteramt Zürich",
+      "management": "Geschäftsführung",
+      "ceo": "Geschäftsführer",
+      "cto": "Technischer Leiter",
+      "operations": "Betriebsleiter"
+    },
+    "content": {
+      "title": "Verantwortlich für den Inhalt",
+      "responsible": "Verantwortlich für den Inhalt dieser Website nach § 55 Abs. 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "liability": {
+        "title": "Haftung für Inhalte",
+        "content": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+      },
+      "links": {
+        "title": "Haftung für Links",
+        "content": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+      },
+      "copyright": {
+        "title": "Urheberrecht",
+        "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+      }
+    },
+    "links": {
+      "title": "Weitere Informationen",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookie-Einstellungen"
+    },
+    "lastUpdated": "Letzte Aktualisierung"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 

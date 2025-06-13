@@ -82,7 +82,9 @@ export default function TestimonialsMarquee() {
                       <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="mb-4 text-gray-600">
+                    <blockquote>&ldquo;{testimonial.quote}&rdquo;</blockquote>
+                  </div>
                   <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
@@ -112,7 +114,9 @@ export default function TestimonialsMarquee() {
                       <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="mb-4 text-gray-600">
+                    <blockquote>&ldquo;{testimonial.quote}&rdquo;</blockquote>
+                  </div>
                   <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>
@@ -142,7 +146,9 @@ export default function TestimonialsMarquee() {
                       <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed italic">"{testimonial.quote}"</p>
+                  <div className="mb-4 text-gray-600">
+                    <blockquote>&ldquo;{testimonial.quote}&rdquo;</blockquote>
+                  </div>
                   <div className="flex mt-4 text-yellow-400">⭐⭐⭐⭐⭐</div>
                 </div>
               </div>

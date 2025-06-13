@@ -71,10 +71,199 @@
     "privacyText": "En vous abonnant, vous acceptez notre Politique de Confidentialité.",
     "error": "Échec de l'abonnement. Veuillez réessayer."
   },
+  "AboutUs": {
+    "statusBadge": "À propos de FocusPilot",
+    "hero": {
+      "title": "Du Chaos Intérieur à la Clarté",
+      "subtitle": "Les hauts performers, les étudiants et les entrepreneurs se retrouvent souvent à jongler avec des outils de productivité et des applications de bien‑être qui ne communiquent pas entre eux. FocusPilot.ai comble cette lacune : un mentor alimenté par l'IA qui unit les pratiques de santé mentale fondées sur la science avec l'exécution d'objectifs—sans jamais compromettre votre vie privée."
+    },
+    "mission": {
+      "badge": "Notre Mission",
+      "title": "Autonomiser 100 Millions de Personnes",
+      "description": "Pour atteindre des objectifs significatifs tout en se sentant mentalement résilient et en contrôle."
+    },
+    "stats": {
+      "users": "Personnes à impacter",
+      "completion": "Boost de Réalisation des Tâches",
+      "stress": "Réduction du Stress",
+      "time": "Pour Voir les Résultats"
+    },
+    "features": {
+      "badge": "Fonctionnalités Clés", 
+      "title": "Pourquoi FocusPilot Fonctionne",
+      "items": {
+        "mentor": {
+          "title": "Mentor Tout‑en‑Un",
+          "description": "Planification, boucles d'habitudes et suivi émotionnel en un seul endroit."
+        },
+        "ai": {
+          "title": "Coups de Pouce IA Adaptatifs", 
+          "description": "Détecte les obstacles et fournit des conseils au bon moment."
+        },
+        "security": {
+          "title": "Sécurité Sans Compromis",
+          "description": "Hébergé en Suisse, chiffrement de bout en bout, conforme GDPR et HIPAA."
+        },
+        "results": {
+          "title": "Résultats Mesurables",
+          "description": "Tableaux de bord qui visualisent les progrès et le bien‑être."
+        }
+      },
+      "learnMore": "En Savoir Plus"
+    },
+    "values": {
+      "badge": "Nos Valeurs",
+      "title": "Ce Qui Nous Motive",
+      "items": {
+        "humanFirst": "L'Humain d'Abord",
+        "clarity": "Clarté Radicale", 
+        "quality": "Qualité Sans Relâche",
+        "guardianship": "Gardiennage des Données",
+        "science": "Science Ouverte"
+      }
+    },
+    "team": {
+      "badge": "Notre Équipe",
+      "title": "Rencontrez l'Équipe – Pourquoi Nous Nous Soucions",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "PDG · Expert en Finance Comportementale",
+          "quote": "Personne ne devrait avoir à naviguer dans la volatilité de la vie sans boussole. Focuspilot est cette boussole."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "Je transforme les modèles mathématiques en résultats mesurables de santé mentale."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Responsable Opérations · ex‑Banquier", 
+          "quote": "Je traduis la discipline financière stricte en opérations produit centrées sur l'utilisateur qui maintiennent les gens responsables—sans stress."
+        },
+        "vitoria": {
+          "name": "Vittoria Gambirasi",
+          "role": "Liaison en Psychologie Clinique",
+          "quote": "Les insights thérapeutiques appartiennent dans toutes les poches, pas seulement dans les cliniques."
+        },
+        "ammar": {
+          "name": "Ammar Khatib",
+          "role": "Ingénieur Machine Learning",
+          "quote": "L'IA préservant la vie privée nous permet d'aider des millions sans jamais voir leurs données brutes."
+        },
+        "markus": {
+          "name": "Markus Jourdan",
+          "role": "Designer UX & Accessibilité",
+          "quote": "Les interfaces devraient réduire les niveaux de cortisol avant même que vous touchiez un bouton."
+        }
+      }
+    },
+    "cta": {
+      "title": "Prêt à co‑piloter votre focus ?",
+      "subtitle": "Demandez un accès anticipé aujourd'hui et aidez‑nous à redéfinir la santé mentale pour la prochaine décennie.",
+      "getAccess": "Obtenir un Accès Anticipé",
+      "watchDemo": "Voir la Démo", 
+      "features": "Aucune carte de crédit requise · Annulez à tout moment · Confidentialité hébergée en Suisse"
+    }
+  },
+  "CookieConsent": {
+    "banner": {
+      "title": "Paramètres des Cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic du site et fournir du contenu personnalisé. Votre vie privée compte pour nous.",
+      "acceptAll": "Accepter Tout",
+      "acceptNecessary": "Nécessaires Seulement",
+      "moreInfo": "En savoir plus dans notre",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "settings": {
+      "title": "Préférences des Cookies",
+      "subtitle": "Gérez vos paramètres de cookies et contrôlez comment nous utilisons vos données.",
+      "required": "Requis",
+      "examples": "Exemples",
+      "savePreferences": "Enregistrer les Préférences",
+      "acceptAll": "Accepter Tout",
+      "canChange": "Vous pouvez modifier ces paramètres à tout moment dans notre",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Cookies Nécessaires",
+        "description": "Cookies essentiels requis pour les fonctionnalités de base du site, la sécurité et l'authentification des utilisateurs.",
+        "examples": "Cookies de session, jetons d'authentification, cookies de sécurité"
+      },
+      "analytics": {
+        "title": "Cookies d'Analyse",
+        "description": "Nous aident à comprendre comment les visiteurs interagissent avec notre site pour améliorer l'expérience utilisateur.",
+        "examples": "Google Analytics, vues de pages, suivi du comportement utilisateur"
+      },
+      "marketing": {
+        "title": "Cookies Marketing",
+        "description": "Utilisés pour diffuser des publicités personnalisées et mesurer l'efficacité des campagnes publicitaires.",
+        "examples": "Facebook Pixel, cookies publicitaires, suivi des conversions"
+      },
+      "personalization": {
+        "title": "Cookies de Personnalisation",
+        "description": "Se souviennent de vos préférences et fournissent du contenu personnalisé basé sur votre utilisation.",
+        "examples": "Préférences linguistiques, paramètres de thème, recommandations personnalisées"
+      }
+    }
+  },
   "Common": {
     "close": "Fermer",
     "loading": "Chargement...",
     "error": "Erreur",
     "success": "Succès"
+  },
+  "Impressum": {
+    "backToHome": "Retour à l'accueil",
+    "badge": "Informations légales",
+    "title": "Mentions légales",
+    "subtitle": "Informations légales selon le droit suisse et le RGPD de l'UE",
+    "company": {
+      "title": "Informations sur l'entreprise",
+      "details": "Détails de l'entreprise",
+      "contact": "Informations de contact"
+    },
+    "legal": {
+      "title": "Informations légales",
+      "registration": "Enregistrement",
+      "registerNumber": "Numéro de registre du commerce",
+      "taxNumber": "Numéro IDE",
+      "court": "Tribunal d'enregistrement",
+      "courtLocation": "Office du registre du commerce de Zurich",
+      "management": "Direction",
+      "ceo": "Directeur général",
+      "cto": "Directeur technique",
+      "operations": "Directeur des opérations"
+    },
+    "content": {
+      "title": "Responsable du contenu",
+      "responsible": "Responsable du contenu de ce site web selon le § 55 al. 2 RStV :"
+    },
+    "disclaimer": {
+      "title": "Avis de non-responsabilité",
+      "liability": {
+        "title": "Responsabilité du contenu",
+        "content": "En tant que prestataire de services, nous sommes responsables de notre propre contenu sur ces pages selon les lois générales conformément au § 7 al. 1 TMG. Selon les §§ 8 à 10 TMG, cependant, nous en tant que prestataire de services ne sommes pas obligés de surveiller les informations tierces transmises ou stockées ou d'enquêter sur des circonstances qui indiquent une activité illégale."
+      },
+      "links": {
+        "title": "Responsabilité des liens",
+        "content": "Notre offre contient des liens vers des sites web externes tiers sur le contenu desquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune garantie pour ce contenu externe. Le fournisseur ou exploitant respectif des pages est toujours responsable du contenu des pages liées."
+      },
+      "copyright": {
+        "title": "Droit d'auteur",
+        "content": "Le contenu et les œuvres créés par les exploitants du site sur ces pages sont soumis au droit d'auteur allemand. La duplication, le traitement, la distribution et tout type d'exploitation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif."
+      }
+    },
+    "links": {
+      "title": "Informations supplémentaires",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "cookies": "Paramètres des cookies"
+    },
+    "lastUpdated": "Dernière mise à jour"
+  },
+  "Footer": {
+    "impressum": "Mentions légales"
   }
 } 

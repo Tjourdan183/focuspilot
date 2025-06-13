@@ -71,10 +71,199 @@
     "privacyText": "Door te abonneren ga je akkoord met onze Privacybeleid.",
     "error": "Abonneren mislukt. Probeer het opnieuw."
   },
+  "AboutUs": {
+    "statusBadge": "Over FocusPilot",
+    "hero": {
+      "title": "Van Innerlijke Chaos naar Helderheid",
+      "subtitle": "Hoge presteerders, studenten en ondernemers bevinden zich vaak jonglerende met productiviteitstools en wellness‑apps die niet met elkaar communiceren. FocusPilot.ai overbrugt deze kloof: een AI‑aangedreven mentor die wetenschappelijk onderbouwde mental‑health‑praktijken verenigt met doeluitvoering—zonder ooit je privacy in gevaar te brengen."
+    },
+    "mission": {
+      "badge": "Onze Missie",
+      "title": "100 Miljoen Mensen Empoweren",
+      "description": "Om betekenisvolle doelen te bereiken terwijl ze zich mentaal veerkrachtig en in controle voelen."
+    },
+    "stats": {
+      "users": "Mensen te Beïnvloeden",
+      "completion": "Taakvoltooing Boost",
+      "stress": "Stressvermindering",
+      "time": "Om Resultaten te Zien"
+    },
+    "features": {
+      "badge": "Kernfuncties", 
+      "title": "Waarom FocusPilot Werkt",
+      "items": {
+        "mentor": {
+          "title": "Alles‑in‑Één Mentor",
+          "description": "Routeplanning, gewoontelussen & emotietracking op één plek."
+        },
+        "ai": {
+          "title": "Adaptieve AI‑Duwtjes", 
+          "description": "Detecteert wegversperringen en levert just‑in‑time begeleiding."
+        },
+        "security": {
+          "title": "Geen‑Compromis Beveiliging",
+          "description": "Zwitsers gehost, end‑to‑end versleuteld, GDPR & HIPAA klaar."
+        },
+        "results": {
+          "title": "Meetbare Resultaten",
+          "description": "Dashboards die vooruitgang & welzijn visualiseren."
+        }
+      },
+      "learnMore": "Meer Weten"
+    },
+    "values": {
+      "badge": "Onze Waarden",
+      "title": "Wat Ons Drijft",
+      "items": {
+        "humanFirst": "Mens Eerst",
+        "clarity": "Radicale Helderheid", 
+        "quality": "Meedogenloze Kwaliteit",
+        "guardianship": "Data Bewaking",
+        "science": "Open Wetenschap"
+      }
+    },
+    "team": {
+      "badge": "Ons Team",
+      "title": "Ontmoet het Team – Waarom Wij Geven",
+      "members": {
+        "thomas": {
+          "name": "Thomas Jourdan",
+          "role": "CEO · Gedragsfinancieringsexpert",
+          "quote": "Niemand zou de volatiliteit van het leven moeten navigeren zonder kompas. Focuspilot is dat kompas."
+        },
+        "samuel": {
+          "name": "Samuel Fricker", 
+          "role": "Data Scientist · ETH Zürich",
+          "quote": "Ik zet wiskundige modellen om in meetbare mentale‑gezondheidsresultaten."
+        },
+        "orhan": {
+          "name": "Orhan Koca",
+          "role": "Operationeel Leider · ex‑Bankier", 
+          "quote": "Ik vertaal strikte financiële discipline naar gebruikersgerichte productoperaties die mensen verantwoordelijk houden—zonder stress."
+        },
+        "vitoria": {
+          "name": "Vittoria Gambirasi",
+          "role": "Klinische Psychologie Verbinding",
+          "quote": "Therapeutische inzichten horen in ieders zak, niet alleen in klinieken."
+        },
+        "ammar": {
+          "name": "Ammar Khatib",
+          "role": "Machine Learning Ingenieur",
+          "quote": "Privacy‑behoudende AI laat ons miljoenen helpen zonder ooit hun ruwe data te zien."
+        },
+        "markus": {
+          "name": "Markus Jourdan",
+          "role": "UX & Toegankelijkheidsontwerper",
+          "quote": "Interfaces zouden cortisolniveaus moeten verlagen voordat je zelfs maar een knop aanraakt."
+        }
+      }
+    },
+    "cta": {
+      "title": "Klaar om je focus te co‑piloten?",
+      "subtitle": "Vraag vandaag vroege toegang aan en help ons mental health voor het volgende decennium opnieuw te definiëren.",
+      "getAccess": "Vroege Toegang Krijgen",
+      "watchDemo": "Demo Bekijken", 
+      "features": "Geen creditcard vereist · Altijd opzegbaar · Zwitserse privacy"
+    }
+  },
+  "CookieConsent": {
+    "banner": {
+      "title": "Cookie-instellingen",
+      "description": "We gebruiken cookies om uw ervaring te verbeteren, websiteverkeer te analyseren en gepersonaliseerde content te bieden. Uw privacy is belangrijk voor ons.",
+      "acceptAll": "Alles Accepteren",
+      "acceptNecessary": "Alleen Noodzakelijke",
+      "moreInfo": "Lees meer in ons",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "settings": {
+      "title": "Cookie Voorkeuren",
+      "subtitle": "Beheer uw cookie-instellingen en controleer hoe we uw gegevens gebruiken.",
+      "required": "Vereist",
+      "examples": "Voorbeelden",
+      "savePreferences": "Voorkeuren Opslaan",
+      "acceptAll": "Alles Accepteren",
+      "canChange": "U kunt deze instellingen op elk moment wijzigen in ons",
+      "privacyPolicy": "Privacybeleid"
+    },
+    "categories": {
+      "necessary": {
+        "title": "Noodzakelijke Cookies",
+        "description": "Essentiële cookies vereist voor basale websitefunctionaliteit, beveiliging en gebruikersauthenticatie.",
+        "examples": "Sessie cookies, authenticatie tokens, beveiligings cookies"
+      },
+      "analytics": {
+        "title": "Analyse Cookies",
+        "description": "Helpen ons begrijpen hoe bezoekers omgaan met onze website om de gebruikerservaring te verbeteren.",
+        "examples": "Google Analytics, paginaweergaven, gebruikersgedrag tracking"
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "Gebruikt voor het leveren van gepersonaliseerde advertenties en het meten van reclamecampagne-effectiviteit.",
+        "examples": "Facebook Pixel, reclame cookies, conversie tracking"
+      },
+      "personalization": {
+        "title": "Personalisatie Cookies",
+        "description": "Onthouden uw voorkeuren en bieden aangepaste content gebaseerd op uw gebruik.",
+        "examples": "Taalvoorkeuren, thema-instellingen, gepersonaliseerde aanbevelingen"
+      }
+    }
+  },
   "Common": {
     "close": "Sluiten",
     "loading": "Laden...",
     "error": "Fout",
     "success": "Succes"
+  },
+  "Impressum": {
+    "backToHome": "Terug naar home",
+    "badge": "Juridische informatie",
+    "title": "Impressum",
+    "subtitle": "Juridische informatie volgens Zwitsers recht en EU-AVG",
+    "company": {
+      "title": "Bedrijfsinformatie",
+      "details": "Bedrijfsgegevens",
+      "contact": "Contactinformatie"
+    },
+    "legal": {
+      "title": "Juridische informatie",
+      "registration": "Registratie",
+      "registerNumber": "Handelsregisternummer",
+      "taxNumber": "UID-nummer",
+      "court": "Registratiekamer",
+      "courtLocation": "Handelsregisterkantoor Zürich",
+      "management": "Management",
+      "ceo": "Chief Executive Officer",
+      "cto": "Chief Technology Officer",
+      "operations": "Operations Manager"
+    },
+    "content": {
+      "title": "Verantwoordelijk voor inhoud",
+      "responsible": "Verantwoordelijk voor de inhoud van deze website volgens § 55 lid 2 RStV:"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "liability": {
+        "title": "Aansprakelijkheid voor inhoud",
+        "content": "Als dienstverlener zijn wij verantwoordelijk voor onze eigen inhoud op deze pagina's volgens de algemene wetten conform § 7 lid 1 TMG. Volgens §§ 8 tot 10 TMG zijn wij als dienstverlener echter niet verplicht om doorgegeven of opgeslagen informatie van derden te controleren of onderzoek te doen naar omstandigheden die wijzen op illegale activiteiten."
+      },
+      "links": {
+        "title": "Aansprakelijkheid voor links",
+        "content": "Ons aanbod bevat links naar externe websites van derden waarop wij geen invloed hebben. Daarom kunnen wij geen garantie overnemen voor deze externe inhoud. De respectievelijke aanbieder of exploitant van de pagina's is altijd verantwoordelijk voor de inhoud van de gelinkte pagina's."
+      },
+      "copyright": {
+        "title": "Auteursrecht",
+        "content": "De inhoud en werken die door de site-exploitanten op deze pagina's zijn gemaakt, vallen onder het Duitse auteursrecht. Duplicatie, bewerking, distributie en elk soort exploitatie buiten de grenzen van het auteursrecht vereisen de schriftelijke toestemming van de respectievelijke auteur of maker."
+      }
+    },
+    "links": {
+      "title": "Aanvullende informatie",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "cookies": "Cookie-instellingen"
+    },
+    "lastUpdated": "Laatst bijgewerkt"
+  },
+  "Footer": {
+    "impressum": "Impressum"
   }
 } 
